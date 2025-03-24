@@ -1,4 +1,6 @@
 // options.js - Gestion des actions disponibles
+import { gameFeed, selectedCharacter } from "./game.js";
+import { addNPCReaction } from "./characters.js";
 
 const optionsContainer = document.getElementById("options-container");
 
@@ -29,5 +31,19 @@ function displayActions() {
         optionsContainer.appendChild(button);
     });
 }
+
+button.addEventListener("click", () => {
+    console.log(`Option sélectionnée : ${action.name}`);
+
+    // Ajouter l'action du joueur au flux
+    const actionElement = document.createElement("div");
+    actionElement.className = "player-action"; // Classe CSS dédiée
+    actionElement.textContent = `${selectedCharacter} ${action.description.toLowerCase()}`;
+    gameFeed.appendChild(actionElement);
+    gameFeed.scrollTop = gameFeed.scrollHeight;
+
+    // Déclencher une réaction des PNJ
+    addNPCReaction();
+});
 
 export { playerOptions, displayActions };
