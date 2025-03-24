@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000); // 2 secondes pour afficher la sélection du personnage
     
     // Sélection du personnage
-    document.querySelectorAll(".character-button").forEach(button => {
-        button.addEventListener("click", () => {
-            selectedCharacter = button.getAttribute("data-character");
-            characterSelection.style.display = "none";
-            startGameButton.style.display = "block";
-        });
+document.querySelectorAll(".character-button").forEach(button => {
+    button.addEventListener("click", () => {
+        selectedCharacter = button.getAttribute("data-character");
+        localStorage.setItem("selectedCharacter", selectedCharacter); // <-- AJOUT ICI
+        characterSelection.style.display = "none";
+        startGameButton.style.display = "block";
     });
-
+});
     // Lancer le jeu après l'introduction et la sélection du personnage
     startGameButton.addEventListener("click", () => {
         introContainer.style.display = "none";
