@@ -3,12 +3,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const introContainer = document.getElementById("intro-container");
     const startGameButton = document.getElementById("start-game-button");
+    const characterSelection = document.getElementById("character-selection");
     const gameContainer = document.getElementById("game-container");
     const gameFeed = document.getElementById("game-feed");
     const optionsContainer = document.getElementById("options-container");
     const commentaryFeed = document.getElementById("commentary-feed");
     const nextEventButton = document.getElementById("next-event-button");
     
+    let selectedCharacter = "";
+
     // Cacher tout le contenu du jeu au chargement
     gameContainer.style.display = "none";
     gameFeed.style.display = "none";
@@ -77,5 +80,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     // Export the selected character for use in other modules
-  //  export { selectedCharacter };
+    window.selectedCharacter = selectedCharacter;
 });
