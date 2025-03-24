@@ -77,5 +77,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     // Export the selected character for use in other modules
-    export { selectedCharacter };
+  //  export { selectedCharacter };
 });
