@@ -1,5 +1,7 @@
 // commentary.js - Gestion des commentaires du match
 
+import { gameFeed } from "./game.js";
+
 const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
 
