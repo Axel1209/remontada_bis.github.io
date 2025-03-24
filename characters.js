@@ -1,6 +1,6 @@
 // characters.js - Gestion des réactions des personnages
 
-import { barcaScore } from "./game.js";
+import { barcaScore, selectedCharacter } from "./game.js";
 
 const characterReactions = {
     cauvin: [
