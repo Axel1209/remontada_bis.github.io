@@ -1,6 +1,6 @@
 // commentary.js - Gestion des commentaires du match
 
-import { gameFeed } from "./game.js";
+import { gameFeed , matchEvent } from "./game.js";
 
 const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
@@ -27,10 +27,13 @@ let currentEventIndex = 0;
 function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
         const event = matchEvents[currentEventIndex];
+        const eventElement = document.createElement("div");
+        eventElement.className = "commentary";
+        eventElement.textContent = `${event.time} - ${event.description}`;
         // Ajouter la gestion du score
         if (event.type === "goal") {
             const matchEvent = {
-                team: event.team,
+                team: event.team === "Barcelona" ? "Barcelone" : event.team, // ✅ Correction nom
                 score: 1,
                 description: event.description
             };
@@ -41,7 +44,6 @@ function addCommentary() {
         gameFeed.scrollTop = gameFeed.scrollHeight;
         
         currentEventIndex++;
-    }
     }
 }
 
