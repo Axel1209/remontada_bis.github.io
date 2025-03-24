@@ -34,14 +34,25 @@ function addReaction(character, text) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
-// Fonction pour gérer les réactions des autres personnages
 function addNPCReaction() {
+    // Réactions basées sur le score (existant)
     let currentBarcaScore = parseInt(document.getElementById("barca-score").textContent, 10);
     let cauvinIndex = Math.min(currentBarcaScore, characterReactions.cauvin.length - 1);
 
+    // Réactions génériques si aucun but n'est marqué
+    const genericReactions = {
+        jeanphi: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
+        etienne: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
+        renaud: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"]
+    };
+
     Object.keys(characterReactions).forEach(character => {
         if (character !== selectedCharacter) {
-            addReaction(character, characterReactions[character][cauvinIndex]);
+            const reaction = Math.random() < 0.5 // 50% de chance d'avoir une réaction générique
+                ? genericReactions[character][Math.floor(Math.random() * genericReactions[character].length)]
+                : characterReactions[character][cauvinIndex];
+            
+            addReaction(character, reaction);
         }
     });
 }
