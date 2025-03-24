@@ -67,3 +67,11 @@ button {
 button:hover {
     background-color: #0b7dda;
 }
+
+.commentary {
+    background-color: #ffebcd; /* Beige clair pour se démarquer */
+    border-left: 3px solid #ff9800; /* Couleur orange pour les commentaires */
+    padding: 8px;
+    margin: 8px 0;
+    font-style: italic;
+}
