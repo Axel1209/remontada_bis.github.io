@@ -15,7 +15,7 @@ function displayActions() {
     const optionsContainer = document.getElementById("options-container");
     optionsContainer.innerHTML = ""; // Clear previous actions
 
-    actions.forEach(action => {
+    playerOptions.forEach(action => {
         const actionElement = document.createElement("div");
         actionElement.className = "action";
         actionElement.innerHTML = `<h3>${action.name}</h3><p>${action.description}</p>`;
