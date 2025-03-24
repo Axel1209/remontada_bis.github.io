@@ -49,7 +49,21 @@ Enfin, c’est ce qu’ils croient.`;
         <p>${introText}</p>
     `;
     
-    // Lancer le jeu après l'introduction
+    // Afficher la sélection du personnage après l'introduction
+    setTimeout(() => {
+        characterSelection.style.display = "block";
+    }, 2000); // 2 secondes pour afficher la sélection du personnage
+    
+    // Sélection du personnage
+    document.querySelectorAll(".character-button").forEach(button => {
+        button.addEventListener("click", () => {
+            selectedCharacter = button.getAttribute("data-character");
+            characterSelection.style.display = "none";
+            startGameButton.style.display = "block";
+        });
+    });
+
+    // Lancer le jeu après l'introduction et la sélection du personnage
     startGameButton.addEventListener("click", () => {
         introContainer.style.display = "none";
         startGameButton.style.display = "none";
@@ -59,4 +73,7 @@ Enfin, c’est ce qu’ils croient.`;
         commentaryFeed.style.display = "block";
         nextEventButton.style.display = "block";
     });
+    
+    // Export the selected character for use in other modules
+    export { selectedCharacter };
 });
