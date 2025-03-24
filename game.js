@@ -1,11 +1,12 @@
 import { characterReactions, addReaction, addNPCReaction } from "./characters.js";
+import { displayActions } from "./options.js";
 
 let selectedCharacter = "cauvin";
 let gameFeed = document.getElementById("game-feed");
 let nextEventButton = document.getElementById("next-event-button");
 let barcaScore = 0;
+let psgScore = 4; // Initial score from the previous match
 
-// Fonction pour ajouter un événement au jeu
 function addEvent(description) {
     const eventElement = document.createElement("div");
     eventElement.className = "event";
@@ -14,17 +15,34 @@ function addEvent(description) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
-// Mise à jour du score
 function updateScores() {
     document.getElementById("psg-score").textContent = psgScore;
     document.getElementById("barca-score").textContent = barcaScore;
 }
 
-// Gestion du clic sur le bouton "Action suivante"
+function handleMatchEvent(event) {
+    if (event.team === 'Barcelone') {
+        barcaScore += event.score;
+    } else if (event.team === 'PSG') {
+        psgScore += event.score;
+    }
+    updateScores();
+    addEvent(event.description);
+}
+
 nextEventButton.addEventListener("click", () => {
-    barcaScore++;
-    addEvent(`But du Barça ! Score actuel: ${barcaScore}`);
+    const matchEvent = {
+        team: 'Barcelone',
+        score: 1,
+        description: `But du Barça ! Score actuel: PSG ${psgScore} - Barcelone ${barcaScore + 1}`
+    };
+    handleMatchEvent(matchEvent);
     addNPCReaction();
+});
+
+// Display actions when the game starts
+document.addEventListener("DOMContentLoaded", () => {
+    displayActions();
 });
 
 export { barcaScore, selectedCharacter, gameFeed };
