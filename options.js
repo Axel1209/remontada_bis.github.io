@@ -3,27 +3,24 @@
 const optionsContainer = document.getElementById("options-container");
 
 const playerOptions = [
-    "Encourager son équipe",
-    "Crier sur l'arbitre",
-    "Changer de chaîne",
-    "Prendre une boisson",
-    "Se moquer de l'adversaire"
+    { name: "Encourager son équipe", description: "Encourager son équipe" },
+    { name: "Crier sur l'arbitre", description: "Crier sur l'arbitre" },
+    { name: "Changer de chaîne", description: "Changer de chaîne" },
+    { name: "Prendre une boisson", description: "Prendre une boisson" },
+    { name: "Se moquer de l'adversaire", description: "Se moquer de l'adversaire" }
 ];
 
-function displayOptions() {
-    optionsContainer.innerHTML = "";
-    playerOptions.forEach(option => {
-        const button = document.createElement("button");
-        button.textContent = option;
-        button.className = "option-button";
-        button.addEventListener("click", () => handleOptionClick(option));
-        optionsContainer.appendChild(button);
+
+function displayActions() {
+    const optionsContainer = document.getElementById("options-container");
+    optionsContainer.innerHTML = ""; // Clear previous actions
+
+    actions.forEach(action => {
+        const actionElement = document.createElement("div");
+        actionElement.className = "action";
+        actionElement.innerHTML = `<h3>${action.name}</h3><p>${action.description}</p>`;
+        optionsContainer.appendChild(actionElement);
     });
 }
 
-function handleOptionClick(option) {
-    addReaction("joueur", `Vous avez choisi: ${option}`);
-    addNPCReaction();
-}
-
-export { displayOptions };
+export { actions, displayActions };
