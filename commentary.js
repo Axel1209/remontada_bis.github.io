@@ -23,10 +23,16 @@ function addCommentary() {
         commentaryFeed.appendChild(eventElement);
         commentaryFeed.scrollTop = commentaryFeed.scrollHeight;
         currentEventIndex++;
+        console.log(`Event added: ${matchEvents[currentEventIndex - 1]}`);
+    } else {
+        console.log("No more events to add.");
     }
 }
 
 // Lier le bouton "Action suivante" aux commentaires
-nextEventButton.addEventListener("click", addCommentary);
+nextEventButton.addEventListener("click", () => {
+    console.log("Next event button clicked");
+    addCommentary();
+});
 
 export { addCommentary };
