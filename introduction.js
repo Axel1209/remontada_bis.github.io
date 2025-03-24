@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Texte d'introduction
     const introText = "Nous sommes en 2017, le PSG a gagné 4-0 à l'aller contre Barcelone. Il ne reste plus qu'un match pour accéder aux quarts de finale...";
-    const introImage = "https://i.ytimg.com/vi/fyZCVDSXS60/maxresdefault.jpg' alt='Introduction Image' />";
+    const introImage = "https://i.ytimg.com/vi/fyZCVDSXS60/maxresdefault.jpg";
     
     // Affichage de l'introduction
     introContainer.innerHTML = `<p>${introText}</p>${introImage}`;
