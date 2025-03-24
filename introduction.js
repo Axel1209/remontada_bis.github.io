@@ -67,6 +67,11 @@ document.querySelectorAll(".character-button").forEach(button => {
         characterSelection.style.display = "none";
         startGameButton.style.display = "block";
     });
+    // Dans la section de sélection des personnages -->
+<button class="character-button" data-character="cauvin">Cauvin</button>
+<button class="character-button" data-character="jeanphi">Jeanphi</button>
+<button class="character-button" data-character="etienne">Etienne</button>
+<button class="character-button" data-character="renaud">Renaud</button>
 });
     // Lancer le jeu après l'introduction et la sélection du personnage
     startGameButton.addEventListener("click", () => {
