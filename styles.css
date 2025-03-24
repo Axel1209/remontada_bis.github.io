@@ -31,9 +31,16 @@ button {
     text-align: center;
 }
 
+#score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 #psg-logo {
     width: 30px;
-    height: 30px;
+    height: auto;
     margin-right: 10px;
 }
 
