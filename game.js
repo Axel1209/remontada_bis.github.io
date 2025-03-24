@@ -42,6 +42,7 @@ nextEventButton.addEventListener("click", () => {
 
 // Display actions when the game starts
 document.addEventListener("DOMContentLoaded", () => {
+    updateScores();
     displayActions();
 });
 
