@@ -34,7 +34,7 @@ nextEventButton.addEventListener("click", () => {
     const matchEvent = {
         team: 'Barcelone',
         score: 1,
-        description: `But du Barça ! Score actuel: PSG ${psgScore} - Barcelone ${barcaScore + 1}`
+        description: `But du Barça ! Score actuel: PSG ${psgScore} - Barcelone ${barcaScore}`
     };
     handleMatchEvent(matchEvent);
     addNPCReaction();
