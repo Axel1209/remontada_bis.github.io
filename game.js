@@ -1,7 +1,7 @@
 import { characterReactions, addReaction, addNPCReaction } from "./characters.js";
 import { displayActions } from "./options.js";
 
-let selectedCharacter = "cauvin";
+let selectedCharacter = localStorage.getItem("selectedCharacter") || "cauvin";
 let gameFeed = document.getElementById("game-feed");
 let nextEventButton = document.getElementById("next-event-button");
 let barcaScore = 0;
