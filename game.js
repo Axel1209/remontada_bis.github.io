@@ -14,6 +14,12 @@ function addEvent(description) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
+// Mise à jour du score
+function updateScores() {
+    document.getElementById("psg-score").textContent = psgScore;
+    document.getElementById("barca-score").textContent = barcaScore;
+}
+
 // Gestion du clic sur le bouton "Action suivante"
 nextEventButton.addEventListener("click", () => {
     barcaScore++;
