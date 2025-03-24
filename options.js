@@ -23,4 +23,4 @@ function displayActions() {
     });
 }
 
-export { actions, displayActions };
+export { playerOptions, displayActions };
