@@ -38,10 +38,17 @@ button {
     margin-bottom: 20px;
 }
 
-#psg-logo {
+#psg-logo, #barca-logo {
     width: 30px;
     height: auto;
+}
+
+#psg-logo {
     margin-right: 10px;
+}
+
+#barca-logo {
+    margin-left: 10px;
 }
 
 button:hover {
