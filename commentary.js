@@ -1,6 +1,7 @@
 // commentary.js - Gestion des commentaires du match
 
 const commentaryFeed = document.getElementById("commentary-feed");
+const nextEventButton = document.getElementById("next-event-button");
 
 const matchEvents = [
     "Début du match ! Le PSG mène 4-0 au cumulé.",
@@ -24,5 +25,8 @@ function addCommentary() {
         currentEventIndex++;
     }
 }
+
+// Lier le bouton "Action suivante" aux commentaires
+nextEventButton.addEventListener("click", addCommentary);
 
 export { addCommentary };
