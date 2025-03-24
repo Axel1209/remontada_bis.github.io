@@ -1,5 +1,7 @@
 // characters.js - Gestion des réactions des personnages
 
+import { barcaScore } from "./game.js";
+
 const characterReactions = {
     cauvin: [
         "Tranquille, on a 4 buts d'avance. Impossible de perdre.",
