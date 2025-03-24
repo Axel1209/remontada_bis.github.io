@@ -9,16 +9,22 @@
 <body>
     <h1>La Remontada Interactive</h1>
     
-    <div id="game-feed"></div>
+    <div id="intro-container"></div>
+    <button id="start-game-button">Commencer le match</button>
     
-    <h2>Actions disponibles</h2>
-    <div id="options-container"></div>
+    <div id="game-container" style="display: none;">
+        <div id="game-feed"></div>
+        
+        <h2>Actions disponibles</h2>
+        <div id="options-container"></div>
+        
+        <h2>Commentaires du match</h2>
+        <div id="commentary-feed"></div>
+        
+        <button id="next-event-button">Action suivante</button>
+    </div>
     
-    <h2>Commentaires du match</h2>
-    <div id="commentary-feed"></div>
-    
-    <button id="next-event-button">Action suivante</button>
-    
+    <script src="introduction.js"></script>
     <script src="characters.js"></script>
     <script src="game.js"></script>
     <script src="options.js"></script>
