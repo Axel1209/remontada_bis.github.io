@@ -53,9 +53,6 @@ function displayActions() {
     });
 }
 
-button.addEventListener("click", () => {
-    console.log(`Option sélectionnée : ${action.name}`);
-
     // Ajouter l'action du joueur au flux
     const actionElement = document.createElement("div");
     actionElement.className = "player-action"; // Classe CSS dédiée
