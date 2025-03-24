@@ -20,3 +20,5 @@ nextEventButton.addEventListener("click", () => {
     addEvent(`But du Barça ! Score actuel: ${barcaScore}`);
     addNPCReaction();
 });
+
+export { barcaScore };
