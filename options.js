@@ -4,28 +4,49 @@ import { addNPCReaction } from "./characters.js";
 
 const optionsContainer = document.getElementById("options-container");
 
-const playerOptions = [
-    { name: "Encourager son équipe", description: "Encourager son équipe" },
-    { name: "Crier sur l'arbitre", description: "Crier sur l'arbitre" },
-    { name: "Changer de chaîne", description: "Changer de chaîne" },
-    { name: "Prendre une boisson", description: "Prendre une boisson" },
-    { name: "Se moquer de l'adversaire", description: "Se moquer de l'adversaire" }
-];
-
+const playerOptions = {
+    cauvin: [
+        { name: "Insulter l'arbitre", description: "Crier 'Arbitre vendu !'" },
+        { name: "Se ronger les ongles", description: "Se ronger les ongles nerveusement" },
+        { name: "Vérifier le score cumulé", description: "Calculer fébrilement le score global" }
+    ],
+    jeanphi: [
+        { name: "Imitier Cauvin", description: "'Oh non, mon PSG !' en voix aiguë" },
+        { name: "Chanter 'Remontada'", description: "Entonner une parodie de chant" },
+        { name: "Offrir un shot", description: "Forcer Cauvin à boire un shot" }
+    ],
+    etienne: [
+        { name: "Prédire un carton rouge", description: "'Luisito va prendre rouge !'" },
+        { name: "Mimer un coup franc", description: "Imiter un geste technique de Neymar" },
+        { name: "Crier 'C'est culotté !'", description: "Crier à chaque passe risquée" }
+    ],
+    renaud: [
+        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
+        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
+        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+    ]
+};
 
 function displayActions() {
     const optionsContainer = document.getElementById("options-container");
-    optionsContainer.innerHTML = ""; // Vider les anciennes options
+    optionsContainer.innerHTML = "";
 
-    playerOptions.forEach(action => {
+    // Récupérer le personnage sélectionné
+    const selectedCharacter = localStorage.getItem("selectedCharacter") || "cauvin";
+
+    playerOptions[selectedCharacter].forEach(action => {
         const button = document.createElement("button");
-        button.className = "option-button"; // Ajout d'une classe pour le style
-        button.textContent = action.name; // Affiche seulement le nom
+        button.className = `option-button ${selectedCharacter}`; // Classe personnalisée
+        button.textContent = action.name;
 
-        // Ajout d'un événement au clic
         button.addEventListener("click", () => {
-            console.log(`Option sélectionnée : ${action.name}`);
-            // Ici, tu peux ajouter la logique pour gérer le choix du joueur
+            // Ajouter l'action au flux principal
+            const actionElement = document.createElement("div");
+            actionElement.className = `player-action ${selectedCharacter}`;
+            actionElement.textContent = `${action.description}`;
+            gameFeed.appendChild(actionElement);
+            
+            addNPCReaction(); // Déclencher les réactions
         });
 
         optionsContainer.appendChild(button);
