@@ -18,13 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Texte d'introduction
     const introText = "Nous sommes en 2017, le PSG a gagné 4-0 à l'aller contre Barcelone. Il ne reste plus qu'un match pour accéder aux quarts de finale...";
-    const introImage = "https://i.ytimg.com/vi/fyZCVDSXS60/maxresdefault.jpg";
+    const introImage = "<img src='path/to/image.jpg' alt='Introduction Image' />";
     
-    // Affichage de l'introduction avec l'image
-    introContainer.innerHTML = `
-        <img src="${introImage}" alt="Remontada PSG vs Barcelone" style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-        <p>${introText}</p>
-    `;
+    // Affichage de l'introduction
+    introContainer.innerHTML = `<p>${introText}</p>${introImage}`;
     
     // Lancer le jeu après l'introduction
     startGameButton.addEventListener("click", () => {
