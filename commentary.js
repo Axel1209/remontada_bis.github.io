@@ -23,15 +23,17 @@ let currentEventIndex = 0;
 
 function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
+        const event = matchEvents[currentEventIndex];
+        
         const eventElement = document.createElement("div");
         eventElement.className = "commentary";
-        eventElement.textContent = matchEvents[currentEventIndex].description;
-        commentaryFeed.appendChild(eventElement);
-        commentaryFeed.scrollTop = commentaryFeed.scrollHeight;
+        eventElement.innerHTML = `<strong>${event.time}</strong> - ${event.description}`;
+        
+        // Ajouter le commentaire dans le flux principal des événements du jeu
+        gameFeed.appendChild(eventElement);
+        gameFeed.scrollTop = gameFeed.scrollHeight;
+        
         currentEventIndex++;
-        console.log(`Event added: ${matchEvents[currentEventIndex - 1]}`);
-    } else {
-        console.log("No more events to add.");
     }
 }
 
