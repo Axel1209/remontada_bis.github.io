@@ -21,4 +21,4 @@ nextEventButton.addEventListener("click", () => {
     addNPCReaction();
 });
 
-export { barcaScore, selectedCharacter };
+export { barcaScore, selectedCharacter, gameFeed };
