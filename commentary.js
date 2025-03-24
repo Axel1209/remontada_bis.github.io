@@ -25,7 +25,7 @@ function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
         const eventElement = document.createElement("div");
         eventElement.className = "commentary";
-        eventElement.textContent = matchEvents[currentEventIndex];
+        eventElement.textContent = matchEvents[currentEventIndex].description;
         commentaryFeed.appendChild(eventElement);
         commentaryFeed.scrollTop = commentaryFeed.scrollHeight;
         currentEventIndex++;
