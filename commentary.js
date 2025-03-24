@@ -23,19 +23,25 @@ const nextEventButton = document.getElementById("next-event-button");
 
 let currentEventIndex = 0;
 
+
 function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
         const event = matchEvents[currentEventIndex];
-        
-        const eventElement = document.createElement("div");
-        eventElement.className = "commentary";
-        eventElement.innerHTML = `<strong>${event.time}</strong> - ${event.description}`;
-        
+        // Ajouter la gestion du score
+        if (event.type === "goal") {
+            const matchEvent = {
+                team: event.team,
+                score: 1,
+                description: event.description
+            };
+            handleMatchEvent(matchEvent);
+        }
         // Ajouter le commentaire dans le flux principal des événements du jeu
         gameFeed.appendChild(eventElement);
         gameFeed.scrollTop = gameFeed.scrollHeight;
         
         currentEventIndex++;
+    }
     }
 }
 
