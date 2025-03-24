@@ -102,3 +102,29 @@ button:hover {
     margin: 8px 0;
     font-weight: bold;
 }
+/* Couleurs différentes par personnage */
+.player-action.cauvin {
+    background-color: #ffe0e0;
+    border-left: 3px solid #d32f2f; /* Rouge PSG */
+}
+
+.player-action.jeanphi {
+    background-color: #fff3e0;
+    border-left: 3px solid #ffa000; /* Orange */
+}
+
+.player-action.etienne {
+    background-color: #e8f5e9;
+    border-left: 3px solid #388e3c; /* Vert */
+}
+
+.player-action.renaud {
+    background-color: #e3f2fd;
+    border-left: 3px solid #1976d2; /* Bleu */
+}
+
+/* Styles des boutons */
+.option-button.cauvin { background-color: #d32f2f; }
+.option-button.jeanphi { background-color: #ffa000; }
+.option-button.etienne { background-color: #388e3c; }
+.option-button.renaud { background-color: #1976d2; }
