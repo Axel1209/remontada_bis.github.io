@@ -36,7 +36,8 @@ function addReaction(character, text) {
 
 // Fonction pour gérer les réactions des autres personnages
 function addNPCReaction() {
-    let cauvinIndex = Math.min(barcaScore, characterReactions.cauvin.length - 1);
+    let currentBarcaScore = parseInt(document.getElementById("barca-score").textContent, 10);
+    let cauvinIndex = Math.min(currentBarcaScore, characterReactions.cauvin.length - 1);
 
     Object.keys(characterReactions).forEach(character => {
         if (character !== selectedCharacter) {
