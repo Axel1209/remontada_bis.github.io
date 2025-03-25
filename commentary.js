@@ -1,6 +1,6 @@
 // commentary.js - Gestion des commentaires du match
 
-import { gameFeed , matchEvent } from "./game.js";
+import { gameFeed , handleMatchEvent } from "./game.js";
 
 const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
@@ -32,12 +32,11 @@ function addCommentary() {
         eventElement.textContent = `${event.time} - ${event.description}`;
         // Ajouter la gestion du score
         if (event.type === "goal") {
-            const matchEvent = {
+            handleMatchEvent ({
                 team: event.team === "Barcelona" ? "Barcelone" : event.team, // ✅ Correction nom
                 score: 1,
                 description: event.description
-            };
-            handleMatchEvent(matchEvent);
+            });
         }
         // Ajouter le commentaire dans le flux principal des événements du jeu
         gameFeed.appendChild(eventElement);
