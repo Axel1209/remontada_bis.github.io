@@ -43,7 +43,7 @@ function displayActions() {
             // Ajouter l'action au flux principal
             const actionElement = document.createElement("div");
             actionElement.className = `player-action ${selectedCharacter}`;
-            actionElement.textContent = action.description};
+            actionElement.textContent = action.description;
             gameFeed.appendChild(actionElement);
             
             addNPCReaction(); // Déclencher les réactions
@@ -52,7 +52,5 @@ function displayActions() {
         optionsContainer.appendChild(button);
     });
 }
-
-});
 
 export { playerOptions, displayActions };
