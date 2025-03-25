@@ -211,16 +211,5 @@ function addNPCReaction(event) {
     });
 }
 
-    Object.keys(characterReactions).forEach(character => {
-        if (character !== selectedCharacter) {
-            const reaction = Math.random() < 0.5 // 50% de chance d'avoir une réaction générique
-                ? genericReactions[character][Math.floor(Math.random() * genericReactions[character].length)]
-                : characterReactions[character][reactionIndex];
-            
-            addReaction(character, reaction);
-        }
-    });
-}
-
 // Exporter les fonctions pour utilisation dans d'autres fichiers
 export { characterReactions, addReaction, addNPCReaction };
