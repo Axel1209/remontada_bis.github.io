@@ -138,6 +138,41 @@ button:hover {
     border-left: 3px solid #7b1fa2; /* violet */
 }
 
+/* Remplacer ou ajouter ces règles */
+.reaction {
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Utiliser les mêmes couleurs que pour les options */
+.reaction.cauvin {
+    background-color: #ffe0e0;
+    border-left: 3px solid #d32f2f;
+}
+
+.reaction.jeanphi {
+    background-color: #fff3e0;
+    border-left: 3px solid #ffa000;
+}
+
+.reaction.etienne {
+    background-color: #e8f5e9;
+    border-left: 3px solid #388e3c;
+}
+
+.reaction.renaud {
+    background-color: #e3f2fd;
+    border-left: 3px solid #1976d2;
+}
+
+/* Style du nom du personnage */
+.character-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 /* Styles des boutons */
 .option-button.cauvin { background-color: #d32f2f; }
 .option-button.jeanphi { background-color: #ffa000; }
