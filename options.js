@@ -61,7 +61,7 @@ function displayActions() {
             actionElement.textContent = action.description;
             gameFeed.appendChild(actionElement);
             
-            addNPCReaction(); // Déclencher les réactions
+            addNPCReaction(event); // Déclencher les réactions
         });
 
         optionsContainer.appendChild(button);
