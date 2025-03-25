@@ -21,7 +21,7 @@ function updateScores() {
 }
 
 function handleMatchEvent(event) {
-    if (event.team === 'Barcelone') {
+    if (event.team === 'Barcelona') {
         barcaScore += event.score;
     } else if (event.team === 'PSG') {
         psgScore += event.score;
