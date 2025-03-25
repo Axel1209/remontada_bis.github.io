@@ -43,7 +43,7 @@ function displayActions() {
             // Ajouter l'action au flux principal
             const actionElement = document.createElement("div");
             actionElement.className = `player-action ${selectedCharacter}`;
-            actionElement.textContent = `${action.description}`;
+            actionElement.textContent = action.description};
             gameFeed.appendChild(actionElement);
             
             addNPCReaction(); // Déclencher les réactions
@@ -53,15 +53,6 @@ function displayActions() {
     });
 }
 
-    // Ajouter l'action du joueur au flux
-    const actionElement = document.createElement("div");
-    actionElement.className = "player-action"; // Classe CSS dédiée
-    actionElement.textContent = `${selectedCharacter} ${action.description.toLowerCase()}`;
-    gameFeed.appendChild(actionElement);
-    gameFeed.scrollTop = gameFeed.scrollHeight;
-
-    // Déclencher une réaction des PNJ
-    addNPCReaction();
 });
 
 export { playerOptions, displayActions };
