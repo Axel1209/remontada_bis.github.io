@@ -2,18 +2,44 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 
+let currentEvent;
+
 const optionsContainer = document.getElementById("options-container");
 
-const playerOptions = {
+export const playerOptions = {
     cauvin: [
-        { name: "Insulter l'arbitre", description: "Crier 'Arbitre vendu !'" },
-        { name: "Se ronger les ongles", description: "Se ronger les ongles nerveusement" },
-        { name: "Vérifier le score cumulé", description: "Calculer fébrilement le score global" }
+        { 
+            name: "Insulter l'arbitre", 
+            description: "Crier 'Arbitre vendu !'",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Se ronger les ongles", 
+            description: "Se ronger les ongles nerveusement",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Calculer fébrilement le score global",
+            condition: () => true // Toujours disponible
+        }
     ],
     jeanphi: [
-        { name: "Imitier Cauvin", description: "'Oh non, mon PSG !' en voix aiguë" },
-        { name: "Chanter 'Remontada'", description: "Entonner une parodie de chant" },
-        { name: "Offrir un shot", description: "Forcer Cauvin à boire un shot" }
+        { 
+            name: "Insulter l'arbitre", 
+            description: "Crier 'Arbitre vendu !'",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Se ronger les ongles", 
+            description: "Se ronger les ongles nerveusement",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Calculer fébrilement le score global",
+            condition: () => true // Toujours disponible
+        }
     ],
     etienne: [
         { name: "Prédire un carton rouge", description: "'Luisito va prendre rouge !'" },
@@ -42,7 +68,8 @@ const playerOptions = {
     ]
 };
 
-function displayActions() {
+function displayActions(event) {
+    currentEvent = event;
     const optionsContainer = document.getElementById("options-container");
     optionsContainer.innerHTML = "";
 
@@ -50,6 +77,7 @@ function displayActions() {
     const selectedCharacter = localStorage.getItem("selectedCharacter") || "cauvin";
 
     playerOptions[selectedCharacter].forEach(action => {
+        if (action.condition && !action.condition(event)) return;
         const button = document.createElement("button");
         button.className = `option-button ${selectedCharacter}`; // Classe personnalisée
         button.textContent = action.name;
@@ -61,7 +89,7 @@ function displayActions() {
             actionElement.textContent = action.description;
             gameFeed.appendChild(actionElement);
             
-            addNPCReaction(event); // Déclencher les réactions
+            addNPCReaction(currentevent); // Déclencher les réactions
         });
 
         optionsContainer.appendChild(button);
