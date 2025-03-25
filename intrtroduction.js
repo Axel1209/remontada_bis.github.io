@@ -1,4 +1,4 @@
-// introduction.js - Gestion de l'introduction du jeu
+// introduction2.js - Gestion de l'introduction du jeu
 
 import { displayActions } from "./options.js";
 
