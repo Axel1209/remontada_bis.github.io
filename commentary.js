@@ -2,6 +2,8 @@
 
 import { gameFeed , handleMatchEvent } from "./game.js";
 import { addNPCReaction } from "./characters.js";
+import { displayActions } from "./options.js";
+
 
 const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
@@ -47,6 +49,7 @@ function addCommentary() {
 
         // Ajouter des reactions a chaque commentaire
         addNPCReaction(event); // Ajouter cette ligne
+        displayActions(event); // Ajoutez cette ligne
     }
 }
 
