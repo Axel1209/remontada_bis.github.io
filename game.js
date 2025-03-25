@@ -30,16 +30,6 @@ function handleMatchEvent(event) {
     addEvent(event.description);
 }
 
-nextEventButton.addEventListener("click", () => {
-    const matchEvent = {
-        team: 'Barcelone',
-        score: 1,
-        description: `But du Barça ! Score actuel: PSG ${psgScore} - Barcelone ${barcaScore}`
-    };
-    handleMatchEvent(matchEvent);
-    addNPCReaction();
-});
-
 // Display actions when the game starts
 document.addEventListener("DOMContentLoaded", () => {
     updateScores();
