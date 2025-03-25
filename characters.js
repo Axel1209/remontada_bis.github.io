@@ -44,7 +44,10 @@ const characterReactions = {
 function addReaction(character, text) {
     const reactionElement = document.createElement('div');
     reactionElement.className = `reaction ${character}`;
-    reactionElement.innerHTML = `<span class="character-name ${character}">${character}:</span> ${text}`;
+    reactionElement.innerHTML = `
+        <span class="character-name">${character.toUpperCase()}:</span> 
+        ${text}
+    `;
     gameFeed.appendChild(reactionElement);
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
