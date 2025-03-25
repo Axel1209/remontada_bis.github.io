@@ -43,6 +43,11 @@ function addCommentary() {
         gameFeed.scrollTop = gameFeed.scrollHeight;
         
         currentEventIndex++;
+
+        // Ajouter des reactions a chaque commentaire
+        addNPCReaction(); // Ajouter cette ligne
+    }
+            }
     }
 }
 
