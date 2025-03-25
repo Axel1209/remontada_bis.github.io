@@ -87,7 +87,7 @@ function addNPCReaction() {
         if (character !== selectedCharacter) {
             const reaction = Math.random() < 0.5 // 50% de chance d'avoir une réaction générique
                 ? genericReactions[character][Math.floor(Math.random() * genericReactions[character].length)]
-                : characterReactions[character][cauvinIndex];
+                : characterReactions[character][reactionIndex];
             
             addReaction(character, reaction);
         }
