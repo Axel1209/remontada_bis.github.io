@@ -24,6 +24,21 @@ const playerOptions = {
         { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
         { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
         { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+    ],
+    dimitri: [
+        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
+        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
+        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+    ],
+    bastien: [
+        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
+        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
+        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+    ],
+    axel: [
+        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
+        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
+        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
     ]
 };
 
