@@ -167,6 +167,22 @@ button:hover {
     border-left: 3px solid #1976d2;
 }
 
+.reaction.dimitri {
+    background-color: #fff9c4;
+    border-left: 3px solid #fbc02d;
+}
+
+.reaction.bastien {
+    background-color: #f5f5f5;
+    border-left: 3px solid #616161;
+}
+
+.reaction.axel {
+    background-color: #f3e5f5;
+    border-left: 3px solid #7b1fa2;
+}
+
+
 /* Style du nom du personnage */
 .character-name {
     font-weight: bold;
