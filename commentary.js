@@ -1,6 +1,7 @@
 // commentary.js - Gestion des commentaires du match
 
 import { gameFeed , handleMatchEvent } from "./game.js";
+import { addNPCReaction } from "./characters.js";
 
 const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
