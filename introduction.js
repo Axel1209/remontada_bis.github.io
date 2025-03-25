@@ -76,7 +76,9 @@ document.querySelectorAll(".character-button").forEach(button => {
         gameFeed.style.display = "block";
         optionsContainer.style.display = "block";
         commentaryFeed.style.display = "block";
-        nextEventButton.style.display = "block";
+        nextEventButton.style.display = "block";    
+});
+displayActions();
     });
     
 localStorage.setItem("selectedCharacter", selectedCharacter);
