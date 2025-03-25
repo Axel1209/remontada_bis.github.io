@@ -46,4 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
     displayActions();
 });
 
-export { barcaScore, selectedCharacter, gameFeed };
+export { barcaScore, selectedCharacter, gameFeed, handleMatchEvent };
