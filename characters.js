@@ -40,6 +40,16 @@ const characterReactions = {
     ]
 };
 
+// Réactions génériques si aucun but n'est marqué
+    const genericReactions = {
+        jeanphi: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
+        etienne: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
+        renaud: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"],
+        dimitri: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
+        bastien: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
+        axel: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"]
+    };
+
 // Fonction pour ajouter une réaction d'un personnage
 function addReaction(character, text) {
     const reactionElement = document.createElement('div');
@@ -72,17 +82,6 @@ function addNPCReaction() {
             addReaction(character, randomReaction);
         }
     });
-}
-
-    // Réactions génériques si aucun but n'est marqué
-    const genericReactions = {
-        jeanphi: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
-        etienne: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
-        renaud: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"],
-        dimitri: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
-        bastien: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
-        axel: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"]
-    };
 
     Object.keys(characterReactions).forEach(character => {
         if (character !== selectedCharacter) {
