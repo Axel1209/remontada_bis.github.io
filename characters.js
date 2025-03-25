@@ -3,41 +3,167 @@
 import { barcaScore, selectedCharacter, gameFeed } from "./game.js";
 
 const characterReactions = {
-    cauvin: [
-        "Tranquille, on a 4 buts d'avance. Impossible de perdre.",
-        "Pas grave, c'est juste un but. On mène toujours 4-1 au cumulé.",
-        "NON NON NON! C'est pas possible! L'arbitre est acheté!"
-    ],
-    jeanphi: [
-        "Cauvin, tu vas pleurer ce soir!",
-        "Ça sent la remontada!",
-        "Historique! Cauvin est en PLS!"
-    ],
-    etienne: [
-        "Le PSG va craquer, c'est sûr!",
-        "Cauvin, t'es un peu pâle non?",
-        "REMONTADAAAAAAA!"
-    ],
-    renaud: [
-        "La remontada est en marche!",
-        "Cauvin flipette!",
-        "Cauvin, respire par le nez!"
-    ],
-    dimitri: [
-        "Cauvin, tu vas pleurer ce soir!",
-        "Ça sent la remontada!",
-        "Historique! Cauvin est en PLS!"
-    ],
-    bastien: [
-        "Cauvin, tu vas pleurer ce soir!",
-        "Ça sent la remontada!",
-        "Historique! Cauvin est en PLS!"
-    ],
-    axel: [
-        "Cauvin, tu vas pleurer ce soir!",
-        "Ça sent la remontada!",
-        "Historique! Cauvin est en PLS!"
-    ]
+    cauvin: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    jeanphi: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Cauvi' tu vas pleurer ce soir",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Ce sent la remontada",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    etienne: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    renaud: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    dimitri: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    bastien: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    },
+    axel: {
+        'goal-barcelona': [
+            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
+            "Je vais devenir chèvre...",
+            "C'est la malédiction du Parc des Princes !"
+        ],
+        'goal-psg': [
+            "OUIIII ! ON EST ENCORE VIVANTS !",
+            "Cavani mon héros !"
+        ],
+        'penalty-barcelona': [
+            "Penalty volé ! Scandaleux !",
+            "L'arbitre sort d'où ? De Catalogne ?"
+        ],
+        'card': [
+            "Enfin ! Une décision juste !",
+            "Carton mérité !"
+        ],
+        'missed-psg': [
+            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
+            "Même ma grand-mère aurait marqué !"
+        ]
+    }
 };
 
 // Réactions génériques si aucun but n'est marqué
@@ -62,26 +188,28 @@ function addReaction(character, text) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
-function addNPCReaction() {
+function addNPCReaction(event) {
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
-    const numberOfReactions = Math.floor(Math.random() * 3) + 2; // Entre 2 et 4 réactions
-    
-    // Mélanger les personnages et prendre un sous-ensemble aléatoire
-    const shuffledCharacters = characters.sort(() => 0.5 - Math.random());
-    const reactingCharacters = shuffledCharacters.slice(0, numberOfReactions);
+    const reactingCharacters = characters.sort(() => 0.5 - Math.random()).slice(0, 2);
 
     reactingCharacters.forEach(character => {
-        // Choisir aléatoirement entre réactions spécifiques et génériques
-        const reactionPool = [
-            ...characterReactions[character],
-            ...(genericReactions[character] || [])
-        ];
+        const eventType = event.team ? 
+            `${event.type}-${event.team.toLowerCase()}` : 
+            event.type;
         
+        const specificReactions = characterReactions[character]?.[eventType];
+        const genericReactions = characterReactions[character]?.['generic'] || [];
+
+        const reactionPool = specificReactions?.length > 0 ? 
+            specificReactions : 
+            genericReactions;
+
         if (reactionPool.length > 0) {
             const randomReaction = reactionPool[Math.floor(Math.random() * reactionPool.length)];
             addReaction(character, randomReaction);
         }
     });
+}
 
     Object.keys(characterReactions).forEach(character => {
         if (character !== selectedCharacter) {
