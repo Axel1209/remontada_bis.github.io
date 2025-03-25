@@ -5,7 +5,7 @@ let selectedCharacter = localStorage.getItem("selectedCharacter") || "cauvin";
 let gameFeed = document.getElementById("game-feed");
 let nextEventButton = document.getElementById("next-event-button");
 let barcaScore = 0;
-let psgScore = 4; // Initial score from the previous match
+let psgScore = 0; // Initial score from the previous match
 
 function addEvent(description) {
     const eventElement = document.createElement("div");
