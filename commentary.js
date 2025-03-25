@@ -47,8 +47,6 @@ function addCommentary() {
         // Ajouter des reactions a chaque commentaire
         addNPCReaction(); // Ajouter cette ligne
     }
-            }
-    }
 }
 
 // Lier le bouton "Action suivante" aux commentaires
