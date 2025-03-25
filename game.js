@@ -27,7 +27,6 @@ function handleMatchEvent(event) {
         psgScore += event.score;
     }
     updateScores();
-    addEvent(event.description);
 }
 
 // Display actions when the game starts
