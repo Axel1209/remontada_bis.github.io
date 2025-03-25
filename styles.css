@@ -123,8 +123,26 @@ button:hover {
     border-left: 3px solid #1976d2; /* Bleu */
 }
 
+.player-action.dimitri {
+    background-color: #fff3e0;
+    border-left: 3px solid #ffa000; /* Orange */
+}
+
+.player-action.bastien {
+    background-color: #e8f5e9;
+    border-left: 3px solid #388e3c; /* Vert */
+}
+
+.player-action.axel {
+    background-color: #e3f2fd;
+    border-left: 3px solid #1976d2; /* Bleu */
+}
+
 /* Styles des boutons */
 .option-button.cauvin { background-color: #d32f2f; }
 .option-button.jeanphi { background-color: #ffa000; }
 .option-button.etienne { background-color: #388e3c; }
 .option-button.renaud { background-color: #1976d2; }
+.option-button.dimitri { background-color: #ffa000; }
+.option-button.bastien { background-color: #388e3c; }
+.option-button.axel { background-color: #1976d2; }
