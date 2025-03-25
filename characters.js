@@ -190,19 +190,47 @@ function addReaction(character, text) {
 
 function addNPCReaction(event) {
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
-    const reactingCharacters = characters.sort(() => 0.5 - Math.random()).slice(0, 2);
+    if (characters.length === 0) return;
 
+    // Détermine le type d'événement et son équipe associée
+    const eventType = event.team ? 
+        `${event.type}-${event.team.toLowerCase()}` : 
+        event.type;
+
+    // Configuration des réactions par type d'événement
+    const reactionConfig = {
+        'goal': { baseReactions: 4, variance: 2 },  // 4 ±2 → 2-6
+        'foul': { baseReactions: 2, variance: 1 },  // 2 ±1 → 1-3
+        'card-yellow': { baseReactions: 3, variance: 1 },
+        'default': { baseReactions: 3, variance: 2 }
+    };
+
+    // Récupère la configuration appropriée
+    const config = reactionConfig[event.type] || reactionConfig.default;
+    
+    // Calcule le nombre de réactions en fonction de la configuration
+    let reactionCount = Math.min(
+        Math.max(
+            config.baseReactions + Math.floor(Math.random() * (config.variance * 2 + 1)) - config.variance,
+            1
+        ),
+        6
+    );
+
+    // Ajuste au nombre de personnages disponibles
+    reactionCount = Math.min(reactionCount, characters.length);
+    reactionCount = Math.max(reactionCount, 1);
+
+    // Sélection aléatoire des personnages
+    const reactingCharacters = characters
+        .sort(() => 0.5 - Math.random())
+        .slice(0, reactionCount);
+
+    // Ajout des réactions
     reactingCharacters.forEach(character => {
-        const eventType = event.team ? 
-            `${event.type}-${event.team.toLowerCase()}` : 
-            event.type;
-        
         const specificReactions = characterReactions[character]?.[eventType];
         const genericReactions = characterReactions[character]?.['generic'] || [];
-
-        const reactionPool = specificReactions?.length > 0 ? 
-            specificReactions : 
-            genericReactions;
+        const reactionPool = specificReactions?.length > 0 ? specificReactions : genericReactions;
 
         if (reactionPool.length > 0) {
             const randomReaction = reactionPool[Math.floor(Math.random() * reactionPool.length)];
