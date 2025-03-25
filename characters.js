@@ -4,165 +4,162 @@ import { barcaScore, selectedCharacter, gameFeed } from "./game.js";
 
 const characterReactions = {
     cauvin: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "NON ! PAS ENCORE EUX !",
+        "On va revivre le cauchemar de 2017...",
+        "Je sens que je vais vomir..."
+    ],
+    'goal-psg': [
+        "OUIIIIII !!! C'EST PAS FINI !",
+        "ALLEZ PARIS, ON NE LÂCHE RIEN !",
+        "Cavani, je t’aime !"
+    ],
+    'penalty-barcelona': [
+        "Mais c'est quoi cette blague ?!",
+        "L’arbitre veut notre peau, c’est clair !"
+    ],
+    'card': [
+        "Enfin une décision qui va dans notre sens...",
+        "Il était temps !"
+    ],
+    'missed-psg': [
+        "Mais c'est pas possible... Pourquoi moi ?",
+        "Je vais faire une crise cardiaque..."
+    ]
     },
-    jeanphi: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Cauvi' tu vas pleurer ce soir",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Ce sent la remontada",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
-    },
+     jeanphi: {
+    'goal-barcelona': [
+        "Oh, mais quel suspense insoutenable ! *rire*",
+        "Paris va encore nous vendre du rêve, puis du cauchemar."
+    ],
+    'goal-psg': [
+        "Attendez... Paris qui marque en C1 ? J’ai mal aux yeux.",
+        "Profitez, ça arrive pas souvent !"
+    ],
+    'penalty-barcelona': [
+        "Oh non, encore un complot contre Paris ! *ironique*",
+        "Vraiment pas de chance... comme d’habitude."
+    ],
+    'card': [
+        "Une injustice flagrante... ou pas.",
+        "Encore une excuse à venir sur l’arbitrage ?"
+    ],
+    'missed-psg': [
+        "Et voilà... Comme prévu !",
+        "Paris et la LDC, c’est une histoire d’amour à sens unique."
+    ]
+     },
     etienne: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "Encore une erreur de placement défensif, c'est frustrant.",
+        "Le milieu ne suit pas, c'était prévisible...",
+        "La transition défensive est catastrophique."
+    ],
+    'goal-psg': [
+        "Bonne construction, belle finition.",
+        "Enfin une action bien exécutée !"
+    ],
+    'penalty-barcelona': [
+        "Trop d'erreurs individuelles, c'est puni.",
+        "Faut revoir les placements défensifs."
+    ],
+    'card': [
+        "Intervention maladroite, carton logique.",
+        "L'équipe doit rester disciplinée."
+    ],
+    'missed-psg': [
+        "Manque de lucidité devant le but.",
+        "Mauvais choix de frappe, dommage."
+    ]
     },
     renaud: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "Paris qui se fait punir, quel plaisir !",
+        "Et un but dans la musette, un !"
+    ],
+    'goal-psg': [
+        "Même moi je dois avouer que c'était beau...",
+        "Bon, profitez-en, ça va pas durer."
+    ],
+    'penalty-barcelona': [
+        "La remontada, acte II !",
+        "Paris va encore nous sortir les violons sur l’arbitrage..."
+    ],
+    'card': [
+        "Ahah, Paris qui pleure sur une carte, classique.",
+        "On en parle du nombre de fautes non sifflées pour l'OM ?"
+    ],
+    'missed-psg': [
+        "Paris en Ligue des Champions, c’est du stand-up !",
+        "Même Gignac à la retraite l’aurait mise !"
+    ]
     },
     dimitri: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "Statistiquement, Paris encaisse toujours dans ce genre de matchs...",
+        "XG de Barcelone en hausse, logique..."
+    ],
+    'goal-psg': [
+        "Un but à 0.32 XG, belle efficacité !",
+        "Paris a marqué avec seulement 2 tirs cadrés, pas mal."
+    ],
+    'penalty-barcelona': [
+        "Ça fait leur 5e penalty en 10 matchs de C1 cette saison.",
+        "La probabilité de marquer ici est de 78%."
+    ],
+    'card': [
+        "Sur les 10 derniers matchs, Paris prend en moyenne 1.2 cartons.",
+        "La discipline reste un problème..."
+    ],
+    'missed-psg': [
+        "XG de cette action : 0.85... Il fallait le mettre !",
+        "C’est le 3e gros raté de Paris dans ce match."
+    ]
     },
     bastien: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "Et voilà... encore un club français qui se fait marcher dessus.",
+        "Ça devient une habitude, non ?"
+    ],
+    'goal-psg': [
+        "Oh, ils ont marqué ? Ça change !",
+        "C’est bien, mais ça suffira pas."
+    ],
+    'penalty-barcelona': [
+        "C’est ça, les clubs français en Europe : toujours dominés.",
+        "Ils vont encore chouiner sur l’arbitrage au lieu de jouer."
+    ],
+    'card': [
+        "Classique, les clubs français ne savent pas défendre proprement.",
+        "Toujours en retard dans les duels..."
+    ],
+    'missed-psg': [
+        "Ah bah, la finition, ça fait 20 ans que c'est leur problème.",
+        "On est nuls devant le but, comme toujours."
+    ]
     },
     axel: {
-        'goal-barcelona': [
-            "NON ! C'EST PAS VRAI ! L'ARBITRE EST ACHETÉ !",
-            "Je vais devenir chèvre...",
-            "C'est la malédiction du Parc des Princes !"
-        ],
-        'goal-psg': [
-            "OUIIII ! ON EST ENCORE VIVANTS !",
-            "Cavani mon héros !"
-        ],
-        'penalty-barcelona': [
-            "Penalty volé ! Scandaleux !",
-            "L'arbitre sort d'où ? De Catalogne ?"
-        ],
-        'card': [
-            "Enfin ! Une décision juste !",
-            "Carton mérité !"
-        ],
-        'missed-psg': [
-            "PUTAIN CAVANI ! T'ES PAYÉ COMBIEN ?",
-            "Même ma grand-mère aurait marqué !"
-        ]
+    'goal-barcelona': [
+        "Ah bah ça commence ! Préparez les mouchoirs, les Parisiens !",
+        "Paris en C1, c'est un running gag.",
+        "On dirait un remake de 2017, j’adore."
+    ],
+    'goal-psg': [
+        "Oh, ils savent marquer ? Miracle !",
+        "Bon, ça va pas durer, mais profitez..."
+    ],
+    'penalty-barcelona': [
+        "Oh, un penalty ? Comme c'est surprenant ! *rire*",
+        "Allez, mettez le couvercle sur ce match !"
+    ],
+    'card': [
+        "C’est pas trop tôt !",
+        "Une carte pour un club de Ligue 1 ? Rare, mais mérité."
+    ],
+    'missed-psg': [
+        "HAHAHA ! Même moi je l’aurais mise.",
+        "Paris en LDC, c’est une comédie."
+    ]
     }
 };
 
