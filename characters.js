@@ -22,6 +22,21 @@ const characterReactions = {
         "La remontada est en marche!",
         "Cauvin flipette!",
         "Cauvin, respire par le nez!"
+    ],
+    dimitri: [
+        "Cauvin, tu vas pleurer ce soir!",
+        "Ça sent la remontada!",
+        "Historique! Cauvin est en PLS!"
+    ],
+    bastien: [
+        "Cauvin, tu vas pleurer ce soir!",
+        "Ça sent la remontada!",
+        "Historique! Cauvin est en PLS!"
+    ],
+    axel: [
+        "Cauvin, tu vas pleurer ce soir!",
+        "Ça sent la remontada!",
+        "Historique! Cauvin est en PLS!"
     ]
 };
 
@@ -43,7 +58,10 @@ function addNPCReaction() {
     const genericReactions = {
         jeanphi: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
         etienne: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
-        renaud: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"]
+        renaud: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"],
+        dimitri: ["Ça change rien, Cauvinflipette!", "T'as vu ça, il panique!"],
+        bastien: ["Calme-toi, c'est qu'une action!", "Cauvin, respire un coup!"],
+        axel: ["Même mon chat serait plus calme.", "C'est pas ça qui va changer le match!"]
     };
 
     Object.keys(characterReactions).forEach(character => {
