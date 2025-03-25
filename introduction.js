@@ -1,5 +1,7 @@
 // introduction.js - Gestion de l'introduction du jeu
 
+import { displayActions } from "./options.js";
+
 document.addEventListener("DOMContentLoaded", () => {
     const introContainer = document.getElementById("intro-container");
     const startGameButton = document.getElementById("start-game-button");
@@ -51,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Affichage de l'introduction avec l'image
     introContainer.innerHTML = `
         <img src="${introImage}" alt="Remontada PSG vs Barcelone" style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-        <p>${introText}</p>
+        ${introText}
     `;
     
     // Afficher la sélection du personnage après l'introduction
