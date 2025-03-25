@@ -79,6 +79,5 @@ document.querySelectorAll(".character-button").forEach(button => {
         nextEventButton.style.display = "block";
     });
     
-    // Export the selected character for use in other modules
-    window.selectedCharacter = selectedCharacter;
+localStorage.setItem("selectedCharacter", selectedCharacter);
 });
