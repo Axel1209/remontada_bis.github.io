@@ -33,7 +33,7 @@ function addCommentary() {
         // Ajouter la gestion du score
         if (event.type === "goal") {
             handleMatchEvent ({
-                team: event.team === "Barcelona" ? "Barcelone" : event.team, // ✅ Correction nom
+                team: event.team,
                 score: 1,
                 description: event.description
             });
