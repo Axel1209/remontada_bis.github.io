@@ -80,6 +80,4 @@ document.querySelectorAll(".character-button").forEach(button => {
         displayActions();
     });
 });
-    
-localStorage.setItem("selectedCharacter", selectedCharacter);
 });
