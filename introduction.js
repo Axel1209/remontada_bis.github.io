@@ -80,4 +80,3 @@ document.querySelectorAll(".character-button").forEach(button => {
         displayActions();
     });
 });
-});
