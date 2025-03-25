@@ -53,9 +53,26 @@ function addReaction(character, text) {
 }
 
 function addNPCReaction() {
-    // Réactions basées sur le score (existant)
-    let currentBarcaScore = parseInt(document.getElementById("barca-score").textContent, 10);
-    let cauvinIndex = Math.min(currentBarcaScore, characterReactions.cauvin.length - 1);
+    const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
+    const numberOfReactions = Math.floor(Math.random() * 3) + 2; // Entre 2 et 4 réactions
+    
+    // Mélanger les personnages et prendre un sous-ensemble aléatoire
+    const shuffledCharacters = characters.sort(() => 0.5 - Math.random());
+    const reactingCharacters = shuffledCharacters.slice(0, numberOfReactions);
+
+    reactingCharacters.forEach(character => {
+        // Choisir aléatoirement entre réactions spécifiques et génériques
+        const reactionPool = [
+            ...characterReactions[character],
+            ...(genericReactions[character] || [])
+        ];
+        
+        if (reactionPool.length > 0) {
+            const randomReaction = reactionPool[Math.floor(Math.random() * reactionPool.length)];
+            addReaction(character, randomReaction);
+        }
+    });
+}
 
     // Réactions génériques si aucun but n'est marqué
     const genericReactions = {
