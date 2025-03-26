@@ -108,6 +108,6 @@ function displayActions(event) {
 
         optionsContainer.appendChild(button);
     });
-});
+};
 
 export { playerOptions, displayActions };
