@@ -95,6 +95,21 @@ button:hover {
     background-color: #0b7dda;
 }
 
+#intensity-bar {
+    width: 80%;
+    height: 10px;
+    background: #ddd;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#intensity-progress {
+    height: 100%;
+    background: #d32f2f;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
 .player-action {
     background-color: #e8f5e9; /* Vert clair */
     border-left: 3px solid #4CAF50; /* Bordure verte */
