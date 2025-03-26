@@ -103,7 +103,7 @@ function displayActions(event) {
 
             const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
         
-   addNPCReaction(action.type, currentEvent, currentIntensity);
+   addNPCReaction(action.type, {type :action.type}, currentIntensity);
         });
 
         optionsContainer.appendChild(button);
