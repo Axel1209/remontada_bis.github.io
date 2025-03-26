@@ -31,6 +31,7 @@ function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
         const event = matchEvents[currentEventIndex];
         const eventElement = document.createElement("div");
+        const intensity = Math.round((currentEventIndex / matchEvents.length)*100);
         eventElement.className = "commentary";
         eventElement.textContent = `${event.time} - ${event.description}`;
         // Ajouter la gestion du score
@@ -48,7 +49,7 @@ function addCommentary() {
         currentEventIndex++;
 
         // Ajouter des reactions a chaque commentaire
-        addNPCReaction(event); // Ajouter cette ligne
+        addNPCReaction(event, intensity); // Ajouter cette ligne
         displayActions(event); // Ajoutez cette ligne
     }
 }
