@@ -28,9 +28,11 @@ export function displayTopChefImage() {
 // goal-animation.js - Gestion de l'animation des buts
 export function displayGoalAnimation() {
     return new Promise((resolve) => {
-        // Création de l'élément GIF
         const gif = document.createElement("img");
-        gif.src = "goal-animation.gif"; // Chemin relatif ou URL
+        // Utilisez le chemin absolu depuis GitHub
+        gif.src = "https://raw.githubusercontent.com/Axel1209/laremontadabis/main/sergiroberto.gif";
+        
+        // ... (le reste du code reste identique)
         gif.style = `
             position: fixed;
             top: 50%;
@@ -39,15 +41,14 @@ export function displayGoalAnimation() {
             max-width: 90%;
             max-height: 90%;
             z-index: 9999;
-            pointer-events: none;
         `;
 
         document.body.appendChild(gif);
 
-        // Suppression après 3 secondes (durée du GIF)
+        // Ajustez la durée si nécessaire (5000 = 5 secondes)
         setTimeout(() => {
             gif.remove();
-            resolve(); // Résout la promesse quand le GIF est terminé
-        }, 3000); 
+            resolve();
+        }, 5000); // Augmentez si votre GIF est plus long
     });
 }
