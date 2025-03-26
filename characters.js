@@ -25,6 +25,14 @@ const characterReactions = {
     'missed-psg': [
         {text: "Mais c'est pas possible... Pourquoi moi ?", intensity: 20},
         {text: "Je vais faire une crise cardiaque...", intensity: 70}
+    ],
+    'embetercauvin': [
+        {text: "Vous êtes tellement relou...", intensity: 20},
+        {text: "Putain mais arrêtez !", intensity: 70}
+    ],
+    'humour': [
+        {text: "Pfff, non mais je suis pas serein là ", intensity: 20},
+        {text: "Mais c'est pas drôle, c'est pas possible !", intensity: 70}
     ]
     },
      jeanphi: {
@@ -47,6 +55,10 @@ const characterReactions = {
     'missed-psg': [
         {text: "Et voilà... Comme prévu !", intensity: 20},
         {text: "Paris et la LDC, c’est une histoire d’amour à sens unique.", intensity: 20}
+    ],
+    'panique': [
+        {text: "Ah ca fait moins le malin que contre Dijon là !", intensity: 20},
+        {text: "Cauvin en PLS respire !", intensity: 70}
     ]
      },
     etienne: {
