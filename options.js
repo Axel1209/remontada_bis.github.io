@@ -2,7 +2,7 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
-import { displayTopChefImage } from "./custom-effects.js";
+import { displayTopChefImage } from "./animation.js";
 
 let currentEvent;
 
