@@ -49,7 +49,7 @@ function addCommentary() {
         currentEventIndex++;
 
         // Ajouter des reactions a chaque commentaire
-        addNPCReaction(event, intensity); // Ajouter cette ligne
+        addNPCReaction(triggerType, event, intensity); // Ajouter cette ligne
         displayActions(event); // Ajoutez cette ligne
     }
 }
