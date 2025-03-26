@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const introText = [
         `<p>Il est 20h30, et l’appartement d’Axel ressemble déjà à un vestiaire après un match de district : des canettes un peu partout, des chips écrasées sur le canapé, et surtout, une ambiance électrique.</p>`,
         
-        `<p>Ce soir, c’est LE match retour du huitième de finale de Ligue des Champions : <strong>Barcelone - PSG</strong>.</p>`,
+        `<p>Ce soir, c’est LE match retour du huitième de finale de Ligue des Champions : <strong>Barcelone - PSG</strong>.<br>
         
-        `<p>Autour de la table basse, une bande de joyeux lurons : Axel, Étienne, Bastien, Jean-Phi, Renaud et Dimitri. Et au milieu d’eux, tel un condamné à la veille de son exécution : <strong>Cauvin, le seul supporter du PSG</strong>.</p>`,
+        Autour de la table basse, une bande de joyeux lurons : Axel, Étienne, Bastien, Jean-Phi, Renaud et Dimitri. Et au milieu d’eux, tel un condamné à la veille de son exécution : <strong>Cauvin, le seul supporter du PSG</strong>.<br>
         
-        `<p>Mais attention, Cauvin n’est pas en mode supporter arrogant. <strong>Non. Cauvin flippe.</strong> Ce qui, évidemment, ne fait qu’amuser ses charmants amis.</p>`,
+        Mais attention, Cauvin n’est pas en mode supporter arrogant. <strong>Non. Cauvin flippe.</strong> Ce qui, évidemment, ne fait qu’amuser ses charmants amis.</p>`,
         
         `<p>&mdash; Mais gros, c’est bon, vous avez gagné 4-0 à l’aller. Vous êtes <strong>QUALIFIÉS</strong>, c’est scientifique ! fait remarquer Bastien en mordant dans sa pizza froide.<br>
          T’inquiète, même si Barcelone marque un but, ils en auront encore trois à mettre, c’est mission impossible, ajoute Étienne.<br>
@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         
         `<p>Cauvin soupire. Il essaye d’y croire, mais il connaît trop bien son PSG. Lui, il voit le potentiel drame. Il l’imagine déjà : un but rapide du Barça, puis un deuxième... Non, faut pas penser comme ça.</p>`,
         
-        `<p>&mdash; Je vous jure, si on se prend un but avant la mi-temps, je vais pas être bien, lâche-t-il, les mains moites sur son verre de Coca.</p>`,
-        `<p>&mdash; Mec, on est là pour toi, t'inquiète pas. Bon, on se fout de ta gueule, mais on est là, le rassure Dimitri.</p>`,
-        `<p>&mdash; En tout cas, tu pourrais un peu profiter de la soirée, on va juste regarder une qualification pépère, tranquillou. Détends-toi un peu... <strong>Cauvinflipette.</strong></p>`,
+        `<p>&mdash; Je vous jure, si on se prend un but avant la mi-temps, je vais pas être bien, lâche-t-il, les mains moites sur son verre de Coca.<br>
+        &mdash; Mec, on est là pour toi, t'inquiète pas. Bon, on se fout de ta gueule, mais on est là, le rassure Dimitri.<br>
+        &mdash; En tout cas, tu pourrais un peu profiter de la soirée, on va juste regarder une qualification pépère, tranquillou. Détends-toi un peu... <strong>Cauvinflipette.</strong></p>`,
         
-        `<p>Le coup d’envoi approche. Les bières s’ouvrent. L’écran brille. Et tout le monde s’apprête à passer une <strong>soirée sans histoire</strong>...</p>`,
+        `<p>Le coup d’envoi approche. Les bières s’ouvrent. L’écran brille. Et tout le monde s’apprête à passer une <strong>soirée sans histoire</strong>...<br>
         
-        `<p>Enfin, c’est ce qu’ils croient.</p>`
+        Enfin, c’est ce qu’ils croient.</p>`
     ];
 
     const introImage = "https://i.ytimg.com/vi/fyZCVDSXS60/maxresdefault.jpg";
