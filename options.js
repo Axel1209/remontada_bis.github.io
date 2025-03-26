@@ -43,7 +43,7 @@ const playerOptions = {
         { 
             name: "Embêter Cauvin", 
             description: "Péter sur Cauvin",
-            type: "embeter_cauvin",
+            type: "embetercauvin",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
@@ -108,7 +108,6 @@ function displayActions(event) {
 
         optionsContainer.appendChild(button);
     });
-}
 });
 
 export { playerOptions, displayActions };
