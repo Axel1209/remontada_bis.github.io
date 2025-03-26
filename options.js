@@ -102,7 +102,8 @@ function displayActions(event) {
             gameFeed.appendChild(actionElement);
 
             const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
-            addNPCReaction(action.type, currentIntensity); // Déclencher les réactions
+        
+   addNPCReaction(action.type, currentEvent, currentIntensity);
         });
 
         optionsContainer.appendChild(button);
