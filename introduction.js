@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         `<p>Mais attention, Cauvin n’est pas en mode supporter arrogant. <strong>Non. Cauvin flippe.</strong> Ce qui, évidemment, ne fait qu’amuser ses charmants amis.</p>`,
         
-        `<p>&mdash; Mais gros, c’est bon, vous avez gagné 4-0 à l’aller. Vous êtes <strong>QUALIFIÉS</strong>, c’est scientifique ! fait remarquer Bastien en mordant dans sa pizza froide.</p>`,
-        `<p>&mdash; T’inquiète, même si Barcelone marque un but, ils en auront encore trois à mettre, c’est mission impossible, ajoute Étienne.</p>`,
-        `<p>&mdash; Après, Tom Cruise, il a bien réussi six fois de suite... enchaîne Jean-Phi, l'air songeur.</p>`,
-        `<p>&mdash; Ouais, mais ça, c’est du cinéma. Là, on est dans le vrai football. Pas de stress, hein... <strong>Cauvinflipette.</strong></p>`,
+        `<p>&mdash; Mais gros, c’est bon, vous avez gagné 4-0 à l’aller. Vous êtes <strong>QUALIFIÉS</strong>, c’est scientifique ! fait remarquer Bastien en mordant dans sa pizza froide.
+         T’inquiète, même si Barcelone marque un but, ils en auront encore trois à mettre, c’est mission impossible, ajoute Étienne.
+         Après, Tom Cruise, il a bien réussi six fois de suite... enchaîne Jean-Phi, l'air songeur.
+         Ouais, mais ça, c’est du cinéma. Là, on est dans le vrai football. Pas de stress, hein... <strong>Cauvinflipette.</strong></p>`,
         
         `<p>Cauvin soupire. Il essaye d’y croire, mais il connaît trop bien son PSG. Lui, il voit le potentiel drame. Il l’imagine déjà : un but rapide du Barça, puis un deuxième... Non, faut pas penser comme ça.</p>`,
         
