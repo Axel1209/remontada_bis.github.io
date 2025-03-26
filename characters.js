@@ -200,7 +200,6 @@ function addReaction(character, text) {
 function addNPCReaction(triggerType, event, intensity) {
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
     if (characters.length === 0) return;
-    const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
     
     characters.forEach(character => {
         const reactions = characterReactions[character][`option-${triggerType}`] || [];
@@ -209,7 +208,7 @@ function addNPCReaction(triggerType, event, intensity) {
         if (filtered.length > 0) {
             const reaction = filtered[Math.floor(Math.random() * filtered.length)];
             addReaction(character, reaction.text);
-
+        }
     // Détermine le type d'événement et son équipe associée
     const eventType = event.team ? 
         `${event.type}-${event.team.toLowerCase()}` : 
