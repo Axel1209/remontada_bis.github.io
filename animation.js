@@ -1,4 +1,4 @@
-// custom-effects.js - Gestion des effets visuels/audio spécifiques aux options
+// animation.js - Gestion des effets visuels/audio spécifiques aux options
 
 // Fonction pour afficher l'image Top Chef
 export function displayTopChefImage() {
