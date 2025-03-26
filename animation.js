@@ -23,16 +23,12 @@ export function displayTopChefImage() {
     setTimeout(() => img.remove(), 5000);
 }
 
-// Ajoutez ici d'autres fonctions pour d'options (ex: son, animations...)
-
-// goal-animation.js - Gestion de l'animation des buts
+// Fonction pour afficher le GIF de but
 export function displayGoalAnimation() {
     return new Promise((resolve) => {
         const gif = document.createElement("img");
-        // Utilisez le chemin absolu depuis GitHub
-        gif.src = "https://github.com/Axel1209/remontada_bis.github.io/blob/64a29c0a5939d6a3cdd84ed5cdec8f18b61ea0f1/sergiroberto.gif";
-        
-        // ... (le reste du code reste identique)
+        // URL corrigée :
+        gif.src = "https://raw.githubusercontent.com/Axel1209/remontada_bis.github.io/64a29c0a5939d6a3cdd84ed5cdec8f18b61ea0f1/sergiroberto.gif";
         gif.style = `
             position: fixed;
             top: 50%;
@@ -45,10 +41,9 @@ export function displayGoalAnimation() {
 
         document.body.appendChild(gif);
 
-        // Ajustez la durée si nécessaire (5000 = 5 secondes)
         setTimeout(() => {
             gif.remove();
-            resolve();
-        }, 5000); // Augmentez si votre GIF est plus long
+            resolve(); // Déclenche la suite après 5 secondes
+        }, 5000);
     });
 }
