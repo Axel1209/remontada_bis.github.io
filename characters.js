@@ -200,32 +200,23 @@ function addReaction(character, text) {
 function addNPCReaction(triggerType, event, intensity) {
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
     if (characters.length === 0) return;
-    
-    characters.forEach(character => {
-        const reactions = characterReactions[character][`option-${triggerType}`] || [];
-        const filtered = reactions.filter(r => r.intensity <= intensity);
-        
-        if (filtered.length > 0) {
-            const reaction = filtered[Math.floor(Math.random() * filtered.length)];
-            addReaction(character, reaction.text);
-        }
+
     // Détermine le type d'événement et son équipe associée
     const eventType = event.team ? 
         `${event.type}-${event.team.toLowerCase()}` : 
         event.type;
 
-    // Configuration des réactions par type d'événement
+    // Configuration des réactions
     const reactionConfig = {
-        'goal': { baseReactions: 4, variance: 2 },  // 4 ±2 → 2-6
-        'foul': { baseReactions: 2, variance: 1 },  // 2 ±1 → 1-3
+        'goal': { baseReactions: 4, variance: 2 },
+        'foul': { baseReactions: 2, variance: 1 },
         'card-yellow': { baseReactions: 3, variance: 1 },
         'default': { baseReactions: 3, variance: 2 }
     };
 
-    // Récupère la configuration appropriée
     const config = reactionConfig[event.type] || reactionConfig.default;
     
-    // Calcule le nombre de réactions en fonction de la configuration
+    // Calcule le nombre de réactions
     let reactionCount = Math.min(
         Math.max(
             config.baseReactions + Math.floor(Math.random() * (config.variance * 2 + 1)) - config.variance,
@@ -234,30 +225,28 @@ function addNPCReaction(triggerType, event, intensity) {
         6
     );
 
-    // Ajuste au nombre de personnages disponibles
-    reactionCount = Math.min(reactionCount, characters.length);
-    reactionCount = Math.max(reactionCount, 1);
-
     // Sélection aléatoire des personnages
     const reactingCharacters = characters
         .sort(() => 0.5 - Math.random())
-        .slice(0, reactionCount);
+        .slice(0, Math.min(reactionCount, characters.length));
 
     // Ajout des réactions
     reactingCharacters.forEach(character => {
-        const specificReactions = characterReactions[character]?.[eventType];
-        const genericReactions = characterReactions[character]?.['generic'] || [];
-        const reactionPool = specificReactions?.length > 0 ? specificReactions : genericReactions;
+        // Réactions spécifiques ou génériques
+        const specificReactions = characterReactions[character]?.[eventType] || [];
+        const genericReactions = characterReactions[character]?.generic || [];
+        const reactionPool = specificReactions.length > 0 ? specificReactions : genericReactions;
+        
+        // Filtrage par intensité
         const filteredReactions = reactionPool.filter(r => r.intensity <= intensity);
 
         if (filteredReactions.length > 0) {
             const randomReaction = filteredReactions[
                 Math.floor(Math.random() * filteredReactions.length)
-                ];
+            ];
             addReaction(character, randomReaction.text);
         }
     });
 }
 
-// Exporter les fonctions pour utilisation dans d'autres fichiers
 export { characterReactions, addReaction, addNPCReaction };
