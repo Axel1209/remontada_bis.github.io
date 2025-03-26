@@ -234,7 +234,7 @@ function addNPCReaction(event, intensity) {
             const randomReaction = reactionPool[Math.floor(Math.random() * reactionPool.length)];
             addReaction(character, randomReaction);
         }
-        if (filteredReactions.length > 0 {
+        if (filteredReactions.length > 0) {
             const randomReaction = filteredReactions[
                 Math.floor(Math.random() * filteredReactions.length)
                 ]:
