@@ -3,6 +3,7 @@
 import { gameFeed , handleMatchEvent } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { displayActions } from "./options.js";
+import { displayGoalAnimation } from "./animation.js";
 
 
 const commentaryFeed = document.getElementById("commentary-feed");
@@ -27,7 +28,7 @@ const nextEventButton = document.getElementById("next-event-button");
 let currentEventIndex = 0;
 
 
-function addCommentary() {
+async function addCommentary() {
     if (currentEventIndex < matchEvents.length) {
         const event = matchEvents[currentEventIndex];
         const eventElement = document.createElement("div");
@@ -41,6 +42,7 @@ function addCommentary() {
                 score: 1,
                 description: event.description
             });
+        await displayGoalAnimation();
         }
         // Ajouter le commentaire dans le flux principal des événements du jeu
         gameFeed.appendChild(eventElement);
