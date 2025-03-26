@@ -5,160 +5,160 @@ import { barcaScore, selectedCharacter, gameFeed } from "./game.js";
 const characterReactions = {
     cauvin: {
     'goal-barcelona': [
-        "NON ! PAS ENCORE EUX !",
-        "On va revivre le cauchemar de 2017...",
-        "Je sens que je vais vomir..."
+        {text: "NON ! PAS ENCORE EUX !", intensity: 20},
+        {text: "On va revivre le cauchemar de 2017...", intensity: 40},
+        {text: "Je sens que je vais vomir...", intensity: 90}
     ],
     'goal-psg': [
-        "OUIIIIII !!! C'EST PAS FINI !",
-        "ALLEZ PARIS, ON NE LÂCHE RIEN !",
-        "Cavani, je t’aime !"
+        {text: "OUIIIIII !!! C'EST PAS FINI !", intensity: 50},
+        {text: "ALLEZ PARIS, ON NE LÂCHE RIEN !", intensity: 20},
+        {text: "Cavani, je t’aime !", intensity: 80}
     ],
     'penalty-barcelona': [
-        "Mais c'est quoi cette blague ?!",
-        "L’arbitre veut notre peau, c’est clair !"
+        {text: "Mais c'est quoi cette blague ?!", intensity: 20},
+        {text: "L’arbitre veut notre peau, c’est clair !", intensity: 60}
     ],
     'card': [
-        "Enfin une décision qui va dans notre sens...",
-        "Il était temps !"
+        {text: "Enfin une décision qui va dans notre sens...", intensity: 20},
+        {text: "Il était temps !", intensity: 60}
     ],
     'missed-psg': [
-        "Mais c'est pas possible... Pourquoi moi ?",
-        "Je vais faire une crise cardiaque..."
+        {text: "Mais c'est pas possible... Pourquoi moi ?", intensity: 20},
+        {text: "Je vais faire une crise cardiaque...", intensity: 70}
     ]
     },
      jeanphi: {
     'goal-barcelona': [
-        "Oh, mais quel suspense insoutenable ! *rire*",
-        "Paris va encore nous vendre du rêve, puis du cauchemar."
+        {text: "Oh, mais quel suspense insoutenable ! *rire*", intensity: 20},
+        {text: "Paris va encore nous vendre du rêve, puis du cauchemar.", intensity: 50}
     ],
     'goal-psg': [
-        "Attendez... Paris qui marque en C1 ? J’ai mal aux yeux.",
-        "Profitez, ça arrive pas souvent !"
+        {text: "Attendez... Paris qui marque en C1 ? J’ai mal aux yeux.", intensity: 20},
+        {text: "Profitez, ça arrive pas souvent !", intensity: 80}
     ],
     'penalty-barcelona': [
-        "Oh non, encore un complot contre Paris ! *ironique*",
-        "Vraiment pas de chance... comme d’habitude."
+        {text: "Oh non, encore un complot contre Paris ! *ironique*", intensity: 20},
+        {text: "Vraiment pas de chance... comme d’habitude.", intensity: 20}
     ],
     'card': [
-        "Une injustice flagrante... ou pas.",
-        "Encore une excuse à venir sur l’arbitrage ?"
+        {text: "Une injustice flagrante... ou pas.", intensity: 20},
+        {text: "Encore une excuse à venir sur l’arbitrage ?", intensity: 20}
     ],
     'missed-psg': [
-        "Et voilà... Comme prévu !",
-        "Paris et la LDC, c’est une histoire d’amour à sens unique."
+        {text: "Et voilà... Comme prévu !", intensity: 20},
+        {text: "Paris et la LDC, c’est une histoire d’amour à sens unique.", intensity: 20}
     ]
      },
     etienne: {
     'goal-barcelona': [
-        "Encore une erreur de placement défensif, c'est frustrant.",
-        "Le milieu ne suit pas, c'était prévisible...",
-        "La transition défensive est catastrophique."
+        {text: "Encore une erreur de placement défensif, c'est frustrant.", intensity: 20},
+        {text: "Le milieu ne suit pas, c'était prévisible...", intensity: 60},
+        {text: "La transition défensive est catastrophique.", intensity: 90}
     ],
     'goal-psg': [
-        "Bonne construction, belle finition.",
-        "Enfin une action bien exécutée !"
+        {text: "Bonne construction, belle finition.", intensity: 20},
+        {text: "Enfin une action bien exécutée !", intensity: 80}
     ],
     'penalty-barcelona': [
-        "Trop d'erreurs individuelles, c'est puni.",
-        "Faut revoir les placements défensifs."
+        {text: "Trop d'erreurs individuelles, c'est puni.", intensity: 20},
+        {text: "Faut revoir les placements défensifs.", intensity: 90}
     ],
     'card': [
-        "Intervention maladroite, carton logique.",
-        "L'équipe doit rester disciplinée."
+        {text: "Intervention maladroite, carton logique.", intensity: 20},
+        {text: "L'équipe doit rester disciplinée.", intensity: 70}
     ],
     'missed-psg': [
-        "Manque de lucidité devant le but.",
-        "Mauvais choix de frappe, dommage."
+        {text: "Manque de lucidité devant le but.", intensity: 20},
+        {text: "Mauvais choix de frappe, dommage.", intensity: 70}
     ]
     },
     renaud: {
     'goal-barcelona': [
-        "Paris qui se fait punir, quel plaisir !",
-        "Et un but dans la musette, un !"
+        {text: "Paris qui se fait punir, quel plaisir !", intensity: 20},
+        {text: "Et un but dans la musette, un !", intensity: 60}
     ],
     'goal-psg': [
-        "Même moi je dois avouer que c'était beau...",
-        "Bon, profitez-en, ça va pas durer."
+        {text: "Même moi je dois avouer que c'était beau...", intensity: 20},
+        {text: "Bon, profitez-en, ça va pas durer.", intensity: 80}
     ],
     'penalty-barcelona': [
-        "La remontada, acte II !",
-        "Paris va encore nous sortir les violons sur l’arbitrage..."
+        {text: "La remontada, acte II !", intensity: 20},
+        {text: "Paris va encore nous sortir les violons sur l’arbitrage...", intensity: 90}
     ],
     'card': [
-        "Ahah, Paris qui pleure sur une carte, classique.",
-        "On en parle du nombre de fautes non sifflées pour l'OM ?"
+        {text: "Ahah, Paris qui pleure sur une carte, classique.", intensity: 20},
+        {text: "On en parle du nombre de fautes non sifflées pour l'OM ?", intensity: 60},
     ],
     'missed-psg': [
-        "Paris en Ligue des Champions, c’est du stand-up !",
-        "Même Gignac à la retraite l’aurait mise !"
+        {text: "Paris en Ligue des Champions, c’est du stand-up !", intensity: 20},
+        {text: "Même Gignac à la retraite l’aurait mise !", intensity: 50},
     ]
     },
     dimitri: {
     'goal-barcelona': [
-        "Statistiquement, Paris encaisse toujours dans ce genre de matchs...",
-        "XG de Barcelone en hausse, logique..."
+        {text: "Statistiquement, Paris encaisse toujours dans ce genre de matchs...", intensity: 20},
+        {text: "XG de Barcelone en hausse, logique...", intensity: 80}
     ],
     'goal-psg': [
-        "Un but à 0.32 XG, belle efficacité !",
-        "Paris a marqué avec seulement 2 tirs cadrés, pas mal."
+        {text: "Un but à 0.32 XG, belle efficacité !", intensity: 20},
+        {text: "Paris a marqué avec seulement 2 tirs cadrés, pas mal.", intensity: 40}
     ],
     'penalty-barcelona': [
-        "Ça fait leur 5e penalty en 10 matchs de C1 cette saison.",
-        "La probabilité de marquer ici est de 78%."
+        {text: "Ça fait leur 5e penalty en 10 matchs de C1 cette saison.", intensity: 20},
+        {text: "La probabilité de marquer ici est de 78%.", intensity: 80}
     ],
     'card': [
-        "Sur les 10 derniers matchs, Paris prend en moyenne 1.2 cartons.",
-        "La discipline reste un problème..."
+        {text: "Sur les 10 derniers matchs, Paris prend en moyenne 1.2 cartons.", intensity: 20},
+        {text: "La discipline reste un problème...", intensity: 90}
     ],
     'missed-psg': [
-        "XG de cette action : 0.85... Il fallait le mettre !",
-        "C’est le 3e gros raté de Paris dans ce match."
+        {text: "XG de cette action : 0.85... Il fallait le mettre !", intensity: 20},
+        {text: "C’est le 3e gros raté de Paris dans ce match.", intensity: 90}
     ]
     },
     bastien: {
     'goal-barcelona': [
-        "Et voilà... encore un club français qui se fait marcher dessus.",
-        "Ça devient une habitude, non ?"
+        {text: "Et voilà... encore un club français qui se fait marcher dessus.", intensity: 20},
+        {text: "Ça devient une habitude, non ?", intensity: 26}
     ],
     'goal-psg': [
-        "Oh, ils ont marqué ? Ça change !",
-        "C’est bien, mais ça suffira pas."
+        {text: "Oh, ils ont marqué ? Ça change !", intensity: 20},
+        {text: "C’est bien, mais ça suffira pas.", intensity: 50}
     ],
     'penalty-barcelona': [
-        "C’est ça, les clubs français en Europe : toujours dominés.",
-        "Ils vont encore chouiner sur l’arbitrage au lieu de jouer."
+        {text: "C’est ça, les clubs français en Europe : toujours dominés.", intensity: 20},
+        {text: "Ils vont encore chouiner sur l’arbitrage au lieu de jouer.", intensity: 70},
     ],
     'card': [
-        "Classique, les clubs français ne savent pas défendre proprement.",
-        "Toujours en retard dans les duels..."
+        {text: "Classique, les clubs français ne savent pas défendre proprement.", intensity: 20},
+        {text: "Toujours en retard dans les duels...", intensity: 80}
     ],
     'missed-psg': [
-        "Ah bah, la finition, ça fait 20 ans que c'est leur problème.",
-        "On est nuls devant le but, comme toujours."
+        {text: "Ah bah, la finition, ça fait 20 ans que c'est leur problème.", intensity: 20},
+        {text: "On est nuls devant le but, comme toujours.", intensity: 90}
     ]
     },
     axel: {
     'goal-barcelona': [
-        "Ah bah ça commence ! Préparez les mouchoirs, les Parisiens !",
-        "Paris en C1, c'est un running gag.",
-        "On dirait un remake de 2017, j’adore."
+        {text: "Ah bah ça commence ! Préparez les mouchoirs, les Parisiens !", intensity: 20},
+        {text: "Paris en C1, c'est un running gag.", intensity: 40},
+        {text: "On dirait un remake de 2017, j’adore.", intensity: 70}
     ],
     'goal-psg': [
-        "Oh, ils savent marquer ? Miracle !",
-        "Bon, ça va pas durer, mais profitez..."
+        {text: "Oh, ils savent marquer ? Miracle !", intensity: 20},
+        {text: "Bon, ça va pas durer, mais profitez...", intensity: 60},
     ],
     'penalty-barcelona': [
-        "Oh, un penalty ? Comme c'est surprenant ! *rire*",
-        "Allez, mettez le couvercle sur ce match !"
+        {text: "Oh, un penalty ? Comme c'est surprenant ! *rire*", intensity: 20},
+        {text: "Allez, mettez le couvercle sur ce match !", intensity: 80}
     ],
     'card': [
-        "C’est pas trop tôt !",
-        "Une carte pour un club de Ligue 1 ? Rare, mais mérité."
+        {text: "C’est pas trop tôt !", intensity: 20},
+        {text: "Une carte pour un club de Ligue 1 ? Rare, mais mérité.", intensity: 70},
     ],
     'missed-psg': [
-        "HAHAHA ! Même moi je l’aurais mise.",
-        "Paris en LDC, c’est une comédie."
+        {text: "HAHAHA ! Même moi je l’aurais mise.", intensity: 20},
+        {text: "Paris en LDC, c’est une comédie.", intensity: 90}
     ]
     }
 };
