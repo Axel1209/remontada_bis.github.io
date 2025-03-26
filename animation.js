@@ -30,7 +30,7 @@ export function displayGoalAnimation() {
     return new Promise((resolve) => {
         const gif = document.createElement("img");
         // Utilisez le chemin absolu depuis GitHub
-        gif.src = "https://raw.githubusercontent.com/Axel1209/laremontadabis/main/sergiroberto.gif";
+        gif.src = "https://raw.githubusercontent.com/axel1209/remontada_bis/main/sergiroberto.gif";
         
         // ... (le reste du code reste identique)
         gif.style = `
