@@ -60,4 +60,4 @@ nextEventButton.addEventListener("click", () => {
     addCommentary();
 });
 
-export { addCommentary };
+export { addCommentary, currentEventIndex, matchEvents };
