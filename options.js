@@ -10,22 +10,26 @@ const playerOptions = {
     cauvin: [
         { 
             name: "Insulter l'arbitre", 
+            type: "enervement",
             description: "Crier 'Arbitre vendu !'",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
             name: "Se ronger les ongles", 
             description: "Se ronger les ongles nerveusement",
+            type: "panique",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
             name: "Vérifier le score cumulé", 
             description: "Calculer fébrilement le score global",
+            type: "humour",
             condition: () => true // Toujours disponible
         },
          { 
             name: "Changer de chaine", 
             description: "J'en peux plus, je met Koh Lanta",
+            type: "modifchaine",
             condition: () => true // Toujours disponible
         }
     ],
@@ -33,16 +37,19 @@ const playerOptions = {
         { 
             name: "Faire un commentaire sarcastique sur le match", 
             description: "Applaudir la maitrise du PSG",
+            type : "humour",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
             name: "Embêter Cauvin", 
             description: "Péter sur Cauvin",
+            type: "embeter_cauvin",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
             name: "Vérifier le score cumulé", 
             description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "humour",
             condition: () => true // Toujours disponible
         }
     ],
