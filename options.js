@@ -6,7 +6,7 @@ let currentEvent;
 
 const optionsContainer = document.getElementById("options-container");
 
-export const playerOptions = {
+const playerOptions = {
     cauvin: [
         { 
             name: "Insulter l'arbitre", 
