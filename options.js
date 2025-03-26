@@ -1,6 +1,7 @@
 // options.js - Gestion des actions disponibles
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
+import { currentEventIndex, matchEvents } from "./commentary.js";
 
 let currentEvent;
 
