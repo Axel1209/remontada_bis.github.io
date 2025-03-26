@@ -22,22 +22,27 @@ const playerOptions = {
             name: "Vérifier le score cumulé", 
             description: "Calculer fébrilement le score global",
             condition: () => true // Toujours disponible
+        },
+         { 
+            name: "Changer de chaine", 
+            description: "J'en peux plus, je met Koh Lanta",
+            condition: () => true // Toujours disponible
         }
     ],
     jeanphi: [
         { 
-            name: "Insulter l'arbitre", 
-            description: "Crier 'Arbitre vendu !'",
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Se ronger les ongles", 
-            description: "Se ronger les ongles nerveusement",
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
             name: "Vérifier le score cumulé", 
-            description: "Calculer fébrilement le score global",
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
             condition: () => true // Toujours disponible
         }
     ],
