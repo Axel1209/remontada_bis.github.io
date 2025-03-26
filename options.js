@@ -2,6 +2,7 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
+import { displayTopChefImage } from "./custom-effects.js";
 
 let currentEvent;
 
@@ -103,7 +104,11 @@ function displayActions(event) {
             gameFeed.appendChild(actionElement);
 
             const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
-        
+
+            if (action.name === "Changer de chaine" && selectedCharacter === "cauvin") {
+        displayTopChefImage(); // Appel externalisé
+            }
+            
    addNPCReaction(action.type, {type :action.type}, currentIntensity);
         });
 
