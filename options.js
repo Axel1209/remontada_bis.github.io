@@ -100,23 +100,14 @@ function displayActions(event) {
             actionElement.className = `player-action ${selectedCharacter}`;
             actionElement.textContent = action.description;
             gameFeed.appendChild(actionElement);
-            
-            addNPCReaction(currentEvent); // Déclencher les réactions
+
+            const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
+            addNPCReaction(action.type, currentIntensity); // Déclencher les réactions
         });
 
         optionsContainer.appendChild(button);
     });
 }
-
-button.addEventListener("click", () => {
-    const actionElement = document.createElement("div");
-    actionElement.className = `player-action ${selectedCharacter}`;
-    actionElement.textContent = action.description;
-    gameFeed.appendChild(actionElement);
-    
-    // Déclencher les réactions avec type + intensité
-    const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
-    addNPCReaction(action.type, currentIntensity);
 });
 
 export { playerOptions, displayActions };
