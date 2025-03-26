@@ -185,7 +185,7 @@ function addReaction(character, text) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
-function addNPCReaction(event) {
+function addNPCReaction(event, intensity) {
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
     if (characters.length === 0) return;
 
@@ -228,10 +228,17 @@ function addNPCReaction(event) {
         const specificReactions = characterReactions[character]?.[eventType];
         const genericReactions = characterReactions[character]?.['generic'] || [];
         const reactionPool = specificReactions?.length > 0 ? specificReactions : genericReactions;
+        const filteredReactions = reactionPool.filter(r => r.intensity <= intensity);
 
         if (reactionPool.length > 0) {
             const randomReaction = reactionPool[Math.floor(Math.random() * reactionPool.length)];
             addReaction(character, randomReaction);
+        }
+        if (filteredReactions.length > 0 {
+            const randomReaction = filteredReactions[
+                Math.floor(Math.random() * filteredReactions.length)
+                ]:
+            addReaction(character, randomReaction.text);
         }
     });
 }
