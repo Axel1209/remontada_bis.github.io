@@ -5,6 +5,7 @@ import { barcaScore, selectedCharacter, gameFeed } from "./game.js";
 const characterReactions = {
 cauvin: {
     'goal-barcelona': [
+        {text: "NON ! Pas déjà !", intensity: 5},
         {text: "NON ! PAS ENCORE EUX !", intensity: 20},
         {text: "On va revivre le cauchemar de 2017...", intensity: 40},
         {text: "Je sens que je vais vomir...", intensity: 90},
@@ -53,6 +54,7 @@ cauvin: {
         {text: "S’il y a un rouge, on peut souffler un peu…", intensity: 90}
     ],
     'missed-psg': [
+        {text: "Allez, on a des occas, c'est bien ", intensity: 5},
         {text: "Mais c'est pas possible... Pourquoi moi ?", intensity: 20},
         {text: "Je vais faire une crise cardiaque...", intensity: 70},
         {text: "Non, non, non, NON !", intensity: 40},
@@ -91,6 +93,7 @@ cauvin: {
 },
 jeanphi: {
     'goal-barcelona': [
+        {text: "Quel départ!", intensity: 5},
         {text: "Oh, mais quel suspense insoutenable ! *rire*", intensity: 20},
         {text: "Paris va encore nous vendre du rêve, puis du cauchemar.", intensity: 50},
         {text: "Cauvin, tu te sens bien ? T’as blêmi là.", intensity: 60},
@@ -139,6 +142,7 @@ jeanphi: {
         {text: "Cauvin, trouve-moi un match où Paris n'a pas pleuré sur l’arbitrage.", intensity: 90}
     ],
     'missed-psg': [
+        {text: "Et ca flippe déjà au moment de conclure !", intensity: 5},
         {text: "Et voilà... Comme prévu !", intensity: 20},
         {text: "Paris et la LDC, c’est une histoire d’amour à sens unique.", intensity: 20},
         {text: "Cauvin, ça rentre pas, hein ? Dommage.", intensity: 40},
@@ -177,6 +181,7 @@ etienne: {
         {text: "C'est trop facile, ils défendent comme une équipe de district.", intensity: 100}
     ],
     'goal-psg': [
+        {text: "Wow, grosse erreur de marquage d'entrée !", intensity: 5},
         {text: "Bonne construction, belle finition.", intensity: 20},
         {text: "Enfin une action bien exécutée !", intensity: 80},
         {text: "C’est propre, rien à dire.", intensity: 30},
@@ -213,6 +218,7 @@ etienne: {
         {text: "Bon bah, ils vont encore pleurer sur l’arbitrage.", intensity: 100}
     ],
     'missed-psg': [
+        {text: "Aie, l'échauffement n'a pas été assez poussé !", intensity: 5},
         {text: "Manque de lucidité devant le but.", intensity: 20},
         {text: "Mauvais choix de frappe, dommage.", intensity: 70},
         {text: "Il faut lever la tête et ajuster, c'est pas compliqué.", intensity: 30},
@@ -227,6 +233,7 @@ etienne: {
 },
 renaud: {
     'goal-barcelona': [
+        {text: "Remontaga, à jamais les premiers ? ", intensity: 5},
         {text: "C'est bon, c'est écrit, ils vont encore se faire remonter !", intensity: 20},
         {text: "Paris qui coule en C1 ? Oh bah ça alors, QUELLE SURPRISE !", intensity: 40},
         {text: "Je sens que le stade va éteindre les lumières comme en 93 !", intensity: 50},
@@ -275,6 +282,7 @@ renaud: {
         {text: "Carton ou pas, leur problème c’est surtout qu’ils savent pas défendre.", intensity: 100}
     ],
     'missed-psg': [
+        {text: "Voilàà, c'est ca qu'on veut ! ", intensity: 5},
         {text: "Et voilà, encore un ballon qui finit en orbite.", intensity: 20},
         {text: "Si c'était à Marseille, le ballon aurait atterri sur le Vieux-Port.", intensity: 30},
         {text: "C'est pas faute de leur avoir dit qu’il fallait cadrer...", intensity: 50},
@@ -289,6 +297,7 @@ renaud: {
 },
 dimitri: {
     'goal-barcelona': [
+        {text: "Allez, la remontada impossible est passée de 0% à 5% !", intensity: 5},
         {text: "Bon, avec ce but, leur probabilité de qualification passe à 12,4 %. Ça commence à sentir mauvais.", intensity: 20},
         {text: "Paris avait 94 % de chances de passer avant le match. On en est où là ?", intensity: 30},
         {text: "L’xG de cette action était à 0.08… ça veut dire qu’ils ont juste de la chatte.", intensity: 40},
@@ -337,6 +346,7 @@ dimitri: {
         {text: "Je me demande si Bordeaux finirait ce match avec plus ou moins de cartons. Ah non, ils jouent pas la C1.", intensity: 100}
     ],
     'missed-psg': [
+        {text: "Allez encore 12 frappes, et statistiquement le PSG marquera un but", intensity: 5},
         {text: "L’xG de cette occasion ? 0.92. Inratable… sauf pour eux.", intensity: 20},
         {text: "Là, on parle d’un tir qui finit 1,8 mètre à côté avec 88 % de chances de rentrer. Catastrophique.", intensity: 30},
         {text: "Même un attaquant de Bordeaux aurait mis celle-là.", intensity: 40},
@@ -351,6 +361,7 @@ dimitri: {
 },
 bastien: {
     'goal-barcelona': [
+        {text: "FFL, l'histoire est en marche ! ", intensity: 5},
         {text: "Ah, le PSG qui s’écroule en C1… une tradition bien française !", intensity: 20},
         {text: "Les clubs français en Europe, c’est comme les desserts anglais : on sait que ça va mal finir.", intensity: 30},
         {text: "Et voilà, comme d’habitude, ils commencent à trembler.", intensity: 40},
@@ -399,6 +410,7 @@ bastien: {
         {text: "À ce rythme, même une équipe de Ligue 2 les bat en Coupe de France.", intensity: 100}
     ],
     'missed-psg': [
+        {text: "Non mais vous la sentez la loose française là ? ", intensity: 5},
         {text: "Et c’est raté… tiens, quelle surprise !", intensity: 20},
         {text: "On a retrouvé le vrai PSG en C1 : des occasions, pas de buts.", intensity: 30},
         {text: "Si chaque occasion manquée donnait un point UEFA, on serait devant l’Angleterre.", intensity: 40},
@@ -413,6 +425,7 @@ bastien: {
 },
 axel: {
     'goal-barcelona': [
+        {text: "Ouch, ca commence fort !", intensity: 5},
         {text: "Et ça commence... comme prévu !", intensity: 20},
         {text: "Les mecs ont l’avantage, mais défendent comme Thibaut Pinot dans une descente.", intensity: 30},
         {text: "Paris en Ligue des Champions, c’est toujours une belle promesse… et une fin tragique.", intensity: 40},
@@ -461,6 +474,7 @@ axel: {
         {text: "Une expulsion à ce moment du match, c’est comme faire tomber son vélo en plein sprint.", intensity: 100}
     ],
     'missed-psg': [
+        {text: "Si le barça marque, et que le PSG arrose, ca va devenir difficile", intensity: 5},
         {text: "Oh non… La fameuse précision ‘made in Ligue 1’.", intensity: 20},
         {text: "C’est quoi cette finition ? Même Pinot a plus de réussite dans un chrono.", intensity: 30},
         {text: "Le ballon va finir dans l’espace, il est sponsorisé par SpaceX.", intensity: 40},
