@@ -44,6 +44,6 @@ export function displayGoalAnimation() {
         setTimeout(() => {
             gif.remove();
             resolve(); // Déclenche la suite après 3 secondes
-        }, 3200);
+        }, 3400);
     });
 }
