@@ -39,46 +39,121 @@ const playerOptions = {
         { 
             name: "Faire un commentaire sarcastique sur le match", 
             description: "Applaudir la maitrise du PSG",
-            type : "humour",
+            type : "ajout",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
             name: "Embêter Cauvin", 
             description: "Péter sur Cauvin",
-            type: "embetercauvin",
+            type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
             name: "Vérifier le score cumulé", 
             description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
-            type: "humour",
+            type: "ajout",
             condition: () => true // Toujours disponible
         }
     ],
     etienne: [
-        { name: "Prédire un carton rouge", description: "'Luisito va prendre rouge !'" },
-        { name: "Mimer un coup franc", description: "Imiter un geste technique de Neymar" },
-        { name: "Crier 'C'est culotté !'", description: "Crier à chaque passe risquée" }
+        { 
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
+            type : "ajout",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
+            type: "ajout",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        }
     ],
     renaud: [
-        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
-        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
-        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+        { 
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
+            type : "ajout",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
+            type: "ajout",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        }
     ],
     dimitri: [
-        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
-        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
-        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+        { 
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
+            type : "ajout",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
+            type: "ajout",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        }
     ],
     bastien: [
-        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
-        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
-        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+        { 
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
+            type : "ajout",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
+            type: "ajout",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        }
     ],
     axel: [
-        { name: "Montrer le 6-1", description: "Afficher le score sur ses doigts" },
-        { name: "Faire le pouce en bas", description: "Gesticuler vers l'écran" },
-        { name: "Demander un replay", description: "'Replay de l'humiliation !'" }
+        { 
+            name: "Faire un commentaire sarcastique sur le match", 
+            description: "Applaudir la maitrise du PSG",
+            type : "ajout",
+            condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
+        },
+        { 
+            name: "Embêter Cauvin", 
+            description: "Péter sur Cauvin",
+            type: "ajout",
+            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+        { 
+            name: "Vérifier le score cumulé", 
+            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        }
     ]
 };
 
