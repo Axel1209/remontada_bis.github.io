@@ -349,28 +349,68 @@ dimitri: {
         {text: "Une frappe plus molle que la défense de Bordeaux en 2022.", intensity: 100}
     ]
 },
-    bastien: {
+bastien: {
     'goal-barcelona': [
-        {text: "Et voilà... encore un club français qui se fait marcher dessus.", intensity: 20},
-        {text: "Ça devient une habitude, non ?", intensity: 26}
+        {text: "Ah, le PSG qui s’écroule en C1… une tradition bien française !", intensity: 20},
+        {text: "Les clubs français en Europe, c’est comme les desserts anglais : on sait que ça va mal finir.", intensity: 30},
+        {text: "Et voilà, comme d’habitude, ils commencent à trembler.", intensity: 40},
+        {text: "Je propose qu’on prenne le but en photo et qu’on l’envoie à la FFF pour mise à jour du manuel ‘Comment perdre en C1’.", intensity: 50},
+        {text: "Cette défense me rappelle celle de Lyon en 2020, sauf qu’eux avaient au moins battu City.", intensity: 60},
+        {text: "Le PSG, c’est un mélange entre un blockbuster et une comédie : beau spectacle, mais toujours un scénario absurde.", intensity: 70},
+        {text: "Le coefficient UEFA de la France est en PLS.", intensity: 80},
+        {text: "Paris, c’est le seul club qui a peur en menant de 4 buts à l’aller.", intensity: 90},
+        {text: "Je pense que même une équipe de National défendrait mieux.", intensity: 95},
+        {text: "Les clubs français et la C1, c’est une love story qui finit toujours en divorce.", intensity: 100}
     ],
     'goal-psg': [
-        {text: "Oh, ils ont marqué ? Ça change !", intensity: 20},
-        {text: "C’est bien, mais ça suffira pas.", intensity: 50}
+        {text: "Oh ? Paris qui marque ? Attendez, c’est légal en C1 ?", intensity: 20},
+        {text: "Un club français qui brille en Europe, c’est un peu comme un plat surgelé : t’y crois, mais t’es toujours déçu après.", intensity: 30},
+        {text: "Bon, ils vont quand même réussir à tout gâcher, on se détend.", intensity: 40},
+        {text: "Un but en C1, c’est bien, mais un mental en C1, c’est mieux.", intensity: 50},
+        {text: "Profitez, ça va pas durer.", intensity: 60},
+        {text: "On prend les paris sur combien de minutes avant qu’ils paniquent ?", intensity: 70},
+        {text: "Si le PSG se qualifie, je mange mon écharpe de l’OM.", intensity: 80},
+        {text: "C’est bon, on peut mettre à jour le site de l’UEFA ? Un club français a marqué en quart de finale.", intensity: 90},
+        {text: "Si le PSG gagne ce match, je reconnais enfin leur statut de grand club. Spoiler : c’est pas gagné.", intensity: 95},
+        {text: "Les mecs mettent un but et pensent qu’ils sont le Real Madrid. Calmez-vous.", intensity: 100}
     ],
     'penalty-barcelona': [
-        {text: "C’est ça, les clubs français en Europe : toujours dominés.", intensity: 20},
-        {text: "Ils vont encore chouiner sur l’arbitrage au lieu de jouer.", intensity: 70},
+        {text: "Et voilà, classique, Paris qui siffle la fin de son propre rêve.", intensity: 20},
+        {text: "Depuis 10 ans, je me demande si c’est un club de foot ou un laboratoire expérimental du choke.", intensity: 30},
+        {text: "On parie que dans 5 minutes, Cauvin va parler d’arbitrage ?", intensity: 40},
+        {text: "Paris et la Ligue des Champions, c’est le Titanic et l’iceberg.", intensity: 50},
+        {text: "Penalty ? Bah oui, c’était dans le script !", intensity: 60},
+        {text: "Le dernier penalty arrêté par un club français en C1 remonte à l’ère préhistorique.", intensity: 70},
+        {text: "Encore un coup des Illuminati de l’UEFA, c’est sûr.", intensity: 80},
+        {text: "Je suis sûr que même Saint-Étienne en 76 avait plus de solidité défensive.", intensity: 90},
+        {text: "C’est officiel : la France vient de perdre 0,02 points au coefficient UEFA.", intensity: 95},
+        {text: "J’attends le moment où ils vont demander à rejouer le match.", intensity: 100}
     ],
     'card': [
-        {text: "Classique, les clubs français ne savent pas défendre proprement.", intensity: 20},
-        {text: "Toujours en retard dans les duels...", intensity: 80}
+        {text: "Un rouge ? On se demande encore pourquoi la France est la risée de l’Europe.", intensity: 20},
+        {text: "S’il y avait une Coupe d’Europe des cartons, on aurait nos chances.", intensity: 30},
+        {text: "Avec cette discipline, on peut direct s’inscrire à Koh-Lanta.", intensity: 40},
+        {text: "Le fair-play à la française : râler, simuler, et se faire expulser.", intensity: 50},
+        {text: "Un carton de plus… bientôt ils joueront à 7.", intensity: 60},
+        {text: "Même Bordeaux en 2009 était plus discipliné en C1.", intensity: 70},
+        {text: "On peut encore prendre un rouge ou on attend un peu ?", intensity: 80},
+        {text: "Même un club chypriote a plus de maîtrise que ça.", intensity: 90},
+        {text: "Si on fait le cumul de toutes les erreurs françaises en Europe, on pourrait écrire une thèse.", intensity: 95},
+        {text: "À ce rythme, même une équipe de Ligue 2 les bat en Coupe de France.", intensity: 100}
     ],
     'missed-psg': [
-        {text: "Ah bah, la finition, ça fait 20 ans que c'est leur problème.", intensity: 20},
-        {text: "On est nuls devant le but, comme toujours.", intensity: 90}
+        {text: "Et c’est raté… tiens, quelle surprise !", intensity: 20},
+        {text: "On a retrouvé le vrai PSG en C1 : des occasions, pas de buts.", intensity: 30},
+        {text: "Si chaque occasion manquée donnait un point UEFA, on serait devant l’Angleterre.", intensity: 40},
+        {text: "Un attaquant français en Europe, c’est comme une voiture sans moteur.", intensity: 50},
+        {text: "On peut leur envoyer un tuto ‘comment cadrer un tir’ ?", intensity: 60},
+        {text: "Même la CFA 2 du Red Star aurait mis celle-là.", intensity: 70},
+        {text: "Il fallait bien équilibrer le ratio ‘espoirs’ et ‘déceptions’.", intensity: 80},
+        {text: "C’est plus un match de foot, c’est un best-of des occasions ratées.", intensity: 90},
+        {text: "Si rater des occasions était un sport olympique, la France aurait l’or chaque année.", intensity: 95},
+        {text: "Des frappes qui finissent au 3e étage… on sent la patte française.", intensity: 100}
     ]
-    },
+},
     axel: {
     'goal-barcelona': [
         {text: "Ah bah ça commence ! Préparez les mouchoirs, les Parisiens !", intensity: 20},
