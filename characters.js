@@ -66,7 +66,7 @@ cauvin: {
         {text: "Je vais m’exiler dans un monastère si on se fait remonter.", intensity: 95},
         {text: "C’EST FINI. C’EST FINI.", intensity: 100}
     ],
-    'embetercauvin': [
+    'ajout': [
         {text: "Vous êtes tellement relous...", intensity: 20},
         {text: "Putain mais arrêtez !", intensity: 70},
         {text: "C’est pas drôle, sérieux !", intensity: 30},
@@ -76,9 +76,7 @@ cauvin: {
         {text: "Vous avez rien d’autre à faire ?", intensity: 80},
         {text: "Je vais vous muter, c’est bon.", intensity: 90},
         {text: "Je quitte ce groupe, je vous déteste.", intensity: 95},
-        {text: "Laissez-moi en paix, je suis en deuil.", intensity: 100}
-    ],
-    'humour': [
+        {text: "Laissez-moi en paix, je suis en deuil.", intensity: 100},
         {text: "Pfff, non mais je suis pas serein là.", intensity: 20},
         {text: "Mais c'est pas drôle, c'est pas possible !", intensity: 70},
         {text: "Vous avez une caméra cachée, c’est ça ?", intensity: 30},
@@ -154,7 +152,7 @@ jeanphi: {
         {text: "Ils ont entraîné les tirs au but avec Giroud ou quoi ?", intensity: 85},
         {text: "Ce raté va faire le tour des réseaux, crois-moi.", intensity: 100}
     ],
-    'panique': [
+    'ajout': [
         {text: "Ah, ça fait moins le malin que contre Dijon là !", intensity: 20},
         {text: "Cauvin en PLS, respire !", intensity: 70},
         {text: "Ne regarde pas ton téléphone, les mèmes arrivent déjà.", intensity: 50},
