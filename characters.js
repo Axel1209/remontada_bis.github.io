@@ -225,28 +225,68 @@ etienne: {
         {text: "Et après, ils vont dire que c’est pas mental...", intensity: 100}
     ]
 },
-    renaud: {
+renaud: {
     'goal-barcelona': [
-        {text: "Paris qui se fait punir, quel plaisir !", intensity: 20},
-        {text: "Et un but dans la musette, un !", intensity: 60}
+        {text: "C'est bon, c'est écrit, ils vont encore se faire remonter !", intensity: 20},
+        {text: "Paris qui coule en C1 ? Oh bah ça alors, QUELLE SURPRISE !", intensity: 40},
+        {text: "Je sens que le stade va éteindre les lumières comme en 93 !", intensity: 50},
+        {text: "Ils avaient prévu des extincteurs au Parc ?", intensity: 60},
+        {text: "J’ai vu des défenses plus solides dans les tournois corpo du Vieux-Port.", intensity: 70},
+        {text: "Paris, c’est un château de cartes quand y’a du vent.", intensity: 80},
+        {text: "C’est moi ou leur mur défensif a été construit par un stagiaire ?", intensity: 85},
+        {text: "Jean-Michel Aulas doit savourer ce moment quelque part.", intensity: 90},
+        {text: "Même l’OM de 2012 défendait mieux, et pourtant...", intensity: 95},
+        {text: "La seule étoile qu'ils vont voir, c'est celle qu'ils prennent sur le front.", intensity: 100}
     ],
     'goal-psg': [
-        {text: "Même moi je dois avouer que c'était beau...", intensity: 20},
-        {text: "Bon, profitez-en, ça va pas durer.", intensity: 80}
+        {text: "Oh mince, ils savent encore marquer ?!", intensity: 20},
+        {text: "Bordel... ils vont encore nous faire croire qu'ils sont un grand club.", intensity: 30},
+        {text: "OK, mais vous savez qu'après, faut tenir le score hein ?", intensity: 50},
+        {text: "On a déjà vu Paris mener 4-0, on connaît la suite.", intensity: 60},
+        {text: "Ça compte pas tant qu’ils ont pas soulevé la coupe. *Rire*", intensity: 70},
+        {text: "Même en marquant, ils ont l'air fébriles.", intensity: 75},
+        {text: "Bien joué, mais ça vaut pas un but de Basile Boli en finale de C1.", intensity: 80},
+        {text: "On va voir si leur mental est aussi solide qu’ils le prétendent.", intensity: 90},
+        {text: "Bon, qu’ils en mettent un autre avant la 85e, sinon c’est foutu.", intensity: 95},
+        {text: "Profitez, c’est le seul trophée européen que vous verrez !", intensity: 100}
     ],
     'penalty-barcelona': [
-        {text: "La remontada, acte II !", intensity: 20},
-        {text: "Paris va encore nous sortir les violons sur l’arbitrage...", intensity: 90}
+        {text: "Paris et la Ligue des Champions, c'est comme moi et les impôts : une longue histoire de souffrance.", intensity: 20},
+        {text: "Encore un pénalty ? La VAR est sponsorisée par le Vélodrome ce soir ?", intensity: 30},
+        {text: "Si seulement ils défendaient aussi bien que nous en 93...", intensity: 50},
+        {text: "Je crois que j'ai déjà vu ce film. C'est un drame.", intensity: 60},
+        {text: "Paris va crier au complot... en oubliant qu’ils ont eu 15 penaltys cette saison.", intensity: 70},
+        {text: "J'appelle Barthez, il a peut-être encore son maillot pour rentrer dans les cages.", intensity: 80},
+        {text: "Ils devraient engager Didier Deschamps pour apprendre à tenir un score.", intensity: 85},
+        {text: "Une défense plus fragile que ma tente à la fête de l’Huma.", intensity: 90},
+        {text: "C'est ça de croire qu'on peut acheter la gloire, les gars.", intensity: 95},
+        {text: "J'avais dit qu'ils allaient s'effondrer !", intensity: 100}
     ],
     'card': [
-        {text: "Ahah, Paris qui pleure sur une carte, classique.", intensity: 20},
-        {text: "On en parle du nombre de fautes non sifflées pour l'OM ?", intensity: 60},
+        {text: "Carton ? Oh mais laissez-leur une chance, c'est déjà dur pour eux !", intensity: 20},
+        {text: "Si ça continue, ils vont finir à 9 comme au bon vieux temps de Bielsa !", intensity: 30},
+        {text: "Bon, ça équilibre un peu... mais ça changera rien.", intensity: 50},
+        {text: "Carton logique. Il avait oublié qu’il jouait au foot, pas au MMA.", intensity: 60},
+        {text: "Paris en difficulté ? L'arbitre sort le carton, classique.", intensity: 70},
+        {text: "Dans le doute, ils vont encore pleurer au micro après le match.", intensity: 80},
+        {text: "Même Di Meco à l'époque trouvait ça trop viril.", intensity: 85},
+        {text: "Quand ça chauffe, on voit les vrais joueurs... et les autres.", intensity: 90},
+        {text: "Attention, plus qu’un rouge et ils vont demander le report du match !", intensity: 95},
+        {text: "Carton ou pas, leur problème c’est surtout qu’ils savent pas défendre.", intensity: 100}
     ],
     'missed-psg': [
-        {text: "Paris en Ligue des Champions, c’est du stand-up !", intensity: 20},
-        {text: "Même Gignac à la retraite l’aurait mise !", intensity: 50},
+        {text: "Et voilà, encore un ballon qui finit en orbite.", intensity: 20},
+        {text: "Si c'était à Marseille, le ballon aurait atterri sur le Vieux-Port.", intensity: 30},
+        {text: "C'est pas faute de leur avoir dit qu’il fallait cadrer...", intensity: 50},
+        {text: "Encore un but refusé par la gravité.", intensity: 60},
+        {text: "Mais qui leur a appris à frapper au but ?!", intensity: 70},
+        {text: "J’ai vu des joueurs de district être plus efficaces.", intensity: 80},
+        {text: "Cavani aurait marqué, et ça me fait mal de le dire.", intensity: 85},
+        {text: "Ce raté résume tout : Paris en Ligue des Champions.", intensity: 90},
+        {text: "Mais non, continuez comme ça, c'est super !", intensity: 95},
+        {text: "Une frappe plus molle que les finances de Bordeaux.", intensity: 100}
     ]
-    },
+},
     dimitri: {
     'goal-barcelona': [
         {text: "Statistiquement, Paris encaisse toujours dans ce genre de matchs...", intensity: 20},
