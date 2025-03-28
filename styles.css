@@ -74,6 +74,7 @@ button:hover {
     padding: 8px;
     margin: 8px 0;
     font-style: italic;
+    font-weight: bold;
 }
 
 .option-button {
