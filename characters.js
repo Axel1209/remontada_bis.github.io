@@ -35,32 +35,80 @@ const characterReactions = {
         {text: "Mais c'est pas drôle, c'est pas possible !", intensity: 70}
     ]
     },
-     jeanphi: {
+jeanphi: {
     'goal-barcelona': [
         {text: "Oh, mais quel suspense insoutenable ! *rire*", intensity: 20},
-        {text: "Paris va encore nous vendre du rêve, puis du cauchemar.", intensity: 50}
+        {text: "Paris va encore nous vendre du rêve, puis du cauchemar.", intensity: 50},
+        {text: "Cauvin, tu te sens bien ? T’as blêmi là.", intensity: 60},
+        {text: "Je crois que le PSG vient de se rappeler qu’il joue en Ligue des Champions.", intensity: 70},
+        {text: "Regarde-moi ce chef-d'œuvre ! Une démonstration !", intensity: 90},
+        {text: "Cauvin, t’as pensé à éteindre la télé ? Ça va te faire mal.", intensity: 100},
+        {text: "Cauvin, ton silence en dit long.", intensity: 40},
+        {text: "On va bientôt entendre ‘arbitrage scandaleux’ dans 3… 2… 1…", intensity: 30},
+        {text: "Tu devrais appeler le service psy du PSG, ils recrutent à chaque printemps.", intensity: 80},
+        {text: "Et là, Paris commence à douter... Tradition respectée.", intensity: 75}
     ],
     'goal-psg': [
         {text: "Attendez... Paris qui marque en C1 ? J’ai mal aux yeux.", intensity: 20},
-        {text: "Profitez, ça arrive pas souvent !", intensity: 80}
+        {text: "Profitez, ça arrive pas souvent !", intensity: 80},
+        {text: "Cauvin, calme-toi, il reste encore 89 minutes pour tout gâcher.", intensity: 50},
+        {text: "Ah, c'est mignon, ils essaient d'y croire.", intensity: 60},
+        {text: "On en reparle quand il faudra défendre hein ?", intensity: 70},
+        {text: "Cauvin, pourquoi tu pleures ? Ah non, c'est de la sueur.", intensity: 90},
+        {text: "OK, ils ont marqué... Maintenant, place au drame !", intensity: 40},
+        {text: "Cauvin, ça va finir en ‘On a manqué de caractère’ en conf’ d’après-match.", intensity: 55},
+        {text: "C’est beau... mais dans 10 minutes ils prennent un but gag.", intensity: 65},
+        {text: "Je commence à croire au miracle... ou pas.", intensity: 75}
     ],
     'penalty-barcelona': [
         {text: "Oh non, encore un complot contre Paris ! *ironique*", intensity: 20},
-        {text: "Vraiment pas de chance... comme d’habitude.", intensity: 20}
+        {text: "Vraiment pas de chance... comme d’habitude.", intensity: 20},
+        {text: "Penalty pour le Barça ? Bon ben, vous savez ce qui va arriver.", intensity: 50},
+        {text: "Cauvin, t’as prévu un tweet sur l’arbitrage ?", intensity: 60},
+        {text: "Ne t’inquiète pas Cauvin, ça rééquilibre les 12 derniers PSG-OM.", intensity: 70},
+        {text: "Et là, c’est le moment où le PSG commence à trembler.", intensity: 80},
+        {text: "C’est écrit, Messi va marquer et Cauvin va disparaître du groupe WhatsApp.", intensity: 90},
+        {text: "Je propose un bingo ‘excuses PSG’ après ce match.", intensity: 30},
+        {text: "Paris qui pleure sur l’arbitrage... ça change.", intensity: 40},
+        {text: "Cauvin, t'as envoyé ton mail à l’UEFA pour protester ?", intensity: 100}
     ],
     'card': [
         {text: "Une injustice flagrante... ou pas.", intensity: 20},
-        {text: "Encore une excuse à venir sur l’arbitrage ?", intensity: 20}
+        {text: "Encore une excuse à venir sur l’arbitrage ?", intensity: 20},
+        {text: "C’est marrant, je l’avais senti venir.", intensity: 30},
+        {text: "Paris va finir à 10. Tradition oblige.", intensity: 50},
+        {text: "Le rouge arrive, je prends les paris.", intensity: 60},
+        {text: "Cauvin, arrête de crier au scandale, c'est mérité !", intensity: 70},
+        {text: "Si Paris perd, on sait déjà qui sera le coupable : l’arbitre.", intensity: 80},
+        {text: "L’arbitre a osé siffler contre Paris ? Hérésie !", intensity: 40},
+        {text: "Tu sais que le fair-play, ça marche aussi avec les cartons, hein Cauvin ?", intensity: 55},
+        {text: "Cauvin, trouve-moi un match où Paris n'a pas pleuré sur l’arbitrage.", intensity: 90}
     ],
     'missed-psg': [
         {text: "Et voilà... Comme prévu !", intensity: 20},
-        {text: "Paris et la LDC, c’est une histoire d’amour à sens unique.", intensity: 20}
+        {text: "Paris et la LDC, c’est une histoire d’amour à sens unique.", intensity: 20},
+        {text: "Cauvin, ça rentre pas, hein ? Dommage.", intensity: 40},
+        {text: "Tu sens le vent tourner là ?", intensity: 50},
+        {text: "Ah bah oui, la pression, c’est pas leur truc.", intensity: 70},
+        {text: "Allez, le ballon est en orbite, bien joué.", intensity: 90},
+        {text: "Encore un grand moment dans l’histoire du club.", intensity: 60},
+        {text: "Cauvin, tu croyais vraiment qu’il allait marquer ?", intensity: 65},
+        {text: "Ils ont entraîné les tirs au but avec Giroud ou quoi ?", intensity: 85},
+        {text: "Ce raté va faire le tour des réseaux, crois-moi.", intensity: 100}
     ],
     'panique': [
-        {text: "Ah ca fait moins le malin que contre Dijon là !", intensity: 20},
-        {text: "Cauvin en PLS respire !", intensity: 70}
+        {text: "Ah, ça fait moins le malin que contre Dijon là !", intensity: 20},
+        {text: "Cauvin en PLS, respire !", intensity: 70},
+        {text: "Ne regarde pas ton téléphone, les mèmes arrivent déjà.", intensity: 50},
+        {text: "Cauvin, je t'entends plus. T'es toujours là ?", intensity: 60},
+        {text: "Va chercher un sac en papier, mec.", intensity: 80},
+        {text: "Appelez une ambulance pour Cauvin !", intensity: 100},
+        {text: "J’espère que t’as pas parié sur Paris, sinon c’est dur...", intensity: 40},
+        {text: "Je connais cette tête... Celle du supporter qui comprend que c’est fini.", intensity: 85},
+        {text: "Et là, on est en mode ‘On va se battre jusqu’à la fin !’ Spoiler : non.", intensity: 75},
+        {text: "Cauvin, fais pas de bêtises. Y'a toujours l'Europa League... Ah non, même pas.", intensity: 90}
     ]
-     },
+},
     etienne: {
     'goal-barcelona': [
         {text: "Encore une erreur de placement défensif, c'est frustrant.", intensity: 20},
