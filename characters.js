@@ -287,28 +287,68 @@ renaud: {
         {text: "Une frappe plus molle que les finances de Bordeaux.", intensity: 100}
     ]
 },
-    dimitri: {
+dimitri: {
     'goal-barcelona': [
-        {text: "Statistiquement, Paris encaisse toujours dans ce genre de matchs...", intensity: 20},
-        {text: "XG de Barcelone en hausse, logique...", intensity: 80}
+        {text: "Bon, avec ce but, leur probabilité de qualification passe à 12,4 %. Ça commence à sentir mauvais.", intensity: 20},
+        {text: "Paris avait 94 % de chances de passer avant le match. On en est où là ?", intensity: 30},
+        {text: "L’xG de cette action était à 0.08… ça veut dire qu’ils ont juste de la chatte.", intensity: 40},
+        {text: "Avec ce rythme, on est sur une tendance à 3,2 buts encaissés. Faudrait songer à défendre.", intensity: 50},
+        {text: "Paris vient de perdre 1,1 % d’espérance de vie collective après ce but.", intensity: 60},
+        {text: "Statistiquement, Paris a déjà vécu ça 8 fois en C1. Pourquoi ça changerait ?", intensity: 70},
+        {text: "Les expected tears (xT) de Cauvin sont en train d’exploser.", intensity: 80},
+        {text: "On est à combien en possession ? Ah ouais, 68 %… pour quoi faire, en fait ?", intensity: 85},
+        {text: "Paris, c’est un bug dans Football Manager : 78 % de chances de passer, mais éliminé 10 fois sur 10.", intensity: 95},
+        {text: "Bon bah, il reste plus qu’à demander une fusion avec Bordeaux, ils connaissent la loose aussi.", intensity: 100}
     ],
     'goal-psg': [
-        {text: "Un but à 0.32 XG, belle efficacité !", intensity: 20},
-        {text: "Paris a marqué avec seulement 2 tirs cadrés, pas mal.", intensity: 40}
+        {text: "Statistiquement, ils avaient 78 % de chances de marquer là. Normal.", intensity: 20},
+        {text: "Belle action, xG de 0.72, c’est un but attendu.", intensity: 30},
+        {text: "Avec ce but, leurs chances de qualification remontent à 87 %. Pas mal.", intensity: 50},
+        {text: "Enfin un xG qui se convertit en vrai but !", intensity: 60},
+        {text: "Ça, c’est une frappe propre : 97 km/h, bien placé, rien à dire.", intensity: 70},
+        {text: "C’est un but, mais est-ce que ça compense leur mental en mousse ?", intensity: 75},
+        {text: "Si Paris tient ce score, ils passent dans 86 % des cas… oui mais le mental, hein.", intensity: 80},
+        {text: "OK, mais on en parle de leur pressing à la 85e ? Ils auront cramé 8 km de trop.", intensity: 90},
+        {text: "Bon, reste plus qu’à éviter les 15 dernières minutes maudites.", intensity: 95},
+        {text: "Allez, plus qu’un but et ils auront officiellement un espoir. Mais c’est Paris…", intensity: 100}
     ],
     'penalty-barcelona': [
-        {text: "Ça fait leur 5e penalty en 10 matchs de C1 cette saison.", intensity: 20},
-        {text: "La probabilité de marquer ici est de 78%.", intensity: 80}
+        {text: "xG du penalty : 0.78. C’est pratiquement un but automatique.", intensity: 20},
+        {text: "Les probabilités de qualification viennent de perdre 10 points en 3 secondes.", intensity: 30},
+        {text: "Depuis 2010, Paris concède un penalty tous les 4,2 matchs de C1. Quelle surprise.", intensity: 40},
+        {text: "La VAR est du côté de Barcelone, 68 % de chances qu’ils sifflent.", intensity: 50},
+        {text: "Quand Paris mène de 3 buts ou plus en C1, ils finissent par se faire peur dans 88 % des cas.", intensity: 60},
+        {text: "Un penalty contre eux… et leur moral baisse à 4 %.", intensity: 70},
+        {text: "Le dernier penalty arrêté par un gardien de Paris en C1 date de quand déjà ?", intensity: 80},
+        {text: "Les expected cries (xC) de Cauvin viennent de passer à 1.5.", intensity: 90},
+        {text: "Avec ça, leur espérance de qualif tombe sous les 50 %. Ça pue.", intensity: 95},
+        {text: "Bordeaux n’a jamais vécu un tel cauchemar. Mais bon, encore faut-il jouer la C1.", intensity: 100}
     ],
     'card': [
-        {text: "Sur les 10 derniers matchs, Paris prend en moyenne 1.2 cartons.", intensity: 20},
-        {text: "La discipline reste un problème...", intensity: 90}
+        {text: "Bon, statistiquement, un rouge ici, c’est 78 % de chances de se faire éliminer.", intensity: 20},
+        {text: "Avec 3 cartons dans le match, Paris ne finit à 11 que dans 62 % des cas.", intensity: 30},
+        {text: "En moyenne, Paris prend 1,6 carton par match en C1. On est dans les temps.", intensity: 40},
+        {text: "Le dernier rouge à ce stade d’une compétition européenne pour Paris, c’était en… ah non, y’en a trop.", intensity: 50},
+        {text: "Avec 10 contre 11, le bloc défensif tient en moyenne 18 minutes. À voir.", intensity: 60},
+        {text: "Après ce rouge, leur intensité au pressing va baisser de 25 %.", intensity: 70},
+        {text: "Paris réduit à 10, ça donne une probabilité de victoire qui tombe à 14 %.", intensity: 80},
+        {text: "Si on simule ce match 10 000 fois, Paris perd dans 82,7 % des cas.", intensity: 85},
+        {text: "Un rouge contre Barcelone ? Oh, bah comme en 2017.", intensity: 95},
+        {text: "Je me demande si Bordeaux finirait ce match avec plus ou moins de cartons. Ah non, ils jouent pas la C1.", intensity: 100}
     ],
     'missed-psg': [
-        {text: "XG de cette action : 0.85... Il fallait le mettre !", intensity: 20},
-        {text: "C’est le 3e gros raté de Paris dans ce match.", intensity: 90}
+        {text: "L’xG de cette occasion ? 0.92. Inratable… sauf pour eux.", intensity: 20},
+        {text: "Là, on parle d’un tir qui finit 1,8 mètre à côté avec 88 % de chances de rentrer. Catastrophique.", intensity: 30},
+        {text: "Même un attaquant de Bordeaux aurait mis celle-là.", intensity: 40},
+        {text: "Avec ce raté, ils viennent de perdre 3 % de chances de qualification.", intensity: 50},
+        {text: "Là, c’est 99 fois sur 100 au fond. La seule fois où ça rate, c'est Paris.", intensity: 60},
+        {text: "Si on prend tous les tirs de cette position en C1, 84 % finissent en but. Pas eux.", intensity: 70},
+        {text: "À ce rythme, ils ont 22 % de chances de marquer avant la fin du match.", intensity: 80},
+        {text: "Les expected excuses (xE) de l’entraîneur après le match viennent d’augmenter.", intensity: 85},
+        {text: "Ce raté = -4 % de confiance collective.", intensity: 95},
+        {text: "Une frappe plus molle que la défense de Bordeaux en 2022.", intensity: 100}
     ]
-    },
+},
     bastien: {
     'goal-barcelona': [
         {text: "Et voilà... encore un club français qui se fait marcher dessus.", intensity: 20},
