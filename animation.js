@@ -43,7 +43,7 @@ export function displayGoalAnimation() {
 
         setTimeout(() => {
             gif.remove();
-            resolve(); // Déclenche la suite après 5 secondes
-        }, 5000);
+            resolve(); // Déclenche la suite après 3 secondes
+        }, 3200);
     });
 }
