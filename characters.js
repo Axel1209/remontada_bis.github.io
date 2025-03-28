@@ -411,29 +411,68 @@ bastien: {
         {text: "Des frappes qui finissent au 3e étage… on sent la patte française.", intensity: 100}
     ]
 },
-    axel: {
+axel: {
     'goal-barcelona': [
-        {text: "Ah bah ça commence ! Préparez les mouchoirs, les Parisiens !", intensity: 20},
-        {text: "Paris en C1, c'est un running gag.", intensity: 40},
-        {text: "On dirait un remake de 2017, j’adore.", intensity: 70}
+        {text: "Et ça commence... comme prévu !", intensity: 20},
+        {text: "Les mecs ont l’avantage, mais défendent comme Thibaut Pinot dans une descente.", intensity: 30},
+        {text: "Paris en Ligue des Champions, c’est toujours une belle promesse… et une fin tragique.", intensity: 40},
+        {text: "On dirait Federer face à Nadal sur terre battue : ça résiste, mais on sait comment ça finit.", intensity: 50},
+        {text: "Le mental est en train de partir en ski de fond sans bâtons.", intensity: 60},
+        {text: "Cauvin, je t’annonce qu’on entre dans la zone rouge.", intensity: 70},
+        {text: "Le PSG joue ce match comme un biathlète qui tire à 5/10 : ça va se payer.", intensity: 80},
+        {text: "Le Titanic a mis plus de temps à couler.", intensity: 90},
+        {text: "Paris a autant de maîtrise que Pinot en troisième semaine de Tour de France.", intensity: 95},
+        {text: "C’est plié, il n’y a plus qu’à attendre l’abandon au 85e.", intensity: 100}
     ],
     'goal-psg': [
-        {text: "Oh, ils savent marquer ? Miracle !", intensity: 20},
-        {text: "Bon, ça va pas durer, mais profitez...", intensity: 60},
+        {text: "Ah bon ? Ils ont le droit de marquer dans un match à élimination directe ?", intensity: 20},
+        {text: "Paris qui marque en C1, c’est comme Federer à Wimbledon : ça faisait longtemps, mais ça fait plaisir.", intensity: 30},
+        {text: "Belle action ! Maintenant, faut pas paniquer… mais c’est Paris.", intensity: 40},
+        {text: "C’est bien de prendre de l’avance, mais si c’est pour tout jeter après...", intensity: 50},
+        {text: "Ça sent le faux espoir.", intensity: 60},
+        {text: "Cauvin respire un peu, mais ça va pas durer.", intensity: 70},
+        {text: "Le PSG qui gère un avantage, c’est comme un biathlète qui veut tirer vite : on sait comment ça finit.", intensity: 80},
+        {text: "J’annonce, on en parle encore dans 20 ans, mais pas pour de bonnes raisons.", intensity: 90},
+        {text: "Si Paris se qualifie, je fais un pèlerinage à Roland-Garros.", intensity: 95},
+        {text: "C’est bon, on peut mettre le bus et bétonner… ah non, c’est interdit à Paris.", intensity: 100}
     ],
     'penalty-barcelona': [
-        {text: "Oh, un penalty ? Comme c'est surprenant ! *rire*", intensity: 20},
-        {text: "Allez, mettez le couvercle sur ce match !", intensity: 80}
+        {text: "Et voilà, fallait bien que ça arrive.", intensity: 20},
+        {text: "Le PSG défend comme un cycliste qui oublie de ravitailler.", intensity: 30},
+        {text: "L’arbitre a sorti le sifflet plus vite que Fourcade dans une mass start.", intensity: 40},
+        {text: "Cauvin va commencer à parler d’arbitrage dans 3…2…1...", intensity: 50},
+        {text: "Un pénalty contre Paris en C1 ? Comme c’est surprenant.", intensity: 60},
+        {text: "La VAR en Ligue des Champions et le PSG, c’est un feuilleton Netflix.", intensity: 70},
+        {text: "L’histoire retiendra que c’est ici que tout a basculé.", intensity: 80},
+        {text: "Je vais chercher du popcorn, on entre dans l’acte final.", intensity: 90},
+        {text: "Même Federer au tie-break est plus serein.", intensity: 95},
+        {text: "Ce pénalty est le premier clou du cercueil.", intensity: 100}
     ],
     'card': [
-        {text: "C’est pas trop tôt !", intensity: 20},
-        {text: "Une carte pour un club de Ligue 1 ? Rare, mais mérité.", intensity: 70},
+        {text: "Un rouge pour Paris ? Ah bah, c’est pratique pour justifier la défaite.", intensity: 20},
+        {text: "Ça commence à s’énerver, le mental fond comme de la neige au soleil.", intensity: 30},
+        {text: "Bon, il reste combien de joueurs valides sur le terrain ?", intensity: 40},
+        {text: "Paris en C1, c’est une masterclass d’auto-sabotage.", intensity: 50},
+        {text: "Une erreur d’inattention, ça me rappelle un biathlète qui oublie une balle au tir.", intensity: 60},
+        {text: "J’espère que les mecs ont pris une option théâtre au lycée.", intensity: 70},
+        {text: "Avec ce niveau de discipline, même Bordeaux ferait mieux.", intensity: 80},
+        {text: "Bon, c’est quoi le plan B ? Ah… y en a pas.", intensity: 90},
+        {text: "Quand tu joues un match couperet, c’est mieux de pas finir à 9.", intensity: 95},
+        {text: "Une expulsion à ce moment du match, c’est comme faire tomber son vélo en plein sprint.", intensity: 100}
     ],
     'missed-psg': [
-        {text: "HAHAHA ! Même moi je l’aurais mise.", intensity: 20},
-        {text: "Paris en LDC, c’est une comédie.", intensity: 90}
+        {text: "Oh non… La fameuse précision ‘made in Ligue 1’.", intensity: 20},
+        {text: "C’est quoi cette finition ? Même Pinot a plus de réussite dans un chrono.", intensity: 30},
+        {text: "Le ballon va finir dans l’espace, il est sponsorisé par SpaceX.", intensity: 40},
+        {text: "Le stade est en feu et lui cadre même pas... quelle masterclass.", intensity: 50},
+        {text: "Paris devant le but en C1, c’est le sketch du siècle.", intensity: 60},
+        {text: "J’espère qu’ils comptaient pas trop sur leurs attaquants pour passer.", intensity: 70},
+        {text: "S’ils continuent, ils vont finir avec plus d’expected goals que Fourcade de médailles d’or.", intensity: 80},
+        {text: "C’est officiel, même mon grand-père aurait marqué celui-là.", intensity: 90},
+        {text: "On en est au niveau où même Federer en revers lifté aurait plus de réussite.", intensity: 95},
+        {text: "Je propose qu’on annule les cages et qu’on fasse un concours de passes.", intensity: 100}
     ]
-    }
+}
 };
 
 // Réactions génériques si aucun but n'est marqué
