@@ -497,16 +497,20 @@ function addReaction(character, text) {
     gameFeed.scrollTop = gameFeed.scrollHeight;
 }
 
+let reactionTimeouts = []; // Pour stocker les timeouts et permettre l'annulation
+
 function addNPCReaction(triggerType, event, intensity) {
+    // Nettoyage des timeouts précédents
+    reactionTimeouts.forEach(timeout => clearTimeout(timeout));
+    reactionTimeouts = [];
+
     const characters = Object.keys(characterReactions).filter(c => c !== selectedCharacter);
     if (characters.length === 0) return;
 
-    // Détermine le type d'événement et son équipe associée
     const eventType = event.team ? 
         `${event.type}-${event.team.toLowerCase()}` : 
         event.type;
 
-    // Configuration des réactions
     const reactionConfig = {
         'goal': { baseReactions: 4, variance: 2 },
         'foul': { baseReactions: 2, variance: 1 },
@@ -516,7 +520,6 @@ function addNPCReaction(triggerType, event, intensity) {
 
     const config = reactionConfig[event.type] || reactionConfig.default;
     
-    // Calcule le nombre de réactions
     let reactionCount = Math.min(
         Math.max(
             config.baseReactions + Math.floor(Math.random() * (config.variance * 2 + 1)) - config.variance,
@@ -525,27 +528,29 @@ function addNPCReaction(triggerType, event, intensity) {
         6
     );
 
-    // Sélection aléatoire des personnages
     const reactingCharacters = characters
         .sort(() => 0.5 - Math.random())
         .slice(0, Math.min(reactionCount, characters.length));
 
-    // Ajout des réactions
-    reactingCharacters.forEach(character => {
-        // Réactions spécifiques ou génériques
-        const specificReactions = characterReactions[character]?.[eventType] || [];
-        const genericReactions = characterReactions[character]?.generic || [];
-        const reactionPool = specificReactions.length > 0 ? specificReactions : genericReactions;
-        
-        // Filtrage par intensité
-        const filteredReactions = reactionPool.filter(r => r.intensity <= intensity);
+    // Nouvelle logique avec délais progressifs
+    const DELAY_BETWEEN_REACTIONS = 500; // 500ms entre chaque réaction
+    reactingCharacters.forEach((character, index) => {
+        const timeout = setTimeout(() => {
+            const specificReactions = characterReactions[character]?.[eventType] || [];
+            const genericReactions = characterReactions[character]?.generic || [];
+            const reactionPool = specificReactions.length > 0 ? specificReactions : genericReactions;
+            
+            const filteredReactions = reactionPool.filter(r => r.intensity <= intensity);
 
-        if (filteredReactions.length > 0) {
-            const randomReaction = filteredReactions[
-                Math.floor(Math.random() * filteredReactions.length)
-            ];
-            addReaction(character, randomReaction.text);
-        }
+            if (filteredReactions.length > 0) {
+                const randomReaction = filteredReactions[
+                    Math.floor(Math.random() * filteredReactions.length)
+                ];
+                addReaction(character, randomReaction.text);
+            }
+        }, index * DELAY_BETWEEN_REACTIONS); // Délai croissant pour chaque réaction
+
+        reactionTimeouts.push(timeout);
     });
 }
 
