@@ -12,25 +12,25 @@ const playerOptions = {
     cauvin: [
         { 
             name: "Insulter l'arbitre", 
-            type: "enervement",
+            type: "ajout",
             description: "Crier 'Arbitre vendu !'",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
             name: "Se ronger les ongles", 
             description: "Se ronger les ongles nerveusement",
-            type: "panique",
+            type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
             name: "Vérifier le score cumulé", 
             description: "Calculer fébrilement le score global",
-            type: "humour",
+            type: "ajout",
             condition: () => true // Toujours disponible
         },
          { 
             name: "Changer de chaine", 
-            description: "J'en peux plus, je met Koh Lanta",
+            description: "J'en peux plus, je met top chef",
             type: "modifchaine",
             condition: () => true // Toujours disponible
         }
