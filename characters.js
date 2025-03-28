@@ -3,38 +3,92 @@
 import { barcaScore, selectedCharacter, gameFeed } from "./game.js";
 
 const characterReactions = {
-    cauvin: {
+cauvin: {
     'goal-barcelona': [
         {text: "NON ! PAS ENCORE EUX !", intensity: 20},
         {text: "On va revivre le cauchemar de 2017...", intensity: 40},
-        {text: "Je sens que je vais vomir...", intensity: 90}
+        {text: "Je sens que je vais vomir...", intensity: 90},
+        {text: "Bon, c’est juste un but… Juste un but…", intensity: 30},
+        {text: "On va pas commencer à trembler, hein ?", intensity: 50},
+        {text: "Non mais sérieux, c'est un cauchemar qui recommence !", intensity: 70},
+        {text: "Je veux juste rentrer chez moi...", intensity: 80},
+        {text: "Mais c’est un script FIFA ou quoi ?!", intensity: 85},
+        {text: "Je ne supporte plus de voir ce maillot blaugrana.", intensity: 95},
+        {text: "STOP ! QUELQU'UN COUPE LE SIGNAL TV !", intensity: 100}
     ],
     'goal-psg': [
         {text: "OUIIIIII !!! C'EST PAS FINI !", intensity: 50},
         {text: "ALLEZ PARIS, ON NE LÂCHE RIEN !", intensity: 20},
-        {text: "Cavani, je t’aime !", intensity: 80}
+        {text: "Cavani, je t’aime !", intensity: 80},
+        {text: "VOUS Y AVEZ CRU, BANDE DE HAINEUX !", intensity: 60},
+        {text: "Allez, encore un et c’est fini pour eux !", intensity: 70},
+        {text: "C’est bon, on respire, on est qualifiés !", intensity: 30},
+        {text: "FINISSONS LE TRAVAIL, PAS DE RELÂCHEMENT !", intensity: 40},
+        {text: "C’est la délivrance !", intensity: 75},
+        {text: "Vous êtes où les rageux, là ?", intensity: 85},
+        {text: "ON LEUR MARQUE UN CINQUIÈME ET ON RENTRE À LA MAISON !", intensity: 100}
     ],
     'penalty-barcelona': [
         {text: "Mais c'est quoi cette blague ?!", intensity: 20},
-        {text: "L’arbitre veut notre peau, c’est clair !", intensity: 60}
+        {text: "L’arbitre veut notre peau, c’est clair !", intensity: 60},
+        {text: "Non mais il y a VAR ou quoi ?!", intensity: 30},
+        {text: "Le football est truqué, c’est officiel.", intensity: 40},
+        {text: "J’en peux plus, je vais éteindre la télé…", intensity: 80},
+        {text: "Si Messi tire, c’est but, on est foutus.", intensity: 90},
+        {text: "Quelqu'un peut appeler l’UEFA ?!", intensity: 70},
+        {text: "Bon bah c’est comme en 2017…", intensity: 85},
+        {text: "Si ça rentre, je jette mon maillot.", intensity: 95},
+        {text: "L’arbitre est un vendu, j’en suis sûr !", intensity: 100}
     ],
     'card': [
         {text: "Enfin une décision qui va dans notre sens...", intensity: 20},
-        {text: "Il était temps !", intensity: 60}
+        {text: "Il était temps !", intensity: 60},
+        {text: "Allez, ça c’est bon pour nous !", intensity: 30},
+        {text: "Justice est faite !", intensity: 40},
+        {text: "Bon, au moins un arbitre qui ouvre les yeux.", intensity: 50},
+        {text: "Là, c’est carton, là c’est carton direct !", intensity: 65},
+        {text: "Je vais pleurer de joie.", intensity: 70},
+        {text: "Allez hop, dehors !", intensity: 80},
+        {text: "Maintenant, on doit tuer le match !", intensity: 85},
+        {text: "S’il y a un rouge, on peut souffler un peu…", intensity: 90}
     ],
     'missed-psg': [
         {text: "Mais c'est pas possible... Pourquoi moi ?", intensity: 20},
-        {text: "Je vais faire une crise cardiaque...", intensity: 70}
+        {text: "Je vais faire une crise cardiaque...", intensity: 70},
+        {text: "Non, non, non, NON !", intensity: 40},
+        {text: "Si on perd à cause de ça…", intensity: 50},
+        {text: "Mais tire fort, BORDEL !", intensity: 60},
+        {text: "C’est bon, c’est mort, on va le regretter.", intensity: 80},
+        {text: "Il y avait la place !", intensity: 85},
+        {text: "C’EST UN SCANDALE, ON DOIT MARQUER CES OCCASIONS !", intensity: 90},
+        {text: "Je vais m’exiler dans un monastère si on se fait remonter.", intensity: 95},
+        {text: "C’EST FINI. C’EST FINI.", intensity: 100}
     ],
     'embetercauvin': [
-        {text: "Vous êtes tellement relou...", intensity: 20},
-        {text: "Putain mais arrêtez !", intensity: 70}
+        {text: "Vous êtes tellement relous...", intensity: 20},
+        {text: "Putain mais arrêtez !", intensity: 70},
+        {text: "C’est pas drôle, sérieux !", intensity: 30},
+        {text: "Vous attendez que ça, hein ?", intensity: 40},
+        {text: "Vous êtes insupportables, je vous jure.", intensity: 50},
+        {text: "Allez tous vous faire voir.", intensity: 60},
+        {text: "Vous avez rien d’autre à faire ?", intensity: 80},
+        {text: "Je vais vous muter, c’est bon.", intensity: 90},
+        {text: "Je quitte ce groupe, je vous déteste.", intensity: 95},
+        {text: "Laissez-moi en paix, je suis en deuil.", intensity: 100}
     ],
     'humour': [
-        {text: "Pfff, non mais je suis pas serein là ", intensity: 20},
-        {text: "Mais c'est pas drôle, c'est pas possible !", intensity: 70}
+        {text: "Pfff, non mais je suis pas serein là.", intensity: 20},
+        {text: "Mais c'est pas drôle, c'est pas possible !", intensity: 70},
+        {text: "Vous avez une caméra cachée, c’est ça ?", intensity: 30},
+        {text: "La vie d’un supporter parisien, c’est que de la souffrance.", intensity: 40},
+        {text: "On a tous nos traumatismes, moi c’est Barcelone.", intensity: 50},
+        {text: "Le PSG, c’est une relation toxique.", intensity: 60},
+        {text: "Je crois que je vais postuler pour être moine au Tibet.", intensity: 80},
+        {text: "En vrai, je devrais juste supporter Guingamp, moins de stress.", intensity: 85},
+        {text: "Un jour, on gagnera la LDC… Un jour.", intensity: 90},
+        {text: "J’ai vu des feuilletons brésiliens avec moins de drame.", intensity: 100}
     ]
-    },
+},
 jeanphi: {
     'goal-barcelona': [
         {text: "Oh, mais quel suspense insoutenable ! *rire*", intensity: 20},
