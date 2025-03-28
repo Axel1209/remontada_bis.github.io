@@ -163,29 +163,68 @@ jeanphi: {
         {text: "Cauvin, fais pas de bêtises. Y'a toujours l'Europa League... Ah non, même pas.", intensity: 90}
     ]
 },
-    etienne: {
+etienne: {
     'goal-barcelona': [
         {text: "Encore une erreur de placement défensif, c'est frustrant.", intensity: 20},
         {text: "Le milieu ne suit pas, c'était prévisible...", intensity: 60},
-        {text: "La transition défensive est catastrophique.", intensity: 90}
+        {text: "La transition défensive est catastrophique.", intensity: 90},
+        {text: "Mais pourquoi personne ne coupe la passe ?!", intensity: 30},
+        {text: "C’est bien beau d’avoir le ballon, mais défendez un peu !", intensity: 40},
+        {text: "Toujours le même problème sur les seconds ballons.", intensity: 50},
+        {text: "Une défense alignée comme ça, c’est une invitation au but.", intensity: 70},
+        {text: "Ah, le marquage individuel, concept inconnu à Paris...", intensity: 80},
+        {text: "Même Juni à 40 ans aurait mieux géré ça.", intensity: 85},
+        {text: "C'est trop facile, ils défendent comme une équipe de district.", intensity: 100}
     ],
     'goal-psg': [
         {text: "Bonne construction, belle finition.", intensity: 20},
-        {text: "Enfin une action bien exécutée !", intensity: 80}
+        {text: "Enfin une action bien exécutée !", intensity: 80},
+        {text: "C’est propre, rien à dire.", intensity: 30},
+        {text: "Là, ils ont bien étiré le bloc adverse.", intensity: 40},
+        {text: "C’est rare de voir Paris jouer simple et efficace.", intensity: 50},
+        {text: "Ça, c’est une vraie action de classe.", intensity: 60},
+        {text: "Bien joué, mais je suis sûr que Lacazette l’aurait mise aussi.", intensity: 70},
+        {text: "C’est quand même plus beau qu’un vieux péno sifflé pour Neymar.", intensity: 85},
+        {text: "Enfin une phase de jeu digne d’un grand d’Europe !", intensity: 90},
+        {text: "Bon, même Genesio aurait applaudi celle-là.", intensity: 100}
     ],
     'penalty-barcelona': [
         {text: "Trop d'erreurs individuelles, c'est puni.", intensity: 20},
-        {text: "Faut revoir les placements défensifs.", intensity: 90}
+        {text: "Faut revoir les placements défensifs.", intensity: 90},
+        {text: "Encore un pressing mal coordonné qui finit en faute...", intensity: 30},
+        {text: "Sérieux, vous voulez leur donner la qualif ?!", intensity: 40},
+        {text: "Le défenseur est en retard, pénalty indiscutable.", intensity: 50},
+        {text: "Toujours cette naïveté défensive incroyable.", intensity: 60},
+        {text: "À ce niveau, c’est impardonnable.", intensity: 70},
+        {text: "C’est digne des relances foireuses de Mapou Yanga-Mbiwa, ça...", intensity: 80},
+        {text: "Paris dans la gestion d’un match, c’est comme un enfant avec un château de sable.", intensity: 95},
+        {text: "Encore un peno concédé… bientôt ils vont battre le record de Marcelo.", intensity: 100}
     ],
     'card': [
         {text: "Intervention maladroite, carton logique.", intensity: 20},
-        {text: "L'équipe doit rester disciplinée.", intensity: 70}
+        {text: "L'équipe doit rester disciplinée.", intensity: 70},
+        {text: "Encore une faute bête qui leur coûte cher.", intensity: 30},
+        {text: "Franchement, c’est mérité.", intensity: 40},
+        {text: "Il a confondu pressing et karaté, c'est malin.", intensity: 50},
+        {text: "Tant mieux, ça équilibre un peu.", intensity: 60},
+        {text: "Même chez les jeunes de l’OL, on apprend à défendre mieux que ça.", intensity: 80},
+        {text: "Ça devient n’importe quoi, bientôt ils vont finir à 8.", intensity: 85},
+        {text: "Il va falloir s’accrocher maintenant...", intensity: 90},
+        {text: "Bon bah, ils vont encore pleurer sur l’arbitrage.", intensity: 100}
     ],
     'missed-psg': [
         {text: "Manque de lucidité devant le but.", intensity: 20},
-        {text: "Mauvais choix de frappe, dommage.", intensity: 70}
+        {text: "Mauvais choix de frappe, dommage.", intensity: 70},
+        {text: "Il faut lever la tête et ajuster, c'est pas compliqué.", intensity: 30},
+        {text: "Techniquement, il la prend mal, ça se voit.", intensity: 40},
+        {text: "Avec un vrai attaquant, ça fait but 9 fois sur 10.", intensity: 50},
+        {text: "Encore une occasion gâchée, ils vont s’en mordre les doigts.", intensity: 60},
+        {text: "Là, un Benzema ou un Sonny Anderson, c’est au fond.", intensity: 75},
+        {text: "On peut pas être aussi maladroit devant le but à ce niveau.", intensity: 85},
+        {text: "C’est le genre d’action où tu sais que tu vas regretter à la 90e.", intensity: 95},
+        {text: "Et après, ils vont dire que c’est pas mental...", intensity: 100}
     ]
-    },
+},
     renaud: {
     'goal-barcelona': [
         {text: "Paris qui se fait punir, quel plaisir !", intensity: 20},
