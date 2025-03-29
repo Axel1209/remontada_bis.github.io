@@ -162,7 +162,28 @@ jeanphi: {
         {text: "J’espère que t’as pas parié sur Paris, sinon c’est dur...", intensity: 40},
         {text: "Je connais cette tête... Celle du supporter qui comprend que c’est fini.", intensity: 85},
         {text: "Et là, on est en mode ‘On va se battre jusqu’à la fin !’ Spoiler : non.", intensity: 75},
-        {text: "Cauvin, fais pas de bêtises. Y'a toujours l'Europa League... Ah non, même pas.", intensity: 90}
+        {text: "Cauvin, fais pas de bêtises. Y'a toujours l'Europa League... Ah non, même pas.", intensity: 90},
+    {text: "C’est marrant, vous croyez vraiment que cette équipe va gagner quelque chose ?", intensity: 0},
+    {text: "Encore une défaite en Ligue des Champions ? C’est devenu une habitude.", intensity: 10},
+    {text: "J’ai vu des matchs de foot plus intéressants que PSG-Guingamp.", intensity: 20},
+    {text: "C’est fou comme vous arrivez toujours à trouver des excuses.", intensity: 30},
+    {text: "Franchement, un PSG sans Neymar, c’est comme un burger sans frites.", intensity: 35},
+    {text: "Ce club est une vraie blague, vous êtes sérieux à le défendre ?", intensity: 40},
+    {text: "D’un côté, c’est bien de voir que l’argent ne fait pas tout.", intensity: 45},
+    {text: "Vous avez quand même l’air à fond pour une équipe qui a pas de LDC...", intensity: 50},
+    {text: "Ce n’est même plus de l’espoir, c’est de l’aveuglement.", intensity: 55},
+    {text: "Un PSG qui ne gagne pas la LDC, c’est comme un Noël sans cadeaux.", intensity: 60},
+    {text: "Je vous admire, vous continuez à croire en eux malgré tout ça.", intensity: 65},
+    {text: "Quand tu vois l’argent investi et que t’as rien en retour, c’est triste.", intensity: 70},
+    {text: "C’est sûr, l’argent c’est la clé pour devenir une équipe légendaire… Oh wait.", intensity: 75},
+    {text: "Et dire que vous vous appelez ‘les rois de la capitale’. C’est une blague ?", intensity: 80},
+    {text: "Le PSG, c’est une série à suspense... mais sans fin heureuse.", intensity: 85},
+    {text: "Il faudrait peut-être revoir le concept de ‘gagner’ dans ce club.", intensity: 90},
+    {text: "À force de se prendre des raclées, ça devient une tradition chez vous.", intensity: 95},
+    {text: "J’en ai marre d’entendre parler de cette équipe, c’est de l’auto-sabotage.", intensity: 100},
+    {text: "Allez, un jour peut-être, la LDC… mais pas avant 10 ans à ce rythme.", intensity: 105},
+    {text: "Franchement, on dirait que vous êtes abonnés à l’humiliation européenne.", intensity: 110}
+]
     ]
 },
 etienne: {
