@@ -248,7 +248,27 @@ etienne: {
         {text: "On peut pas être aussi maladroit devant le but à ce niveau.", intensity: 85},
         {text: "C’est le genre d’action où tu sais que tu vas regretter à la 90e.", intensity: 95},
         {text: "Et après, ils vont dire que c’est pas mental...", intensity: 100}
-    ]
+    ],
+    ajout: [
+    {text: "C'est quoi ce PSG ? C'est même plus drôle à regarder.", intensity: 0},
+    {text: "Vous savez, l'OL arrive à faire mieux avec beaucoup moins d'argent. C’est assez incroyable.", intensity: 10},
+    {text: "Ah, vous avez perdu encore une fois en LDC... Vous commencez à ressembler à une série à suspense sans fin.", intensity: 20},
+    {text: "Franchement, vous avez plus de chances de voir Kevin Mayer courir un 100m en 9 secondes que le PSG gagner la LDC.", intensity: 25},
+    {text: "Encore un match où vous avez été totalement dépassés tactiquement, bravo.", intensity: 30},
+    {text: "L’OL n’a pas besoin de Messi pour être plus solide que vous. Vous êtes en train de vous ridiculiser.", intensity: 40},
+    {text: "Le PSG a-t-il une tactique, ou est-ce juste de l’improvisation ?", intensity: 45},
+    {text: "Sérieusement, même Kevin Mayer pourrait mieux organiser vos transitions offensives.", intensity: 50},
+    {text: "Et dire qu'on vous appelle la ‘meilleure équipe de France’, on dirait plus une équipe de débutants.", intensity: 55},
+    {text: "L'OL vous montre comment jouer au football, et vous êtes là à vous vautrer.", intensity: 60},
+    {text: "Quand tu vois l'OL jouer et toi, tu te dis que le PSG n’a même pas de plan de jeu, c’est un peu flippant.", intensity: 70},
+    {text: "C’est comme si Kevin Mayer avait une meilleure gestion du jeu que vous, c’est pas possible.", intensity: 75},
+    {text: "L'OL a plus de tactique en un match que vous en toute une saison européenne. Vous vous êtes perdus, non ?", intensity: 80},
+    {text: "Même les tactiques de l’OL semblent plus créatives que ce que vous proposez. C'est un vrai désastre.", intensity: 85},
+    {text: "Votre défense, c'est comme un château de cartes, et l'OL vous regarde vous effondrer.", intensity: 90},
+    {text: "C’est clair, l'OL a plus de cohésion dans son jeu que vous dans toute une saison. Une honte.", intensity: 95},
+    {text: "C'est bon, j'ai compris, vous êtes là pour divertir, pas pour gagner. En attendant, l'OL vous écrase.", intensity: 100},
+    {text: "Franchement, l’OL serait capable de vous écraser tactiquement même avec Kevin Mayer en tant qu’entraîneur. Vous êtes ridicules.", intensity: 105}
+]
 },
 renaud: {
     'goal-barcelona': [
