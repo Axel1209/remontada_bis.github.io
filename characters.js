@@ -332,7 +332,28 @@ renaud: {
         {text: "Ce raté résume tout : Paris en Ligue des Champions.", intensity: 90},
         {text: "Mais non, continuez comme ça, c'est super !", intensity: 95},
         {text: "Une frappe plus molle que les finances de Bordeaux.", intensity: 100}
-    ]
+    ],
+    ajout: [
+    {text: "Franchement, si l'OM a pu gagner la Ligue des Champions, vous pouvez bien réussir à gagner un match contre n'importe qui.", intensity: 0},
+    {text: "J'crois qu'un fan de l'OM a plus de chances de voir son équipe remporter la LDC que vous.", intensity: 10},
+    {text: "L'OM a gagné la Ligue des Champions... et vous, vous galérez contre des équipes plus faibles.", intensity: 20},
+    {text: "Vous vous croyez meilleurs que l'OM, mais eux, au moins, ils ont une LDC dans leur histoire.", intensity: 25},
+    {text: "Franchement, si l'OM a gagné la Ligue des Champions, pourquoi pas vous, hein ? Oh wait…", intensity: 30},
+    {text: "J’ai vu plus de tactique dans un match de pétanque que dans votre équipe ce soir.", intensity: 35},
+    {text: "L’OM en 1993, c'était un miracle, mais vous, même avec tous vos milliards, vous arrivez à ne rien faire.", intensity: 40},
+    {text: "Si l’OM a pu gagner la LDC avec un équipe moins forte que la vôtre, faut peut-être réfléchir à vos stratégies.", intensity: 50},
+    {text: "Je suis sûr qu’un groupe d’amis de l’OM pourrait faire mieux que votre défense ce soir.", intensity: 55},
+    {text: "Franchement, même les supporters de l'OM ne se moquent pas autant de vous... Enfin, presque.", intensity: 60},
+    {text: "L’OM a gagné la LDC avec un jeu ultra défensif… et vous, vous êtes censés être une machine à goals, mais vous coulez.", intensity: 65},
+    {text: "Je suis certain que même les joueurs de l’OM feraient mieux sur ce terrain… et ils n’ont même pas de Neymar.", intensity: 70},
+    {text: "Je vous jure, même l’OM aurait trouvé un moyen de gagner avec l’équipe que vous avez ce soir. Ou au moins d’être un peu moins pathétiques.", intensity: 75},
+    {text: "Le PSG en LDC, c’est comme un chat qui essaie d’attraper un laser : ça court dans tous les sens, mais ça ne capte jamais rien.", intensity: 80},
+    {text: "Sérieusement, vous êtes là à pleurer, mais l’OM a gagné la LDC, alors que vous, vous n’avez rien à vous mettre sous la dent.", intensity: 85},
+    {text: "Quand l’OM a remporté la LDC, c’était tout un continent qui tremblait. Vous, vous faites juste pleurer vos supporters.", intensity: 90},
+    {text: "Vous vous dites ‘on va tout déchirer’, mais en réalité, c’est comme si un dauphin essayait de jouer au rugby.", intensity: 95},
+    {text: "Franchement, même l'OM en 1993 avait plus de cohésion que vous ce soir. La honte.", intensity: 100},
+    {text: "Le PSG en Ligue des Champions, c’est comme un spectacle de magie où le magicien oublie de sortir le lapin du chapeau.", intensity: 105}
+]
 },
 dimitri: {
     'goal-barcelona': [
