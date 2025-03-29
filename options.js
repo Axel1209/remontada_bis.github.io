@@ -184,7 +184,7 @@ function displayActions(event) {
         displayTopChefImage(); // Appel externalisé
             }
             
-   addNPCReaction(action.type, {type :action.type}, currentIntensity);
+   addNPCReaction(action.type, { type : action.type}, currentIntensity);
         });
 
         optionsContainer.appendChild(button);
