@@ -417,7 +417,29 @@ dimitri: {
         {text: "Les expected excuses (xE) de l’entraîneur après le match viennent d’augmenter.", intensity: 85},
         {text: "Ce raté = -4 % de confiance collective.", intensity: 95},
         {text: "Une frappe plus molle que la défense de Bordeaux en 2022.", intensity: 100}
-    ]
+    ],
+    ajout: [
+    {text: "Franchement, à ce rythme, vous allez finir la saison avec plus de défaites que de victoires.", intensity: 0},
+    {text: "À force de perdre des points comme ça, vous allez bientôt rivaliser avec les équipes de bas de tableau.", intensity: 10},
+    {text: "Sur les 5 derniers matchs, vous avez plus de cartons rouges que de buts inscrits. C’est quand même inquiétant.", intensity: 20},
+    {text: "Vous avez plus de chances d’obtenir un penalty que de marquer un but sur un contre. C’est dire le niveau.", intensity: 25},
+    {text: "Le PSG a touché plus de fois la barre transversale que la ligne de but cette saison... un vrai exploit.", intensity: 30},
+    {text: "Avec votre défense, on dirait une équipe amateur. Vous encaissez en moyenne 1.5 buts par match depuis 5 matchs.", intensity: 35},
+    {text: "C'est comme si vous jouiez sans gardien. Ah, attendez... vous avez Donnarumma, pourtant.", intensity: 40},
+    {text: "Franchement, avec les statistiques actuelles, il vaut mieux parier sur une victoire de Guingamp que sur le PSG en Ligue des Champions.", intensity: 45},
+    {text: "Le PSG a marqué en moyenne 2.3 buts par match cette saison, mais apparemment, ça ne suffit même pas à passer les 8èmes.", intensity: 50},
+    {text: "C’est fou comme votre tactique ne suit même pas les données. Vous avez 65% de possession et vous perdez quand même.", intensity: 55},
+    {text: "Quand tu regardes les stats de votre attaque et que tu réalises qu’elle est moins efficace que celle d’une équipe de Ligue 2.", intensity: 60},
+    {text: "À ce rythme, avec 5 tirs cadrés sur 20, même une équipe d’amateurs aurait plus de chance de marquer.", intensity: 65},
+    {text: "Je vous jure, vos statistiques de passes sont aussi fiables qu’une montre cassée. Toujours à côté de la plaque.", intensity: 70},
+    {text: "Depuis le début de la saison, vous avez plus de buts contre votre camp que de victoires en LDC. Ça en dit long.", intensity: 75},
+    {text: "C’est comme si vous jouiez à 10 contre 11 à chaque match, même avec vos superstars. Et ça ne va pas changer de sitôt.", intensity: 80},
+    {text: "Avec vos 80% de possession et 0 buts inscrits, vous êtes en train de réécrire l’histoire... mais de la mauvaise façon.", intensity: 85},
+    {text: "Même avec un budget 3 fois supérieur à celui des autres clubs, vous arrivez à faire pire que l’équipe du coin.", intensity: 90},
+    {text: "Il serait peut-être temps de revoir votre stratégie. Vous avez plus de buts encaissés que de victoires depuis la reprise.", intensity: 95},
+    {text: "D’un point de vue statistique, c’est clair : vous êtes la meilleure équipe… pour donner de l’espoir, puis tout gâcher.", intensity: 100},
+    {text: "À ce niveau, vous devriez envisager d’investir dans un bon statisticien pour vous apprendre à gagner des matchs.", intensity: 105}
+]
 },
 bastien: {
     'goal-barcelona': [
