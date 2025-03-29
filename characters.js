@@ -503,7 +503,28 @@ bastien: {
         {text: "C’est plus un match de foot, c’est un best-of des occasions ratées.", intensity: 90},
         {text: "Si rater des occasions était un sport olympique, la France aurait l’or chaque année.", intensity: 95},
         {text: "Des frappes qui finissent au 3e étage… on sent la patte française.", intensity: 100}
-    ]
+    ],
+    ajout: [
+    {text: "Franchement, à ce rythme, la Coupe d'Europe, c'est juste une promenade pour les autres équipes.", intensity: 0},
+    {text: "Encore une année où les clubs français ne feront même pas les quarts de finale. C’est presque une tradition.", intensity: 10},
+    {text: "Vous jouez en Coupe d'Europe comme si c’était un tournoi de pré-saison. Sérieusement, ça ne va jamais changer.", intensity: 20},
+    {text: "Les clubs français en Coupe d’Europe, c’est un peu comme une équipe de foot amateur qui rêve de jouer la finale de la Champions League.", intensity: 25},
+    {text: "C’est marrant, les clubs français sont là pour participer, mais pas pour gagner. Vous êtes déjà en vacances, c’est ça ?", intensity: 30},
+    {text: "Là, vous perdez contre des équipes qui sont même pas favorites. Sérieusement, vous pensez toujours pouvoir concurrencer les géants européens ?", intensity: 40},
+    {text: "Les clubs français en Coupe d'Europe, c'est un peu comme un chat qui essaie de jouer au foot : ils sont mignons, mais ça ne mène nulle part.", intensity: 45},
+    {text: "Chaque année, c'est la même chose : des clubs français qui espèrent, mais qui se font éliminer comme des amateurs.", intensity: 50},
+    {text: "L’année dernière, les clubs français ont été éliminés dès les 8èmes... Ah non, j'me trompe, il n'y en avait même pas.", intensity: 55},
+    {text: "C’est dingue, même des clubs de petite taille en Europe arrivent à surpasser vos équipes, et ça arrive chaque année.", intensity: 60},
+    {text: "Les clubs français en Coupe d’Europe, c’est comme un feu de paille : ça commence fort, puis ça se dissipe rapidement.", intensity: 65},
+    {text: "C'est fou, vous êtes presque plus proches de la relégation que de la qualification en quarts. Une vraie blague.", intensity: 70},
+    {text: "Les clubs français en Coupe d'Europe, c'est comme un épisode de série sans fin, où tout le monde perd à la fin. Mais vous y croyez encore.", intensity: 75},
+    {text: "Franchement, la Coupe d'Europe c'est devenu votre terrain d'entraînement. Vous y allez pour perdre et ça fait presque pitié.", intensity: 80},
+    {text: "La Ligue des Champions sans un club français en quart ? C’est devenu un classique. Vous arrivez à chaque fois à nous décevoir.", intensity: 85},
+    {text: "Les clubs français en Europe, c’est un peu comme un piège à touristes : tout le monde y passe, mais personne ne va au bout.", intensity: 90},
+    {text: "Même quand vous avez une équipe qui peut prétendre au titre, vous trouvez un moyen de tout foutre en l'air en huitièmes.", intensity: 95},
+    {text: "On dirait que les clubs français sont abonnés aux éliminations en Coupe d'Europe. C’est triste, mais au moins c’est prévisible.", intensity: 100},
+    {text: "Vous vous qualifiez, mais c’est juste pour avoir l’honneur de perdre face à une équipe espagnole ou anglaise. C’est devenu votre rôle.", intensity: 105}
+]
 },
 axel: {
     'goal-barcelona': [
@@ -567,7 +588,27 @@ axel: {
         {text: "C’est officiel, même mon grand-père aurait marqué celui-là.", intensity: 90},
         {text: "On en est au niveau où même Federer en revers lifté aurait plus de réussite.", intensity: 95},
         {text: "Je propose qu’on annule les cages et qu’on fasse un concours de passes.", intensity: 100}
-    ]
+    ],
+    ajout: [
+    {text: "Franchement, si vous aviez la précision de Federer dans ses coups droits, vous seriez déjà qualifiés pour les quarts.", intensity: 0},
+    {text: "Même Federer sur son déclin aurait plus de chance de remporter la Ligue des Champions que vous cette année.", intensity: 10},
+    {text: "Si vous jouiez avec la régularité de Fourcade en biathlon, vous passeriez les phases de groupes sans souci.", intensity: 20},
+    {text: "Franchement, avec un mental comme celui de Federer, vous seriez déjà en finale de la Ligue des Champions.", intensity: 25},
+    {text: "C’est comme si vous couriez avec les pieds liés, alors que Fourcade court pour l’or avec son biathlon. Où est la cohésion ?", intensity: 30},
+    {text: "Si votre équipe avait la précision de Fourcade sur la cible, vous feriez au moins 5-0 à chaque match en Coupe d'Europe.", intensity: 40},
+    {text: "Avec la concentration de Federer lors de ses matchs importants, vous seriez déjà dans le dernier carré de la Ligue des Champions.", intensity: 50},
+    {text: "Les clubs français en Coupe d’Europe, c’est un peu comme voir Federer perdre à Wimbledon : une surprise, mais aussi une déception.", intensity: 55},
+    {text: "Si votre équipe avait la constance de Fourcade en Coupe du Monde, vous seriez en train de jouer la finale européenne, pas en train de pleurer.", intensity: 60},
+    {text: "Franchement, même Federer à 40 ans aurait plus de chance de gagner la LDC que vous, avec toute votre équipe de stars.", intensity: 65},
+    {text: "Fourcade a le mental pour tenir tête aux plus grands, et vous, vous ne tenez même pas 90 minutes face à une équipe européenne moyenne.", intensity: 70},
+    {text: "Vous devriez peut-être suivre l'exemple de Federer : travail, mental et précision. Parce que là, c’est un peu la pagaille.", intensity: 75},
+    {text: "Avec la régularité de Fourcade, vous seriez déjà en quarts. Mais non, vous préférez vous effondrer au moindre obstacle.", intensity: 80},
+    {text: "Même Federer a su rebondir après ses défaites. Vous, vous n’arrivez même pas à vous relever après un match nul.", intensity: 85},
+    {text: "Fourcade, il ne baisse jamais les bras, même après des échecs. C’est dommage que vos joueurs ne montrent pas la même détermination.", intensity: 90},
+    {text: "Si vous aviez la mentalité de Federer sur un grand match, vous seriez au sommet de l’Europe. Mais vous préférez plier dès les 8èmes.", intensity: 95},
+    {text: "Regardez Fourcade : il ne perd jamais espoir, même dans les moments difficiles. C’est peut-être ce qui manque à votre équipe.", intensity: 100},
+    {text: "Avec l'attitude de Federer, vous n'auriez pas seulement survécu à la phase de groupes, vous seriez en train de dominer l'Europe.", intensity: 105}
+]
 }
 };
 
