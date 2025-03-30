@@ -3,6 +3,7 @@ import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
 import { displayTopChefImage } from "./animation.js";
+import { TransferDockGame } from './transfer-dock.js';
 
 let currentEvent;
 
@@ -181,7 +182,18 @@ function displayActions(event) {
             const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
 
             if (action.name === "Changer de chaine" && selectedCharacter === "cauvin") {
-        displayTopChefImage(); // Appel externalisé
+        const game = new TransferDockGame(
+    () => { // Success
+        displayTopChefImage();
+        game.destroy();
+    },
+    () => { // Fail
+        const feed = document.getElementById('game-feed');
+        feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Retour au match...</div>');
+        game.destroy();
+    }
+);
+game.start();
             }
             
    addNPCReaction(action.type, { type : action.type}, currentIntensity);
