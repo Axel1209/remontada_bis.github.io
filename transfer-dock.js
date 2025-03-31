@@ -69,6 +69,7 @@ export class TransferDockGame {
             height: 100%;
             background-color: black;
             display: none;
+            z-index: 1;
         }
         #player {
             position: absolute;
@@ -77,6 +78,7 @@ export class TransferDockGame {
             background-color: blue;
             border-radius: 50%;
             touch-action: none;
+            z-index: 10;
         }
         .enemy {
             position: absolute;
@@ -89,6 +91,7 @@ export class TransferDockGame {
             align-items: center;
             color: white;
             font-size: 12px;
+            z-index: 10;
         }
         #remote {
             position: absolute;
@@ -96,6 +99,7 @@ export class TransferDockGame {
             height: 25px;
             background-color: gray;
             border-radius: 15px;
+            z-index: 10;
         }
         #score {
             position: absolute;
