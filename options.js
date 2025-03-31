@@ -44,8 +44,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
@@ -64,8 +64,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
@@ -84,8 +84,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
@@ -104,8 +104,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
@@ -124,8 +124,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
@@ -144,8 +144,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
-            name: "Embêter Cauvin", 
-            description: "Péter sur Cauvin",
+            name: "Proposer un replay à Cauvin", 
+            description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
