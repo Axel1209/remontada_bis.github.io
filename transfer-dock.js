@@ -10,159 +10,339 @@ export class TransferDockGame {
         this.container = document.createElement('div');
         this.container.id = 'transfer-dock-container';
         this.container.innerHTML = `
-            <style>
-                #transfer-dock-container {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: white;
-                    z-index: 10000;
-                    touch-action: none;
-                }
-                
-                #td-start-screen {
-                    padding: 20px;
-                    text-align: center;
-                }
-                
-                .td-game-element {
-                    position: absolute;
-                    touch-action: none;
-                    user-select: none;
-                }
-                
-                #td-player {
-                    width: 50px;
-                    height: 50px;
-                    background: blue;
-                    border-radius: 50%;
-                }
-                
-                .td-enemy {
-                    width: 50px;
-                    height: 50px;
-                    background: red;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                }
-            </style>
+                <style>
+        * {
+            touch-action: none;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overscroll-behavior: contain;
+        }
+        #start-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1000;
+        }
+        #start-screen h1 {
+            color: #333;
+        }
+        #start-screen p {
+            max-width: 80%;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        #start-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #game-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: none;
+        }
+        #player {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            touch-action: none;
+        }
+        .enemy {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 12px;
+        }
+        #remote {
+            position: absolute;
+            width: 50px;
+            height: 25px;
+            background-color: gray;
+            border-radius: 15px;
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            z-index: 10;
+        }
+        #game-over {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1000;
+        }
+        #game-over h2 {
+            margin-bottom: 20px;
+        }
+        #restart-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
             
-            <div id="td-start-screen">
-                <h1>Changement de Chaîne</h1>
-                <p>Attrapez la télécommande pour échapper au match !</p>
-                <button id="td-start-button">Démarrer</button>
-            </div>
-            
-            <div id="td-game-container" style="display: none;">
-                <div id="td-score">Score: 0</div>
-                <div id="td-player" class="td-game-element"></div>
-                <div id="td-remote" class="td-game-element" style="width: 50px; height: 25px; background: grey;"></div>
-            </div>
+    <!-- Écran de démarrage -->
+    <div id="start-screen">
+        <h1>Jeu de la Télécommande</h1>
+        <p>Règles du jeu :</p>
+        <ul style="text-align: left; max-width: 80%;">
+            <li>Attrapez la télécommande grise pour gagner des points</li>
+            <li>Évitez les ronds rouges qui vous poursuivent</li>
+            <li>Déplacez votre cercle bleu en le glissant</li>
+            <li>Si un rond rouge vous touche, la partie est terminée</li>
+        </ul>
+        <button id="start-button">Commencer</button>
+    </div>
+    <!-- Conteneur de jeu -->
+    <div id="game-container">
+        <div id="score">Score: 0</div>
+        <div id="player">Cauvin</div>
+        <div id="remote"></div>
+        <div id="game-over">
+            <h2>Partie terminée !</h2>
+            <p id="final-score">Votre score : 0</p>
+            <button id="restart-button">Recommencer</button>
+        </div>
+    </div>
         `;
     }
 
     start() {
         document.body.appendChild(this.container);
         
-        // Éléments du jeu
-        const startButton = this.container.querySelector('#td-start-button');
-        const gameContainer = this.container.querySelector('#td-game-container');
-        const player = this.container.querySelector('#td-player');
-        const remote = this.container.querySelector('#td-remote');
-        const scoreDisplay = this.container.querySelector('#td-score');
+  // Sélection des éléments principaux
+        const startScreen = document.getElementById('start-screen');
+        const gameContainer = document.getElementById('game-container');
+        const player = document.getElementById('player');
+        const remote = document.getElementById('remote');
+        const scoreDisplay = document.getElementById('score');
+        const gameOverScreen = document.getElementById('game-over');
+        const finalScoreDisplay = document.getElementById('final-score');
+        const startButton = document.getElementById('start-button');
+        const restartButton = document.getElementById('restart-button');
         
-        // Variables d'état
+        let playerX, playerY;
         let score = 0;
         let enemies = [];
-        let isDragging = false;
-        let playerX = 0, playerY = 0;
-        
-        // Initialisation
-        startButton.addEventListener('click', () => {
-            this.container.querySelector('#td-start-screen').style.display = 'none';
+        let gameOver = false;
+        const PLAYER_SIZE = 50;
+        const ENEMY_SIZE = 50;
+        const REMOTE_WIDTH = 50;
+        const REMOTE_HEIGHT = 25;
+        const enemyNames = ["Axel", "Jean phi", "Renaud", "Étienne", "Dimitri", "Bastien"];
+
+        function initGame() {
+            startScreen.style.display = 'none';
             gameContainer.style.display = 'block';
+            gameOverScreen.style.display = 'none';
+            
+            const container = gameContainer.getBoundingClientRect();
+            playerX = container.width / 2 - PLAYER_SIZE / 2;
+            playerY = container.height / 2 - PLAYER_SIZE / 2;
+            player.style.left = `${playerX}px`;
+            player.style.top = `${playerY}px`;
+            
+            enemyNames.forEach(name => createEnemy(name));
+            placeRemote();
+            
+            score = 0;
+            scoreDisplay.textContent = 'Score: 0';
+            gameOver = false;
+            
+            let isDragging = false;
+            let offsetX, offsetY;
+            
+            player.addEventListener('touchstart', (e) => {
+                if (gameOver) return;
+                const touch = e.touches[0];
+                const rect = player.getBoundingClientRect();
+                offsetX = touch.clientX - rect.left;
+                offsetY = touch.clientY - rect.top;
+                isDragging = true;
+            });
+
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging || gameOver) return;
+                const touch = e.touches[0];
+                playerX = touch.clientX - offsetX;
+                playerY = touch.clientY - offsetY;
+                
+                const containerRect = gameContainer.getBoundingClientRect();
+                playerX = Math.max(0, Math.min(playerX, containerRect.width - PLAYER_SIZE));
+                playerY = Math.max(0, Math.min(playerY, containerRect.height - PLAYER_SIZE));
+                
+                player.style.left = `${playerX}px`;
+                player.style.top = `${playerY}px`;
+            });
+
+            document.addEventListener('touchend', () => isDragging = false);
+            
+            function gameLoop() {
+                if (gameOver) return;
+                updateEnemies();
+                checkRemoteCapture();
+                requestAnimationFrame(gameLoop);
+            }
+            gameLoop();
+        }
+
+        function createEnemy(name) {
+            const enemy = document.createElement('div');
+            enemy.className = 'enemy';
+            enemy.textContent = name;
+            
+            const container = gameContainer.getBoundingClientRect();
+            const side = Math.floor(Math.random() * 4);
+            let startX, startY;
+            
+            switch(side) {
+                case 0: 
+                    startX = Math.random() * (container.width - ENEMY_SIZE);
+                    startY = -ENEMY_SIZE;
+                    break;
+                case 1: 
+                    startX = Math.random() * (container.width - ENEMY_SIZE);
+                    startY = container.height;
+                    break;
+                case 2: 
+                    startX = -ENEMY_SIZE;
+                    startY = Math.random() * (container.height - ENEMY_SIZE);
+                    break;
+                case 3: 
+                    startX = container.width;
+                    startY = Math.random() * (container.height - ENEMY_SIZE);
+                    break;
+            }
+            
+            enemy.style.left = `${startX}px`;
+            enemy.style.top = `${startY}px`;
+            gameContainer.appendChild(enemy);
+            enemies.push({ element: enemy, x: startX, y: startY });
+        }
+
+        function updateEnemies() {
+            const container = gameContainer.getBoundingClientRect();
+            enemies.forEach(enemy => {
+                const dx = playerX - enemy.x;
+                const dy = playerY - enemy.y;
+                const distance = Math.hypot(dx, dy);
+                if (distance === 0) return;
+                
+                const speed = 0.9;
+                let velocityX = (dx / distance) * speed;
+                let velocityY = (dy / distance) * speed;
+                
+                const nextX = enemy.x + velocityX;
+                const nextY = enemy.y + velocityY;
+                
+                if (nextX < 0 || nextX + ENEMY_SIZE > container.width) {
+                    velocityX = -velocityX;
+                }
+                if (nextY < 0 || nextY + ENEMY_SIZE > container.height) {
+                    velocityY = -velocityY;
+                }
+                
+                enemy.x += velocityX;
+                enemy.y += velocityY;
+                
+                enemy.x = Math.max(0, Math.min(enemy.x, container.width - ENEMY_SIZE));
+                enemy.y = Math.max(0, Math.min(enemy.y, container.height - ENEMY_SIZE));
+                
+                enemy.element.style.left = `${enemy.x}px`;
+                enemy.element.style.top = `${enemy.y}px`;
+                
+                if (checkCollision(playerX, playerY, PLAYER_SIZE, PLAYER_SIZE, 
+                                   enemy.x, enemy.y, ENEMY_SIZE, ENEMY_SIZE)) {
+                    endGame();
+                }
+            });
+        }
+
+        function placeRemote() {
+            const container = gameContainer.getBoundingClientRect();
+            remote.style.left = `${Math.random() * (container.width - REMOTE_WIDTH)}px`;
+            remote.style.top = `${Math.random() * (container.height - REMOTE_HEIGHT)}px`;
+        }
+
+        function checkRemoteCapture() {
+            const remoteRect = remote.getBoundingClientRect();
+            if (playerX < remoteRect.right &&
+                playerX + PLAYER_SIZE > remoteRect.left &&
+                playerY < remoteRect.bottom &&
+                playerY + PLAYER_SIZE > remoteRect.top) {
+                score++;
+                scoreDisplay.textContent = `Score: ${score}`;
+                placeRemote();
+                endGame();
+            }
+        }
+
+        function checkCollision(x1, y1, w1, h1, x2, y2, w2, h2) {
+            return !(x1 + w1 < x2 || 
+                     x1 > x2 + w2 || 
+                     y1 + h1 < y2 || 
+                     y1 > y2 + h2);
+        }
+
+        function endGame() {
+            gameOver = true;
+            finalScoreDisplay.textContent = `Votre score : ${score}`;
+            gameOverScreen.style.display = 'flex';
+        }
+
+        function restartGame() {
+            gameOverScreen.style.display = 'none';
+            enemies.forEach(e => e.element.remove());
+            enemies = [];
             initGame();
-        });
+        }
 
-        const initGame = () => {
-            // Position initiale
-            const bounds = gameContainer.getBoundingClientRect();
-            playerX = bounds.width/2 - 25;
-            playerY = bounds.height/2 - 25;
-            updatePosition(player, playerX, playerY);
-            
-            // Événements tactiles
-            player.addEventListener('touchstart', handleTouchStart);
-            document.addEventListener('touchmove', handleTouchMove);
-            document.addEventListener('touchend', handleTouchEnd);
-            
-            // Boucle de jeu
-            this.animationFrame = requestAnimationFrame(gameLoop);
-        };
-
-        const handleTouchStart = (e) => {
-            isDragging = true;
-            const touch = e.touches[0];
-            const rect = player.getBoundingClientRect();
-            this.offsetX = touch.clientX - rect.left;
-            this.offsetY = touch.clientY - rect.top;
-        };
-
-        const handleTouchMove = (e) => {
-            if (!isDragging) return;
-            const touch = e.touches[0];
-            playerX = touch.clientX - this.offsetX;
-            playerY = touch.clientY - this.offsetY;
-            
-            // Limites
-            const bounds = gameContainer.getBoundingClientRect();
-            playerX = Math.max(0, Math.min(playerX, bounds.width - 50));
-            playerY = Math.max(0, Math.min(playerY, bounds.height - 50));
-            
-            updatePosition(player, playerX, playerY);
-        };
-
-        const handleTouchEnd = () => {
-            isDragging = false;
-        };
-
-        const gameLoop = () => {
-            // Logique du jeu...
-            this.animationFrame = requestAnimationFrame(gameLoop);
-        };
-
-        const endGame = (success) => {
-            cancelAnimationFrame(this.animationFrame);
-            this.cleanup();
-            success ? this.onSuccess() : this.onFail();
-        };
-
-        // Méthodes utilitaires
-        const updatePosition = (element, x, y) => {
-            element.style.transform = `translate(${x}px, ${y}px)`;
-        };
-
-        const checkCollision = (rect1, rect2) => {
-            return !(rect1.right < rect2.left || 
-                    rect1.left > rect2.right || 
-                    rect1.bottom < rect2.top || 
-                    rect1.top > rect2.bottom);
-        };
-    }
-
-    cleanup() {
-        // Nettoyage complet
-        cancelAnimationFrame(this.animationFrame);
-        this.timeouts.forEach(clearTimeout);
-        this.container.remove();
-    }
-
-    destroy() {
-        this.cleanup();
-    }
-}
+        startButton.addEventListener('click', initGame);
+        restartButton.addEventListener('click', restartGame);
+        document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
