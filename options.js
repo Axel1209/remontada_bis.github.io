@@ -182,18 +182,18 @@ function displayActions(event) {
             const currentIntensity = Math.round((currentEventIndex / matchEvents.length) * 100);
 
             if (action.name === "Changer de chaine" && selectedCharacter === "cauvin") {
-        const game = new TransferDockGame(
-    () => { // Success
-        displayTopChefImage();
-        game.destroy();
-    },
-    () => { // Fail
-        const feed = document.getElementById('game-feed');
-        feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Retour au match...</div>');
-        game.destroy();
-    }
-);
-game.start();
+                const game = new TransferDockGame(
+                    () => { // Success
+                        displayTopChefImage();
+                        game.destroy();
+                    },
+                    () => { // Fail
+                        const feed = document.getElementById('game-feed');
+                        feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Retour au match...</div>');
+                        game.destroy();
+                    }
+                );
+                game.start();
             }
 
               if (action.name === "Prendre une photo de cauvin") {
