@@ -15,7 +15,7 @@ export class TransferDockGame {
         this.container.style.width = '100%';
         this.container.style.height = '100%';
         this.container.style.zIndex = '1000'; // Assure un empilement correct
-        this.container.innerHTML = ` `
+        this.container.innerHTML = `
             
      <style>
      body {
