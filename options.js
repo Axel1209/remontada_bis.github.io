@@ -198,6 +198,10 @@ game.start();
 
               if (action.name === "Prendre une photo de cauvin") {
         displayphotocauvin();
+ // Ajouter une temporisation de 5 secondes avant d'afficher la réaction des NPC
+                setTimeout(() => {
+                    addNPCReaction(action.type, { type: action.type }, currentIntensity);
+                }, 5000);
             }
             
    addNPCReaction(action.type, { type : action.type}, currentIntensity);
