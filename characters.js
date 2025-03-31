@@ -15,6 +15,10 @@ cauvin: {
         {text: "Je veux juste rentrer chez moi...", intensity: 80},
         {text: "Mais c’est un script FIFA ou quoi ?!", intensity: 85},
         {text: "Je ne supporte plus de voir ce maillot blaugrana.", intensity: 95},
+        {text: "Mais Putain, c'est pas vrai !", intensity: 70},
+        {text: "BARCA EN*****", intensity: 80},
+        {text: "C'est une PUTAIN de BLAGUE ! C'est PAS VRAI !", intensity: 85},
+        {text: "AAAARGHHHHHHHHHHHHHHH !", intensity: 95},
         {text: "STOP ! QUELQU'UN COUPE LE SIGNAL TV !", intensity: 100}
     ],
     'goal-psg': [
@@ -27,7 +31,7 @@ cauvin: {
         {text: "FINISSONS LE TRAVAIL, PAS DE RELÂCHEMENT !", intensity: 40},
         {text: "C’est la délivrance !", intensity: 75},
         {text: "Vous êtes où les rageux, là ?", intensity: 85},
-        {text: "ON LEUR MARQUE UN CINQUIÈME ET ON RENTRE À LA MAISON !", intensity: 100}
+        {text: "ON LEUR MARQUE UN DERNIER ET ON RENTRE À LA MAISON !", intensity: 100}
     ],
     'penalty-barcelona': [
         {text: "Mais c'est quoi cette blague ?!", intensity: 20},
