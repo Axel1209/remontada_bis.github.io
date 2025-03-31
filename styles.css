@@ -205,6 +205,16 @@ button:hover {
     margin-right: 10px;
 }
 
+/* Ajouter dans styles.css */
+#game-container {
+    position: relative;
+    z-index: 1;
+}
+
+#topchef-image, #photo-cauvin {
+    pointer-events: none;
+}
+
 /* Styles des boutons */
 .option-button.cauvin { background-color: #d32f2f; }
 .option-button.jeanphi { background-color: #ffa000; }
