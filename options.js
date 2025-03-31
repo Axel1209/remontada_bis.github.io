@@ -2,7 +2,7 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
-import { displayTopChefImage, displayphotocauvin } from "./animation.js";
+import { displayTopChefImage, displayphotocauvin, displayreplay } from "./animation.js";
 import { TransferDockGame } from './transfer-dock.js';
 
 let currentEvent;
@@ -198,13 +198,16 @@ game.start();
 
               if (action.name === "Prendre une photo de cauvin") {
         displayphotocauvin();
+            }
+
+                  if (action.name === "Proposer un replay à Cauvin") {
+        displayreplay();
+            }
+            
  // Ajouter une temporisation de 5 secondes avant d'afficher la réaction des NPC
                 setTimeout(() => {
                     addNPCReaction(action.type, { type: action.type }, currentIntensity);
                 }, 5000);
-            }
-            
-   addNPCReaction(action.type, { type : action.type}, currentIntensity);
         });
 
         optionsContainer.appendChild(button);
