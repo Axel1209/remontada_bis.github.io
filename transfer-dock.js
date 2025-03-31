@@ -155,9 +155,13 @@ export class TransferDockGame {
     }
 
     start() {
+        // Stop the main application
+        document.body.style.pointerEvents = 'none';
+        document.body.style.opacity = '0.5';
+
         document.body.appendChild(this.container);
         
-  // Sélection des éléments principaux
+        // Sélection des éléments principaux
         const startScreen = document.getElementById('start-screen');
         const gameContainer = document.getElementById('game-container');
         const player = document.getElementById('player');
@@ -300,7 +304,7 @@ export class TransferDockGame {
                 
                 if (checkCollision(playerX, playerY, PLAYER_SIZE, PLAYER_SIZE, 
                                    enemy.x, enemy.y, ENEMY_SIZE, ENEMY_SIZE)) {
-                    endGame();
+                    endGame(false);
                 }
             });
         }
@@ -320,7 +324,7 @@ export class TransferDockGame {
                 score++;
                 scoreDisplay.textContent = `Score: ${score}`;
                 placeRemote();
-                endGame();
+                endGame(true);
             }
         }
 
@@ -331,10 +335,16 @@ export class TransferDockGame {
                      y1 > y2 + h2);
         }
 
-        function endGame() {
+        function endGame(success) {
             gameOver = true;
             finalScoreDisplay.textContent = `Votre score : ${score}`;
             gameOverScreen.style.display = 'flex';
+            
+            if (success) {
+                this.onSuccess();
+            } else {
+                this.onFail();
+            }
         }
 
         function restartGame() {
@@ -347,5 +357,12 @@ export class TransferDockGame {
         startButton.addEventListener('click', initGame);
         restartButton.addEventListener('click', restartGame);
         document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+    }
+
+    destroy() {
+        // Remove the game container and reset styles
+        document.body.removeChild(this.container);
+        document.body.style.pointerEvents = 'auto';
+        document.body.style.opacity = '1';
     }
 }
