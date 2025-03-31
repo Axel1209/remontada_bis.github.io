@@ -156,10 +156,16 @@ export class TransferDockGame {
 
     start() {
         // Stop the main application
-        document.getElementById("main-application").style.pointerEvents = 'none';
-        document.getElementById("main-application").style.opacity = '0.5';
 
-        document.body.appendChild(this.container);
+            const mainApplication = document.getElementById("main-application");
+    if (mainApplication) {
+        mainApplication.style.pointerEvents = 'none';
+        mainApplication.style.opacity = '0.5';
+    } else {
+        console.error("Element with ID 'main-application' not found.");
+    }
+
+    document.body.appendChild(this.container);
         
         // Sélection des éléments principaux
         const startScreen = document.getElementById('start-screen');
