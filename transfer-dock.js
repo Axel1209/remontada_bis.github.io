@@ -18,7 +18,7 @@ export class TransferDockGame {
         this.container.innerHTML = `
             
      <style>
-     body {
+     * {
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
