@@ -355,6 +355,7 @@ export class TransferDockGame {
         }
 
         startButton.addEventListener('click', initGame);
+        startButton.disabled = false; // Enable the start button
         restartButton.addEventListener('click', restartGame);
         document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
     }
@@ -362,6 +363,10 @@ export class TransferDockGame {
     destroy() {
         // Remove the game container and reset styles
         document.body.removeChild(this.container);
+        document.body.style.pointerEvents = 'auto';
+        document.body.style.opacity = '1';
+
+        // Re-enable the main application
         document.body.style.pointerEvents = 'auto';
         document.body.style.opacity = '1';
     }
