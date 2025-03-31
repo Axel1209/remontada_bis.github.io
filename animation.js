@@ -28,7 +28,7 @@ export function displayGoalAnimation() {
     return new Promise((resolve) => {
         const gif = document.createElement("img");
         // URL corrigée :
-        gif.src = "https://github.com/Axel1209/remontada_bis.github.io/blob/14436cac82fee07e7a02a2e2dccad376aebc7263/butbarca.gif";
+        gif.src = "https://raw.githubusercontent.com/Axel1209/remontada_bis.github.io/refs/heads/main/butbarca.gif";
         gif.style = `
             position: fixed;
             top: 40%;
