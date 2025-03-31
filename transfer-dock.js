@@ -204,10 +204,13 @@ document.addEventListener('touchstart', e => {
             startScreen.style.display = 'none';
             gameContainer.style.display = 'block';
             gameOverScreen.style.display = 'none';
+
+            gameContainer.offsetHeight; // Cette ligne déclenche le recalcul du layout
             
             const container = gameContainer.getBoundingClientRect();
             playerX = container.width / 2 - PLAYER_SIZE / 2;
             playerY = container.height / 2 - PLAYER_SIZE / 2;
+            
             player.style.left = `${playerX}px`;
             player.style.top = `${playerY}px`;
             
