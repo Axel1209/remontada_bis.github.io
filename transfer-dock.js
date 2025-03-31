@@ -157,10 +157,10 @@ export class TransferDockGame {
     start() {
         // Stop the main application
 
-            const mainApplication = document.getElementById("main-application");
-    if (mainApplication) {
-        mainApplication.style.pointerEvents = 'none';
-        mainApplication.style.opacity = '0.5';
+            const mainApp = document.getElementById("main-application");
+    if (mainApp) {
+        mainApp.style.pointerEvents = 'none';
+        mainApp.style.opacity = '0.5';
     } else {
         console.error("Element with ID 'main-application' not found.");
     }
