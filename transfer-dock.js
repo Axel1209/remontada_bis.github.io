@@ -133,10 +133,10 @@ export class TransferDockGame {
         <h1>Jeu de la Télécommande</h1>
         <p>Règles du jeu :</p>
         <ul style="text-align: left; max-width: 80%;">
-            <li>Attrapez la télécommande grise pour gagner des points</li>
-            <li>Évitez les ronds rouges qui vous poursuivent</li>
-            <li>Déplacez votre cercle bleu en le glissant</li>
-            <li>Si un rond rouge vous touche, la partie est terminée</li>
+            <li>Attrapez la télécommande grise pour changer de chaine</li>
+            <li>Évitez vos copains (ronds rouges) qui ne veulent pas vous laisser changer de chaine</li>
+            <li>Déplacez vous (cercle bleu) pour attapper la télécommande</li>
+            <li>Si un copain vous touche, vous avez échoué</li>
         </ul>
         <button id="start-button">Commencer</button>
     </div>
