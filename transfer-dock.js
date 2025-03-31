@@ -153,8 +153,8 @@ export class TransferDockGame {
     <!-- Conteneur de jeu -->
     <div id="game-container">
         <div id="score">Score: 0</div>
-        <div id="player">Cauvin</div>
-        <div id="remote"></div>
+        <div id="player" style="background-color: blue !important;">Cauvin</div>
+        <div id="remote" style="background-color: blue !important;"></div>
         <div id="game-over">
             <h2>Partie terminée !</h2>
             <p id="final-score">Votre score : 0</p>
