@@ -78,7 +78,7 @@ export class TransferDockGame {
             background-color: blue;
             border-radius: 50%;
             touch-action: none;
-            box-shadow: 0 0 10px cyan
+            box-shadow: 0 0 10px cyan;
             z-index: 200;
         }
         .enemy {
