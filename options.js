@@ -203,7 +203,9 @@ game.start();
             }
 
                   if (action.name === "Proposer un replay à Cauvin") {
-        displayreplay();
+                                     setTimeout(() => {
+                    displayreplay();
+                }, 2000);
             }
             
  // Ajouter une temporisation de 5 secondes avant d'afficher la réaction des NPC
