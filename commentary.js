@@ -42,13 +42,21 @@ async function addCommentary() {
         eventElement.className = "commentary";
         eventElement.textContent = `${event.time} - ${event.description}`;
         // Ajouter la gestion du score
-        if (event.type === "goal") {
+        if (event.type === "goal"&& team === "Barcelona") {
             handleMatchEvent ({
                 team: event.team,
                 score: 1,
                 description: event.description
             });
         await displayGoalAnimation();
+        }
+                    if (event.type === "goal" && team === "PSG") {
+            handleMatchEvent ({
+                team: event.team,
+                score: 1,
+                description: event.description
+            });
+        await displayGoalAnimationPSG();
         }
         // Ajouter le commentaire dans le flux principal des événements du jeu
         gameFeed.appendChild(eventElement);
