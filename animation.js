@@ -63,6 +63,46 @@ export function displayGoalAnimation() {
     });
 }
 
+// Fonction pour afficher le GIF de but PSG
+export function displayGoalAnimationPSG() {
+    return new Promise((resolve) => {
+        const gif = document.createElement("img");
+        // URL corrigée :
+        gif.src = "https://raw.githubusercontent.com/Axel1209/remontada_bis.github.io/refs/heads/main/butpsg.gif";
+        gif.style = `
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            z-index: 9999;
+        `;
+        
+        const text = document.createElement("div");
+        text.innerText = "GOAAAAAAAAAAL";
+        text.style = `
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            z-index: 9999;
+        `;
+        
+        document.body.appendChild(gif);
+        document.body.appendChild(text);
+
+        setTimeout(() => {
+            gif.remove();
+            text.remove();
+            resolve(); // Déclenche la suite après 3 secondes
+        }, 3400);
+    });
+}
+
 // Fonction pour mettre un replay
 export function displayreplay() {
     return new Promise((resolve) => {
