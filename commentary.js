@@ -10,6 +10,7 @@ const commentaryFeed = document.getElementById("commentary-feed");
 const nextEventButton = document.getElementById("next-event-button");
 
         const matchEvents = [
+    { time: "0'", description: "Et c'est parti pour ce huitième de finale retour pour valider la qualification pour les quarts pour le PSG !", type: "goal", team: "Barcelona" },
     { time: "3'", description: "But de Suarez ! Le Barça ouvre le score.", type: "goal", team: "Barcelona" },
     { time: "8'", description: "Di Maria tente une frappe lointaine, mais elle passe largement au-dessus.", type: "missed", team: "PSG" },
     { time: "15'", description: "Cavani rate une occasion en or pour le PSG.", type: "missed", team: "PSG" },
