@@ -31,18 +31,33 @@ export function displayGoalAnimation() {
         gif.src = "https://github.com/Axel1209/remontada_bis.github.io/blob/main/sergiroberto.gif";
         gif.style = `
             position: fixed;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 90%;
             max-height: 90%;
             z-index: 9999;
         `;
-
+        
+        const text = document.createElement("div");
+        text.innerText = "GOAAAAAAAAAAl";
+        text.style = `
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            font-weight: bold;
+            color: red;
+            z-index: 9999;
+        `;
+        
         document.body.appendChild(gif);
+        document.body.appendChild(text);
 
         setTimeout(() => {
             gif.remove();
+            text.remove();
             resolve(); // Déclenche la suite après 3 secondes
         }, 3400);
     });
