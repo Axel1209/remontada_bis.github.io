@@ -42,7 +42,7 @@ async function addCommentary() {
         eventElement.className = "commentary";
         eventElement.textContent = `${event.time} - ${event.description}`;
         // Ajouter la gestion du score
-        if (event.type === "goal"&& team === "Barcelona") {
+        if (event.type === "goal"&& event.team === "Barcelona") {
             handleMatchEvent ({
                 team: event.team,
                 score: 1,
@@ -50,7 +50,7 @@ async function addCommentary() {
             });
         await displayGoalAnimation();
         }
-                    if (event.type === "goal" && team === "PSG") {
+                    if (event.type === "goal" && event.team === "PSG") {
             handleMatchEvent ({
                 team: event.team,
                 score: 1,
