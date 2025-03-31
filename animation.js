@@ -145,15 +145,21 @@ export function displayreplay() {
 
 // Fonction photo cauvin
 export function displayphotocauvin() {
-    const images = ["photo_cauvin", "photo_cauvin2", "photo_cauvin3"];
+    const images = [
+        { id: "photo-cauvin", src: "photo_cauvin.jpg" },
+        { id: "photo-cauvin2", src: "photo_cauvin2.jpg" },
+        { id: "photo-cauvin3", src: "photo_cauvin3.jpg" }
+    ];
     const randomIndex = Math.floor(Math.random() * images.length);
     const selectedImage = images[randomIndex];
-    
-    if (images) images.remove();
+
+    // Supprimer l'image existante si elle est présente
+    const existingImage = document.getElementById(selectedImage.id);
+    if (existingImage) existingImage.remove();
 
     const img = document.createElement("img");
-    img.id = "photo-cauvin";
-    img.src = "photo_cauvin.jpg"; // Chemin relatif ou URL
+    img.id = selectedImage.id;
+    img.src = selectedImage.src; // Chemin relatif ou URL
     img.style = `
         position: fixed;
         top: 50%;
@@ -165,34 +171,6 @@ export function displayphotocauvin() {
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
     `;
 
-        const img2 = document.createElement("img2");
-    img2.id = "photo-cauvin2";
-    img2.src = "photo_cauvin2.jpg"; // Chemin relatif ou URL
-    img2.style = `
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 80%;
-        max-height: 80%;
-        z-index: 9999;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    `;
-
-        const img3 = document.createElement("img3");
-    img3.id = "photo-cauvin3";
-    img3.src = "photo_cauvin3.jpg"; // Chemin relatif ou URL
-    img3.style = `
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 80%;
-        max-height: 80%;
-        z-index: 9999;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    `;
-    
     document.body.appendChild(img);
     setTimeout(() => img.remove(), 4000);
 }
