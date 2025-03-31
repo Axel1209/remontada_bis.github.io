@@ -105,12 +105,40 @@ export function displayreplay() {
 
 // Fonction photo cauvin
 export function displayphotocauvin() {
-    const existingImage = document.getElementById("topchef-image");
+    const existingImage = document.getElementById("photo-cauvin");
     if (existingImage) existingImage.remove();
 
     const img = document.createElement("img");
     img.id = "photo-cauvin";
     img.src = "photo_cauvin.jpg"; // Chemin relatif ou URL
+    img.style = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        max-height: 80%;
+        z-index: 9999;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    `;
+
+        const img = document.createElement("img");
+    img.id = "photo-cauvin2";
+    img.src = "photo_cauvin2.jpg"; // Chemin relatif ou URL
+    img.style = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        max-height: 80%;
+        z-index: 9999;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    `;
+
+        const img = document.createElement("img");
+    img.id = "photo-cauvin3";
+    img.src = "photo_cauvin3.jpg"; // Chemin relatif ou URL
     img.style = `
         position: fixed;
         top: 50%;
