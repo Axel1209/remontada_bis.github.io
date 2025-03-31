@@ -669,7 +669,7 @@ function addNPCReaction(triggerType, event, intensity) {
         .slice(0, Math.min(reactionCount, characters.length));
 
     // Nouvelle logique avec délais progressifs
-    const DELAY_BETWEEN_REACTIONS = 500; // 500ms entre chaque réaction
+    const DELAY_BETWEEN_REACTIONS = 1500; // 1500ms entre chaque réaction
     reactingCharacters.forEach((character, index) => {
         const timeout = setTimeout(() => {
             const specificReactions = characterReactions[character]?.[eventType] || [];
