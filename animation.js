@@ -172,5 +172,5 @@ export function displayphotocauvin() {
     `;
 
     document.body.appendChild(img);
-    setTimeout(() => img.remove(), 4000);
+    setTimeout(() => img.remove(), 3000);
 }
