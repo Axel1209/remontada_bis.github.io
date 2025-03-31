@@ -105,8 +105,11 @@ export function displayreplay() {
 
 // Fonction photo cauvin
 export function displayphotocauvin() {
-    const existingImage = document.getElementById("photo-cauvin");
-    if (existingImage) existingImage.remove();
+    const images = ["photo_cauvin", "photo_cauvin2", "photo_cauvin3"];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+    
+    if (images) images.remove();
 
     const img = document.createElement("img");
     img.id = "photo-cauvin";
