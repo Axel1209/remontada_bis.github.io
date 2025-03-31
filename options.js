@@ -2,7 +2,7 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
-import { displayTopChefImage } from "./animation.js";
+import { displayTopChefImage, displayphotocauvin } from "./animation.js";
 import { TransferDockGame } from './transfer-dock.js';
 
 let currentEvent;
@@ -50,8 +50,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -70,8 +70,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -90,8 +90,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -110,8 +110,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -130,8 +130,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -150,8 +150,8 @@ const playerOptions = {
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
         { 
-            name: "Vérifier le score cumulé", 
-            description: "Compter le nombre de buts qu'il manque à Barcelone pour égaliser",
+            name: "Prendre une photo de cauvin", 
+            description: "Souris Cauvin, c'est pour les réseaux",
             type: "ajout",
             condition: () => true // Toujours disponible
         }
@@ -194,6 +194,10 @@ function displayActions(event) {
     }
 );
 game.start();
+            }
+
+              if (action.name === "Prendre une photo de cauvin") {
+        displayphotocauvin();
             }
             
    addNPCReaction(action.type, { type : action.type}, currentIntensity);
