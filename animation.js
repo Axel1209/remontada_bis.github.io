@@ -128,7 +128,7 @@ export function displayreplay() {
             transform: translate(-50%, -50%);
             font-size: 3em;
             font-weight: bold;
-            color: red;
+            color: black;
             z-index: 9999;
         `;
         
@@ -139,7 +139,7 @@ export function displayreplay() {
             gif.remove();
             text.remove();
             resolve(); // Déclenche la suite après 3 secondes
-        }, 3600);
+        }, 7200);
     });
 }
 
