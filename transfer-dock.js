@@ -10,8 +10,9 @@ export class TransferDockGame {
         this.container = document.createElement('div');
         this.container.id = 'transfer-dock-container';
         this.container.innerHTML = `
+            
                 <style>
-        * {
+        {
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
@@ -346,3 +347,4 @@ export class TransferDockGame {
         startButton.addEventListener('click', initGame);
         restartButton.addEventListener('click', restartGame);
         document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+    }
