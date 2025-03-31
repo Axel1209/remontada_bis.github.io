@@ -47,7 +47,13 @@ const playerOptions = {
             name: "Proposer un replay à Cauvin", 
             description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
-            condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+            condition: () => true // Toujours disponible
+        },
+                { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
         },
         { 
             name: "Prendre une photo de cauvin", 
@@ -69,6 +75,12 @@ const playerOptions = {
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
+                        { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        },
         { 
             name: "Prendre une photo de cauvin", 
             description: "Souris Cauvin, c'est pour les réseaux",
@@ -88,6 +100,12 @@ const playerOptions = {
             description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+                        { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
         },
         { 
             name: "Prendre une photo de cauvin", 
@@ -109,6 +127,12 @@ const playerOptions = {
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
+                        { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        },
         { 
             name: "Prendre une photo de cauvin", 
             description: "Souris Cauvin, c'est pour les réseaux",
@@ -129,6 +153,12 @@ const playerOptions = {
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
         },
+                        { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
+        },
         { 
             name: "Prendre une photo de cauvin", 
             description: "Souris Cauvin, c'est pour les réseaux",
@@ -148,6 +178,12 @@ const playerOptions = {
             description: "Tiens, regarde Cauvin, je crois que t'as pas bien vu",
             type: "ajout",
             condition: (event) => event?.type === 'missed' && event.team === 'PSG'
+        },
+       { 
+            name: "Imposer un maillot du barca à Cauvin", 
+            description: "Allez Cauvin, t'as pas le choix, enfile ca",
+            type: "ajout",
+            condition: () => true // Toujours disponible
         },
         { 
             name: "Prendre une photo de cauvin", 
@@ -199,6 +235,11 @@ function displayActions(event) {
               if (action.name === "Prendre une photo de cauvin") {
                setTimeout(() => {
                     displayphotocauvin();
+                }, 2000);
+            }
+               if (action.name === "Prendre une photo de cauvin") {
+               setTimeout(() => {
+                    displayphotocauvinbarca();
                 }, 2000);
             }
 
