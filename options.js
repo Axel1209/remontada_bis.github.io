@@ -237,7 +237,7 @@ function displayActions(event) {
                     displayphotocauvin();
                 }, 2000);
             }
-               if (action.name === "Prendre une photo de cauvin") {
+               if (action.name === "Imposer un maillot du barca à Cauvin") {
                setTimeout(() => {
                     displayphotocauvinbarca();
                 }, 2000);
