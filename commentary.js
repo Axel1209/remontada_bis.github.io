@@ -3,7 +3,7 @@
 import { gameFeed , handleMatchEvent } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { displayActions } from "./options.js";
-import { displayGoalAnimation } from "./animation.js";
+import { displayGoalAnimation, displayGoalAnimationPSG } from "./animation.js";
 
 
 const commentaryFeed = document.getElementById("commentary-feed");
