@@ -68,7 +68,7 @@ export function displayreplay() {
     return new Promise((resolve) => {
         const gif = document.createElement("img");
         // URL corrigée :
-        gif.src = "https://github.com/Axel1209/remontada_bis.github.io/blob/main/sergiroberto.gif";
+        gif.src = "https://github.com/Axel1209/remontada_bis.github.io/blob/c85ba27a06d4f61ab0fea6c091caa2d10f7fea78/sergiroberto.gif";
         gif.style = `
             position: fixed;
             top: 40%;
