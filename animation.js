@@ -174,3 +174,32 @@ export function displayphotocauvin() {
     document.body.appendChild(img);
     setTimeout(() => img.remove(), 3000);
 }
+
+export function displayphotocauvinbarca() {
+    const images = [
+        { id: "photo-cauvinbarca", src: "cauvin_barca.jpg" }
+    ];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+
+    // Supprimer l'image existante si elle est présente
+    const existingImage = document.getElementById(selectedImage.id);
+    if (existingImage) existingImage.remove();
+
+    const img = document.createElement("img");
+    img.id = selectedImage.id;
+    img.src = selectedImage.src; // Chemin relatif ou URL
+    img.style = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        max-height: 80%;
+        z-index: 9999;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    `;
+
+    document.body.appendChild(img);
+    setTimeout(() => img.remove(), 3000);
+}
