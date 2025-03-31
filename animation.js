@@ -139,7 +139,7 @@ export function displayreplay() {
             gif.remove();
             text.remove();
             resolve(); // Déclenche la suite après 3 secondes
-        }, 3400);
+        }, 3600);
     });
 }
 
