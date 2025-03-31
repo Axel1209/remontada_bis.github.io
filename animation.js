@@ -47,3 +47,26 @@ export function displayGoalAnimation() {
         }, 3400);
     });
 }
+
+// Fonction photo cauvin
+export function displayphotocauvin() {
+    const existingImage = document.getElementById("topchef-image");
+    if (existingImage) existingImage.remove();
+
+    const img = document.createElement("img");
+    img.id = "photo-cauvin";
+    img.src = "photo_cauvin.jpg"; // Chemin relatif ou URL
+    img.style = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        max-height: 80%;
+        z-index: 9999;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    `;
+    
+    document.body.appendChild(img);
+    setTimeout(() => img.remove(), 4000);
+}
