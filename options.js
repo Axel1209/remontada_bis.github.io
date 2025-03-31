@@ -197,7 +197,9 @@ game.start();
             }
 
               if (action.name === "Prendre une photo de cauvin") {
-        displayphotocauvin();
+               setTimeout(() => {
+                    displayphotocauvin();
+                }, 2000);
             }
 
                   if (action.name === "Proposer un replay à Cauvin") {
