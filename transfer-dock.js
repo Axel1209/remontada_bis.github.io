@@ -167,10 +167,6 @@ export class TransferDockGame {
 
     document.body.appendChild(this.container);
 
-    // Dans transfer-dock.js, ajouter :
-document.addEventListener('touchstart', e => {
-    if (e.target === player) e.preventDefault();
-}, { passive: false });
         
         // Sélection des éléments principaux
         const startScreen = document.getElementById('start-screen');
@@ -192,6 +188,11 @@ document.addEventListener('touchstart', e => {
         const REMOTE_WIDTH = 50;
         const REMOTE_HEIGHT = 25;
         const enemyNames = ["Axel", "Jean phi", "Renaud", "Étienne", "Dimitri", "Bastien"];
+
+            // Dans transfer-dock.js, ajouter :
+document.addEventListener('touchstart', e => {
+    if (e.target === player) e.preventDefault();
+}, { passive: false });
 
         function initGame() {
             startScreen.style.display = 'none';
