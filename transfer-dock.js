@@ -17,126 +17,203 @@ export class TransferDockGame {
         this.container.style.zIndex = '1000'; // Assure un empilement correct
         this.container.innerHTML = `
             
-     <style>
-     * {
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+        
+        * {
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
         }
-     html, body {
+        
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
-            overscroll-behavior: contain;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0e0e0, #bdbdbd);
+            overflow: hidden;
         }
+        
+        /* Écran de démarrage */
         #start-screen {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #f0f0f0;
+            inset: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            z-index: 1000;
-        }
-        #start-screen h1 {
-            color: #333;
-        }
-        #start-screen p {
-            max-width: 80%;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        #start-button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #45aaf2, #2b8cd8);
             color: white;
+            padding: 20px;
+        }
+        
+        #start-screen h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        #start-screen ul {
+            list-style: none;
+            padding: 0;
+            max-width: 80%;
+            line-height: 1.8;
+        }
+        
+        #start-button {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            background: linear-gradient(135deg, #26de81, #20bf6b);
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(38, 222, 129, 0.3);
             cursor: pointer;
+            transition: transform 0.2s ease;
         }
+        
+        #start-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(38, 222, 129, 0.4);
+        }
+        
+        /* Conteneur de jeu */
         #game-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: black;
+            position: fixed;
+            inset: 0;
             display: none;
-            z-index: 100;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         }
+        
+        /* Joueur */
         #player {
             position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: blue;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, #4a90e2, #2a60d1);
             border-radius: 50%;
-            touch-action: none;
-            box-shadow: 0 0 10px cyan;
-            z-index: 200;
+            box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
         }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Ennemis */
         .enemy {
             position: absolute;
             width: 50px;
             height: 50px;
-            background-color: red;
+            background: radial-gradient(circle, #ff6b6b, #c62828);
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 12px;
-            z-index: 10;
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+            animation: enemy-pulse 1.5s infinite;
         }
+        
+        @keyframes enemy-pulse {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Télécommande */
         #remote {
             position: absolute;
-            width: 50px;
-            height: 25px;
-            background-color: gray;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(135deg, #9e9e9e, #616161);
             border-radius: 15px;
-            box-shadow 0 0 10px white;
-            z-index: 150;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transform: rotate(-5deg);
         }
+        
+        /* Score */
         #score {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 18px;
-            z-index: 10;
+            top: 20px;
+            left: 20px;
+            font-size: 1.2em;
+            color: #333;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        
+        /* Game Over */
         #game-over {
-            display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
+            inset: 0;
+            display: none;
+            background: rgba(0,0,0,0.8);
             color: white;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            z-index: 1000;
+            padding: 20px;
         }
+        
         #game-over h2 {
+            font-size: 2em;
             margin-bottom: 20px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
+        
         #restart-button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #4CAF50;
-            color: white;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            background: linear-gradient(135deg, #ff6b6b, #c62828);
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
             cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        #restart-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        /* Effets visuels supplémentaires */
+        .enemy::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+            animation: enemy-glow 2s infinite;
+        }
+        
+        @keyframes enemy-glow {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0.3; }
+        }
+        
+        #game-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255,255,255,0.1) 20px,
+                rgba(255,255,255,0.1) 40px
+            );
+            opacity: 0.3;
+            z-index: -1;
         }
     </style>
             
