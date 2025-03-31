@@ -69,7 +69,7 @@ export class TransferDockGame {
             height: 100%;
             background-color: black;
             display: none;
-            z-index: 1;
+            z-index: 100;
         }
         #player {
             position: absolute;
@@ -78,7 +78,8 @@ export class TransferDockGame {
             background-color: blue;
             border-radius: 50%;
             touch-action: none;
-            z-index: 10;
+            box-shadow: 0 0 10px cyan
+            z-index: 200;
         }
         .enemy {
             position: absolute;
@@ -99,7 +100,8 @@ export class TransferDockGame {
             height: 25px;
             background-color: gray;
             border-radius: 15px;
-            z-index: 10;
+            box-shadow 0 0 10px white;
+            z-index: 150;
         }
         #score {
             position: absolute;
@@ -209,7 +211,9 @@ document.addEventListener('touchstart', e => {
             gameContainer.style.display = 'block';
             gameOverScreen.style.display = 'none';
 
-            gameContainer.offsetHeight; // Cette ligne déclenche le recalcul du layout
+            gameContainer.style.opacity = '0.99';
+            void gameContainer.offsetHeight; // Cette ligne déclenche le recalcul du layout
+            gameContainer.style.opacity = '1';
             
             const container = gameContainer.getBoundingClientRect();
             playerX = container.width / 2 - PLAYER_SIZE / 2;
