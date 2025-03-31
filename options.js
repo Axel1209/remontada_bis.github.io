@@ -2,7 +2,7 @@
 import { gameFeed, selectedCharacter } from "./game.js";
 import { addNPCReaction } from "./characters.js";
 import { currentEventIndex, matchEvents } from "./commentary.js";
-import { displayTopChefImage, displayphotocauvin, displayreplay } from "./animation.js";
+import { displayTopChefImage, displayphotocauvin, displayreplay, displayphotocauvinbarca } from "./animation.js";
 import { TransferDockGame } from './transfer-dock.js';
 
 let currentEvent;
