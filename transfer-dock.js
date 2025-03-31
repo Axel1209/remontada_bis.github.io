@@ -133,10 +133,10 @@ export class TransferDockGame {
         <h1>Jeu de la Télécommande</h1>
         <p>Règles du jeu :</p>
         <ul style="text-align: left; max-width: 80%;">
-            <li>Attrapez la télécommande grise pour changer de chaine</li>
-            <li>Évitez vos copains (ronds rouges) qui ne veulent pas vous laisser changer de chaine</li>
-            <li>Déplacez vous (cercle bleu) pour attapper la télécommande</li>
-            <li>Si un copain vous touche, vous avez échoué</li>
+            <li>Attrapez la télécommande grise pour gagner des points</li>
+            <li>Évitez les ronds rouges qui vous poursuivent</li>
+            <li>Déplacez votre cercle bleu en le glissant</li>
+            <li>Si un rond rouge vous touche, la partie est terminée</li>
         </ul>
         <button id="start-button">Commencer</button>
     </div>
@@ -156,8 +156,8 @@ export class TransferDockGame {
 
     start() {
         // Stop the main application
-        document.body.style.pointerEvents = 'none';
-        document.body.style.opacity = '0.5';
+        document.getElementById("main-application").style.pointerEvents = 'none';
+        document.getElementById("main-application").style.opacity = '0.5';
 
         document.body.appendChild(this.container);
         
@@ -363,11 +363,7 @@ export class TransferDockGame {
     destroy() {
         // Remove the game container and reset styles
         document.body.removeChild(this.container);
-        document.body.style.pointerEvents = 'auto';
-        document.body.style.opacity = '1';
-
-        // Re-enable the main application
-        document.body.style.pointerEvents = 'auto';
-        document.body.style.opacity = '1';
+        document.getElementById("main-application").style.pointerEvents = 'auto';
+        document.getElementById("main-application").style.opacity = '1';
     }
 }
