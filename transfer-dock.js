@@ -9,7 +9,13 @@ export class TransferDockGame {
         // Création du conteneur isolé
         this.container = document.createElement('div');
         this.container.id = 'transfer-dock-container';
-        this.container.innerHTML = `
+        this.container.style.position = 'fixed';
+        this.container.style.top = '0';
+        this.container.style.left = '0';
+        this.container.style.width = '100%';
+        this.container.style.height = '100%';
+        this.container.style.zIndex = '1000'; // Assure un empilement correct
+        this.container.innerHTML = ` `
             
      <style>
      body {
