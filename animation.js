@@ -40,7 +40,7 @@ export function displayGoalAnimation() {
         `;
         
         const text = document.createElement("div");
-        text.innerText = "GOAAAAAAAAAAl";
+        text.innerText = "GOAAAAAAAAAAL";
         text.style = `
             position: fixed;
             top: 60%;
@@ -48,7 +48,7 @@ export function displayGoalAnimation() {
             transform: translate(-50%, -50%);
             font-size: 3em;
             font-weight: bold;
-            color: red;
+            color: black;
             z-index: 9999;
         `;
         
