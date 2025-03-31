@@ -166,6 +166,11 @@ export class TransferDockGame {
     }
 
     document.body.appendChild(this.container);
+
+    // Dans transfer-dock.js, ajouter :
+document.addEventListener('touchstart', e => {
+    if (e.target === player) e.preventDefault();
+}, { passive: false });
         
         // Sélection des éléments principaux
         const startScreen = document.getElementById('start-screen');
