@@ -184,7 +184,6 @@ jeanphi: {
     {text: "Allez, un jour peut-être, la LDC… mais pas avant 10 ans à ce rythme.", intensity: 105},
     {text: "Franchement, on dirait que vous êtes abonnés à l’humiliation européenne.", intensity: 110}
 ]
-    ]
 },
 etienne: {
     'goal-barcelona': [
