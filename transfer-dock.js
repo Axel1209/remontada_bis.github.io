@@ -11,13 +11,13 @@ export class TransferDockGame {
         this.container.id = 'transfer-dock-container';
         this.container.innerHTML = `
             
-                <style>
-        {
+     <style>
+     body {
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
         }
-        body, html {
+         {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -348,3 +348,4 @@ export class TransferDockGame {
         restartButton.addEventListener('click', restartGame);
         document.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
     }
+}
