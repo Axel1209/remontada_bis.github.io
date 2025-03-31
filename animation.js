@@ -165,10 +165,10 @@ export function displayphotocauvin() {
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
     `;
 
-        const img = document.createElement("img");
-    img.id = "photo-cauvin2";
-    img.src = "photo_cauvin2.jpg"; // Chemin relatif ou URL
-    img.style = `
+        const img2 = document.createElement("img2");
+    img2.id = "photo-cauvin2";
+    img2.src = "photo_cauvin2.jpg"; // Chemin relatif ou URL
+    img2.style = `
         position: fixed;
         top: 50%;
         left: 50%;
@@ -179,10 +179,10 @@ export function displayphotocauvin() {
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
     `;
 
-        const img = document.createElement("img");
-    img.id = "photo-cauvin3";
-    img.src = "photo_cauvin3.jpg"; // Chemin relatif ou URL
-    img.style = `
+        const img3 = document.createElement("img3");
+    img3.id = "photo-cauvin3";
+    img3.src = "photo_cauvin3.jpg"; // Chemin relatif ou URL
+    img3.style = `
         position: fixed;
         top: 50%;
         left: 50%;
