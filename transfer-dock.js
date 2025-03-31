@@ -62,7 +62,7 @@ export class TransferDockGame {
             cursor: pointer;
         }
         #game-container {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
