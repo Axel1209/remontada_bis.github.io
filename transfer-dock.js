@@ -258,15 +258,16 @@ export class TransferDockGame {
 
         
         // Sélection des éléments principaux
-        const startScreen = document.getElementById('start-screen');
-        const gameContainer = document.getElementById('game-container');
-        const player = document.getElementById('player');
-        const remote = document.getElementById('remote');
-        const scoreDisplay = document.getElementById('score');
-        const gameOverScreen = document.getElementById('game-over');
-        const finalScoreDisplay = document.getElementById('final-score');
-        const startButton = document.getElementById('start-button');
-        const restartButton = document.getElementById('restart-button');
+
+        const startScreen = this.container.querySelector('#start-screen');
+        const gameContainer = this.container.querySelector('#game-container');
+        const player = this.container.querySelector('#player');
+        const remote = this.container.querySelector('#remote');
+        const scoreDisplay = this.container.querySelector('#score');
+        const gameOverScreen = this.container.querySelector('#game-over');
+        const finalScoreDisplay = this.container.querySelector('#final-score');
+        const startButton = this.container.querySelector('#start-button');
+        const restartButton = this.container.querySelector('#restart-button');
         
         let playerX, playerY;
         let score = 0;
