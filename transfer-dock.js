@@ -171,7 +171,7 @@ export class TransferDockGame {
     <div id="game-container">
         <div id="score">Score: 0</div>
         <!-- Remplacement du div par une image pour le joueur -->
-        <img id="player" src="player_blue.png" alt="Joueur (Cauvin)">
+        <img id="player" src="player_blue.svg" alt="Joueur (Cauvin)">
         <div id="remote"></div>
         <div id="game-over">
             <h2>Partie terminée !</h2>
@@ -348,7 +348,7 @@ export class TransferDockGame {
             // Créer une image pour l'ennemi
             const enemy = document.createElement('img');
             enemy.className = 'enemy'; // Appliquer la classe CSS
-            enemy.src = 'enemy_red.png'; // Chemin vers l'image ennemie
+            enemy.src = 'enemy_red.svg'; // Chemin vers l'image ennemie
             enemy.alt = name; // Texte alternatif pour l'accessibilité
 
             const containerRect = gameContainer.getBoundingClientRect();
