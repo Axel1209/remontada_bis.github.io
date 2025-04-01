@@ -1,0 +1,6 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="25" cy="25" r="25" fill="#3498db" />
+  <!-- Vous pouvez ajouter d'autres éléments ici si vous voulez un design plus complexe -->
+  <!-- Par exemple, un petit reflet : -->
+  <!-- <circle cx="18" cy="18" r="5" fill="#a9cce3" fill-opacity="0.7"/> -->
+</svg>
