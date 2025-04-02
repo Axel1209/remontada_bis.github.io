@@ -468,3 +468,71 @@ export class TransferDockGame {
          // Modifiée pour utiliser this.onSuccess/this.onFail
         const endGame = (success) => {
             if (gameOver) return; // Empêcher d'appeler plusi
+
+            console.log(`Fin du mini-jeu. Succès: ${success}`);
+            gameOver = true; // Mettre l'état à terminé
+
+            // Arrêter la boucle de jeu
+             if (this.animationFrame) {
+                cancelAnimationFrame(this.animationFrame);
+                this.animationFrame = null;
+            }
+
+            // Arrêter le mouvement des ennemis (optionnel)
+            // enemies.forEach(enemy => /* arrêter mouvement */);
+
+            finalScoreDisplay.textContent = `Mission ${success ? 'réussie' : 'échouée'} !`; // Message de fin
+            gameOverScreen.style.display = 'flex'; // Afficher l'écran de fin
+
+            // Exécuter le callback approprié après un court délai pour montrer l'écran de fin
+            setTimeout(() => {
+                if (success) {
+                    this.onSuccess(); // Appeler le callback de succès
+                } else {
+                    this.onFail(); // Appeler le callback d'échec
+                }
+                // Note : this.destroy() sera appelé par le code principal après onSuccess/onFail
+            }, 1500); // Délai de 1.5 secondes avant de déclencher la suite
+        }
+        // Stocker endGame dans l'instance pour y accéder depuis les callbacks si nécessaire
+        this.endGameCallback = endGame;
+
+
+        // Lier les boutons
+        startButton.addEventListener('click', initGame);
+        startButton.disabled = false; // Assurez-vous que le bouton est cliquable
+
+        // Pas de bouton restart dans ce scénario, on retourne au jeu principal
+        // restartButton.addEventListener('click', restartGame);
+
+    } // Fin de start()
+
+    destroy() {
+        console.log("Destruction du conteneur du mini-jeu.");
+        // Annuler l'animation frame si elle tourne encore
+        if (this.animationFrame) {
+            cancelAnimationFrame(this.animationFrame);
+            this.animationFrame = null;
+        }
+        // Nettoyer les timeouts restants
+        this.timeouts.forEach(clearTimeout);
+        this.timeouts = [];
+
+        // Supprimer les écouteurs d'événements globaux ajoutés (mousemove, mouseup)
+         document.removeEventListener('mousemove', this.boundDragMove); // Nécessite de stocker les fonctions liées
+         document.removeEventListener('mouseup', this.boundStopDrag); // Nécessite de stocker les fonctions liées
+
+
+        // Supprimer le conteneur du DOM
+        if (this.container && this.container.parentNode) {
+            this.container.parentNode.removeChild(this.container);
+        }
+
+        // Rétablir l'interaction avec l'application principale
+        const mainApp = document.getElementById("main-application"); // Assurez-vous que cet ID existe
+        if (mainApp) {
+            mainApp.style.pointerEvents = 'auto';
+            mainApp.style.opacity = '1';
+        }
+    }
+}
