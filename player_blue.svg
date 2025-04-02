@@ -1,6 +1,20 @@
 <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="25" cy="25" r="25" fill="#3498db" />
-  <!-- Vous pouvez ajouter d'autres éléments ici si vous voulez un design plus complexe -->
-  <!-- Par exemple, un petit reflet : -->
-  <!-- <circle cx="18" cy="18" r="5" fill="#a9cce3" fill-opacity="0.7"/> -->
+  <!-- Groupe pour appliquer les styles communs -->
+  <g stroke="#3498db" stroke-width="4" stroke-linecap="round" fill="#3498db">
+
+    <!-- Tête -->
+    <circle cx="25" cy="10" r="8" />
+
+    <!-- Torse -->
+    <line x1="25" y1="18" x2="25" y2="35" />
+
+    <!-- Bras -->
+    <line x1="25" y1="22" x2="10" y2="30" /> <!-- Bras gauche -->
+    <line x1="25" y1="22" x2="40" y2="30" /> <!-- Bras droit -->
+
+    <!-- Jambes -->
+    <line x1="25" y1="35" x2="15" y2="48" /> <!-- Jambe gauche -->
+    <line x1="25" y1="35" x2="35" y2="48" /> <!-- Jambe droite -->
+
+  </g>
 </svg>
