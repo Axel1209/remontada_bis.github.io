@@ -225,7 +225,7 @@ function displayActions(event) {
                     },
                     () => { // Fail
                         const feed = document.getElementById('game-feed');
-                        feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Retour au match...</div>');
+                        feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Vous n avez pas réussi à changer de chaine, vous devez donc continuer à regarder le match</div>');
                         game.destroy();
                     }
                 );
