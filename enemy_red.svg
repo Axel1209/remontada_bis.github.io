@@ -1,6 +1,20 @@
 <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="25" cy="25" r="25" fill="#e74c3c" />
-  <!-- Vous pouvez ajouter d'autres éléments ici si vous voulez un design plus complexe -->
-  <!-- Par exemple, un petit air "méchant" : -->
-  <!-- <path d="M 15 30 Q 25 38, 35 30" stroke="#c0392b" stroke-width="2" fill="none" /> -->
+  <!-- Groupe pour appliquer les styles communs -->
+  <g stroke="#e74c3c" stroke-width="4" stroke-linecap="round" fill="#e74c3c">
+
+    <!-- Tête -->
+    <circle cx="25" cy="10" r="8" />
+
+    <!-- Torse -->
+    <line x1="25" y1="18" x2="25" y2="35" />
+
+    <!-- Bras -->
+    <line x1="25" y1="22" x2="10" y2="30" /> <!-- Bras gauche -->
+    <line x1="25" y1="22" x2="40" y2="30" /> <!-- Bras droit -->
+
+    <!-- Jambes -->
+    <line x1="25" y1="35" x2="15" y2="48" /> <!-- Jambe gauche -->
+    <line x1="25" y1="35" x2="35" y2="48" /> <!-- Jambe droite -->
+
+  </g>
 </svg>
