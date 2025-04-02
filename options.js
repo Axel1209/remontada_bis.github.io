@@ -220,8 +220,9 @@ function displayActions(event) {
             if (action.name === "Changer de chaine" && selectedCharacter === "cauvin") {
                 const game = new TransferDockGame(
                     () => { // Success
-                        displayTopChefImage();
-                        game.destroy();
+                setTimeout(() => {
+                    displayTopChefImage();
+                }, 10000);
                     },
                     () => { // Fail
                         const feed = document.getElementById('game-feed');
