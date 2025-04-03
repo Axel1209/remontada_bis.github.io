@@ -222,7 +222,7 @@ function displayActions(event) {
                     () => { // Success
                 setTimeout(() => {
                     displayTopChefImage();
-                }, 10000);
+                }, 1000);
                     },
                     () => { // Fail
                         const feed = document.getElementById('game-feed');
