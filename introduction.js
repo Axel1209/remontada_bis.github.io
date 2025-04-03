@@ -11,6 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionsContainer = document.getElementById("options-container");
     const commentaryFeed = document.getElementById("commentary-feed");
     const nextEventButton = document.getElementById("next-event-button");
+
+   const restartAppButton = document.getElementById("restart-app-button");
+    if (restartAppButton) {
+        restartAppButton.addEventListener("click", () => {
+            // Optional: Confirmation dialog
+            if (confirm("Êtes-vous sûr de vouloir recommencer depuis le début ? Toute progression sera perdue.")) {
+                // Clear stored character selection before reload
+                localStorage.removeItem("selectedCharacter");
+                // Reload the entire page
+                window.location.reload();
+            }
+        });
+    } else {
+        console.error("Restart button (#restart-app-button) not found!");
+    }
     
     let selectedCharacter = "";
 
