@@ -37,6 +37,27 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Add these styles to styles.css */
+
+.restart-button {
+    position: fixed; /* Keeps it in place even when scrolling */
+    top: 15px;
+    right: 15px;
+    z-index: 1000; /* Ensures it's above most other elements */
+    background-color: #f44336; /* Red color for reset */
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.restart-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
 
 #next-event-button {
     display: block;
