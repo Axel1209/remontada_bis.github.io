@@ -20,7 +20,7 @@ export function displayTopChefImage() {
     `;
     
     document.body.appendChild(img);
-    setTimeout(() => img.remove(), 5000);
+    setTimeout(() => img.remove(), 500000);
 }
 
 // Fonction pour afficher le GIF de but
