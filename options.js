@@ -25,7 +25,7 @@ const playerOptions = {
         },
         { 
             name: "Vérifier le score cumulé", 
-            description: "Calculer fébrilement le score global",
+            description: "Ouch, le barca se rapproche, je suis pas confiant là",
             type: "ajout",
             condition: () => true // Toujours disponible
         },
