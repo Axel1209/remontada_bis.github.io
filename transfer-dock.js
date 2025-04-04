@@ -154,6 +154,20 @@ export class TransferDockGame {
             border-radius: 5px;
             cursor: pointer;
         }
+                 #td-restart-button { /* Use a unique ID like td-restart-button */
+                    padding: 10px 20px;
+                    font-size: 18px;
+                    background-color: #4CAF50; /* Green */
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-top: 15px; /* Add some space */
+                    display: none; /* Hidden by default */
+                }
+                #td-restart-button:hover {
+                    background-color: #367c39; /* Darker green */
+                }
     </style>
 
     <!-- Écran de démarrage -->
@@ -178,7 +192,7 @@ export class TransferDockGame {
         <div id="game-over">
             <h2>Partie terminée !</h2>
             <p id="final-score">Votre score : 0</p>
-            <!-- <button id="restart-button">Recommencer</button> --> <!-- On ne veut pas recommencer ici -->
+            <button id="td-restart-button">Recommencer la Soirée</button>
         </div>
     </div>
         `;
@@ -488,16 +502,33 @@ export class TransferDockGame {
             finalScoreDisplay.textContent = `Mission ${success ? 'réussie' : 'échouée'} !`; // Message de fin
             gameOverScreen.style.display = 'flex'; // Afficher l'écran de fin
 
-                if (success) {
-        const restartButton = document.getElementById('restart-button');
-        if (restartButton) {
-            restartButton.style.display = 'block';
-            restartButton.addEventListener('click', () => {
-                // Logique pour recommencer le jeu
-                window.location.reload(); // Par exemple, recharger la page
-            });
+        if (success) {
+            if (restartButton) {
+                console.log("Success: Showing restart button.");
+                restartButton.style.display = 'block'; // Show the button
+
+                // Define handler separately to avoid adding multiple listeners if endGame runs again
+                const restartHandler = () => {
+                    console.log("Mini-game restart button clicked. Reloading application.");
+                    // Optional: Confirmation
+                    if (confirm("Êtes-vous sûr de vouloir recommencer toute la soirée depuis le début ?")) {
+                        localStorage.removeItem("selectedCharacter"); // Clear stored character
+                        window.location.reload(); // Reload the whole page
+                    }
+                };
+                // Remove previous listener before adding (safer)
+                restartButton.removeEventListener('click', restartHandler); // Remove if exists
+                restartButton.addEventListener('click', restartHandler); // Add fresh listener
+
+            } else {
+                console.error("Restart button (#td-restart-button) not found within the mini-game container!");
+            }
+        } else {
+            // Ensure button is hidden on failure screen if it was somehow visible
+            if (restartButton) {
+                restartButton.style.display = 'none';
+            }
         }
-    }
 
             
             // Exécuter le callback approprié après un court délai pour montrer l'écran de fin
