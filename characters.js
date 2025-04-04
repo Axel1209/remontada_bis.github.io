@@ -275,7 +275,7 @@ etienne: {
 },
 renaud: {
     'goal-barcelona': [
-        {text: "Remontaga, à jamais les premiers ? ", intensity: 5},
+        {text: "Remontada, à jamais les premiers ? ", intensity: 5},
         {text: "C'est bon, c'est écrit, ils vont encore se faire remonter !", intensity: 20},
         {text: "Paris qui coule en C1 ? Oh bah ça alors, QUELLE SURPRISE !", intensity: 40},
         {text: "Je sens que le stade va éteindre les lumières comme en 93 !", intensity: 50},
