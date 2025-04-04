@@ -14,7 +14,7 @@ const playerOptions = {
         { 
             name: "Insulter l'arbitre", 
             type: "ajout",
-            description: "Crier 'Arbitre vendu !'",
+            description: "Arbitre vendu !",
             condition: (event) => event?.type === 'penalty' && event.team === 'Barcelona'
         },
         { 
