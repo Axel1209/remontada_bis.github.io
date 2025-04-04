@@ -219,7 +219,7 @@ export class TransferDockGame {
         const gameOverScreen = this.container.querySelector('#game-over');
         const finalScoreDisplay = this.container.querySelector('#final-score');
         const startButton = this.container.querySelector('#start-button');
-        const td-restart-Button = this.container.querySelector('#td-restart-button'); // Pas de bouton recommencer ici
+        const tdrestartbutton = this.container.querySelector('#td-restart-button'); // Pas de bouton recommencer ici
 
         // Vérification (bonne pratique)
          if (!startScreen || !gameContainer || !player || !remote || !scoreDisplay || !gameOverScreen || !finalScoreDisplay || !startButton) {
@@ -503,9 +503,9 @@ export class TransferDockGame {
             gameOverScreen.style.display = 'flex'; // Afficher l'écran de fin
 
         if (success) {
-            if (td-restart-button) {
+            if (tdrestartbutton) {
                 console.log("Success: Showing restart button.");
-                td-restart-button.style.display = 'block'; // Show the button
+                tdrestartbutton.style.display = 'block'; // Show the button
 
                 // Define handler separately to avoid adding multiple listeners if endGame runs again
                 const restartHandler = () => {
@@ -517,16 +517,16 @@ export class TransferDockGame {
                     }
                 };
                 // Remove previous listener before adding (safer)
-                td-restart-button.removeEventListener('click', restartHandler); // Remove if exists
-                td-restart-button.addEventListener('click', restartHandler); // Add fresh listener
+                tdrestartbutton.removeEventListener('click', restartHandler); // Remove if exists
+                tdrestartbutton.addEventListener('click', restartHandler); // Add fresh listener
 
             } else {
                 console.error("Restart button (#td-restart-button) not found within the mini-game container!");
             }
         } else {
             // Ensure button is hidden on failure screen if it was somehow visible
-            if (td-restart-button) {
-                td-restart-button.style.display = 'none';
+            if (tdrestartbutton) {
+                tdrestartbutton.style.display = 'none';
             }
         }
 
