@@ -219,7 +219,7 @@ export class TransferDockGame {
         const gameOverScreen = this.container.querySelector('#game-over');
         const finalScoreDisplay = this.container.querySelector('#final-score');
         const startButton = this.container.querySelector('#start-button');
-        // const restartButton = this.container.querySelector('#restart-button'); // Pas de bouton recommencer ici
+        const td-restart-Button = this.container.querySelector('#td-restart-button'); // Pas de bouton recommencer ici
 
         // Vérification (bonne pratique)
          if (!startScreen || !gameContainer || !player || !remote || !scoreDisplay || !gameOverScreen || !finalScoreDisplay || !startButton) {
