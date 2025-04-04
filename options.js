@@ -219,17 +219,21 @@ function displayActions(event) {
 
             if (action.name === "Changer de chaine" && selectedCharacter === "cauvin") {
                 const game = new TransferDockGame(
-                    () => { // Success
+                    () => { 
+                        console.log("TransferDockSucess: Scheduling TopChefimage.");
+                        // Success
                 setTimeout(() => {
                     displayTopChefImage();
                 }, 1000);
                     },
                     () => { // Fail
+                        console.log("TransferDock Fail: Displaying failure message");
                         const feed = document.getElementById('game-feed');
                         feed.insertAdjacentHTML('beforeend', '<div class="fail">Échec ! Vous n avez pas réussi à changer de chaine, vous devez donc continuer à regarder le match</div>');
                         game.destroy();
                     }
                 );
+                console.log("Starting TransferDockGame...");
                 game.start();
             }
 
