@@ -5,6 +5,8 @@ export class TransferDockGame {
         this.onFail = onFail;
         this.timeouts = [];
         this.animationFrame = null;
+        this.boundDragMove = null;
+        this.boundStopDrag = null;
 
         // Création du conteneur isolé
         this.container = document.createElement('div');
