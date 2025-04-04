@@ -188,9 +188,11 @@ export class TransferDockGame {
         // Masquer l'application principale (si nécessaire et si l'ID existe)
         const mainApp = document.getElementById("main-application"); // Assurez-vous que cet ID existe dans votre HTML principal
         if (mainApp) {
+            console.log("Disabling main application interaction.");
             mainApp.style.pointerEvents = 'none';
             mainApp.style.opacity = '0.5';
-        }
+        } else {
+            console.warn("#main-application container not found. Cannot disable interaction.");}
 
         document.body.appendChild(this.container);
 
