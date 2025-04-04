@@ -503,9 +503,9 @@ export class TransferDockGame {
             gameOverScreen.style.display = 'flex'; // Afficher l'écran de fin
 
         if (success) {
-            if (restartButton) {
+            if (td-restart-button) {
                 console.log("Success: Showing restart button.");
-                restartButton.style.display = 'block'; // Show the button
+                td-restart-button.style.display = 'block'; // Show the button
 
                 // Define handler separately to avoid adding multiple listeners if endGame runs again
                 const restartHandler = () => {
@@ -517,16 +517,16 @@ export class TransferDockGame {
                     }
                 };
                 // Remove previous listener before adding (safer)
-                restartButton.removeEventListener('click', restartHandler); // Remove if exists
-                restartButton.addEventListener('click', restartHandler); // Add fresh listener
+                td-restart-button.removeEventListener('click', restartHandler); // Remove if exists
+                td-restart-button.addEventListener('click', restartHandler); // Add fresh listener
 
             } else {
                 console.error("Restart button (#td-restart-button) not found within the mini-game container!");
             }
         } else {
             // Ensure button is hidden on failure screen if it was somehow visible
-            if (restartButton) {
-                restartButton.style.display = 'none';
+            if (td-restart-button) {
+                td-restart-button.style.display = 'none';
             }
         }
 
