@@ -157,6 +157,10 @@ jeanphi: {
         {text: "Ce raté va faire le tour des réseaux, crois-moi.", intensity: 100}
     ],
     'ajout': [
+    {text: "Ouh, 4 buts d'avance c'est pas assez, dommage de ne pas avoir fait le boulot à l'aller, #Cauvinflipette", intensity: 0},
+    {text: "Il manque un momo bayo pour me faire bander ce soir", intensity: 5},
+    {text: "Vous voyez le barça revenir à hauteur du PSG à quelle minute vous ? Moi je dis égalisation sur l'ensemble des deux matchs à la 72ème, #Cauvinflipette", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas Clermont en face, c'est seulement le Barca !", intensity: 5},
         {text: "Ah, ça fait moins le malin que contre Dijon là !", intensity: 20},
         {text: "Cauvin en PLS, respire !", intensity: 70},
         {text: "Ne regarde pas ton téléphone, les mèmes arrivent déjà.", intensity: 50},
@@ -253,7 +257,10 @@ etienne: {
         {text: "Et après, ils vont dire que c’est pas mental...", intensity: 100}
     ],
     ajout: [
-    {text: "C'est quoi ce PSG ? C'est même plus drôle à regarder.", intensity: 0},
+    {text: "Allez, voyons comment ce PSG va se faire remonter, #Cauvinflipette", intensity: 0},
+    {text: "Tout le monde est prêt pour un quintuplé de messi ?", intensity: 5},
+    {text: "Alors, comment le PSG va s'y prendre pour nous surprendre aujourd'hui ?", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas l'OL en face, c'est seulement le Barca !", intensity: 5},
     {text: "Vous savez, l'OL arrive à faire mieux avec beaucoup moins d'argent. C’est assez incroyable.", intensity: 10},
     {text: "Ah, vous avez perdu encore une fois en LDC... Vous commencez à ressembler à une série à suspense sans fin.", intensity: 20},
     {text: "Franchement, vous avez plus de chances de voir Kevin Mayer courir un 100m en 9 secondes que le PSG gagner la LDC.", intensity: 25},
@@ -338,6 +345,10 @@ renaud: {
     ],
     ajout: [
     {text: "Franchement, si l'OM a pu gagner la Ligue des Champions, vous pouvez bien réussir à gagner un match contre n'importe qui.", intensity: 0},
+    {text: "Tu te souviens de ce match ou l'OM avait remonté 5 buts à montpellier en une seule mi-temps ? Imagine ce que le barca peut faire sur un match entier ... #Cauvinflipette", intensity: 0},
+    {text: "Il vous manque un Drogba mon cauvinou pour être sereins", intensity: 5},
+    {text: "Je viens de préparer un quiche Haribo roquefort, qui en veut ?", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas l'OM en face, c'est seulement le Barca !", intensity: 5},
     {text: "J'crois qu'un fan de l'OM a plus de chances de voir son équipe remporter la LDC que vous.", intensity: 10},
     {text: "L'OM a gagné la Ligue des Champions... et vous, vous galérez contre des équipes plus faibles.", intensity: 20},
     {text: "Vous vous croyez meilleurs que l'OM, mais eux, au moins, ils ont une LDC dans leur histoire.", intensity: 25},
@@ -347,11 +358,13 @@ renaud: {
     {text: "Si l’OM a pu gagner la LDC avec un équipe moins forte que la vôtre, faut peut-être réfléchir à vos stratégies.", intensity: 50},
     {text: "Je suis sûr qu’un groupe d’amis de l’OM pourrait faire mieux que votre défense ce soir.", intensity: 55},
     {text: "Franchement, même les supporters de l'OM ne se moquent pas autant de vous... Enfin, presque.", intensity: 60},
+    {text: "Allez Cauvin, reprend un coup de Vodka-Harissa?", intensity: 60},
     {text: "L’OM a gagné la LDC avec un jeu ultra défensif… et vous, vous êtes censés être une machine à goals, mais vous coulez.", intensity: 65},
     {text: "Je suis certain que même les joueurs de l’OM feraient mieux sur ce terrain… et ils n’ont même pas de Neymar.", intensity: 70},
     {text: "Je vous jure, même l’OM aurait trouvé un moyen de gagner avec l’équipe que vous avez ce soir. Ou au moins d’être un peu moins pathétiques.", intensity: 75},
     {text: "Le PSG en LDC, c’est comme un chat qui essaie d’attraper un laser : ça court dans tous les sens, mais ça ne capte jamais rien.", intensity: 80},
     {text: "Sérieusement, vous êtes là à pleurer, mais l’OM a gagné la LDC, alors que vous, vous n’avez rien à vous mettre sous la dent.", intensity: 85},
+    {text: "Putain, qui a planqué le guacamole au nutella ?", intensity: 90},
     {text: "Quand l’OM a remporté la LDC, c’était tout un continent qui tremblait. Vous, vous faites juste pleurer vos supporters.", intensity: 90},
     {text: "Vous vous dites ‘on va tout déchirer’, mais en réalité, c’est comme si un dauphin essayait de jouer au rugby.", intensity: 95},
     {text: "Franchement, même l'OM en 1993 avait plus de cohésion que vous ce soir. La honte.", intensity: 100},
@@ -422,7 +435,11 @@ dimitri: {
         {text: "Une frappe plus molle que la défense de Bordeaux en 2022.", intensity: 100}
     ],
     ajout: [
-    {text: "Franchement, à ce rythme, vous allez finir la saison avec plus de défaites que de victoires.", intensity: 0},
+    {text: "Franchement, à ce rythme, vous allez finir la saison avec plus de défaites que de victoires.", intensity: 40},
+    {text: "100 % de chance de se qualifier, ca me semble un peu juste, courage #Cauvinflipette", intensity: 0},
+    {text: "Le barca a déjà marque 4 buts cette saison à 8 reprises, autant dire que c'est easy pour eux, #Cauvinflipette", intensity: 5},
+    {text: "Renaud, tu fais quoi avec la chantilly au dessus de la casserole de pates ?", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas Bordeaux en face, c'est seulement le Barca !", intensity: 5},
     {text: "À force de perdre des points comme ça, vous allez bientôt rivaliser avec les équipes de bas de tableau.", intensity: 10},
     {text: "Sur les 5 derniers matchs, vous avez plus de cartons rouges que de buts inscrits. C’est quand même inquiétant.", intensity: 20},
     {text: "Vous avez plus de chances d’obtenir un penalty que de marquer un but sur un contre. C’est dire le niveau.", intensity: 25},
@@ -508,7 +525,11 @@ bastien: {
         {text: "Des frappes qui finissent au 3e étage… on sent la patte française.", intensity: 100}
     ],
     ajout: [
-    {text: "Franchement, à ce rythme, la Coupe d'Europe, c'est juste une promenade pour les autres équipes.", intensity: 0},
+    {text: "Franchement, à ce rythme, la Coupe d'Europe, c'est juste une promenade pour les autres équipes.", intensity: 40},
+    {text: "Les chiffres sont clairs : Un club français n'a aucune chance contre le barça. Je ne vois pas comment ils peuvent se qualifier, #Cauvinflipette", intensity: 0},
+    {text: "Cauvin, je te propose, tu te fais la bouteille de Vodka-radis de Renaud cul sec si le PSG ne se qualifie pas ce soir", intensity: 5},
+    {text: "Vous voulez pas regarder l'analyse pré-match de Laure Boulleau plutôt ?", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas Evian-thonon en face, c'est seulement le Barca !", intensity: 5},
     {text: "Encore une année où les clubs français ne feront même pas les quarts de finale. C’est presque une tradition.", intensity: 10},
     {text: "Vous jouez en Coupe d'Europe comme si c’était un tournoi de pré-saison. Sérieusement, ça ne va jamais changer.", intensity: 20},
     {text: "Les clubs français en Coupe d’Europe, c’est un peu comme une équipe de foot amateur qui rêve de jouer la finale de la Champions League.", intensity: 25},
@@ -594,7 +615,11 @@ axel: {
     ],
     ajout: [
     {text: "Franchement, si vous aviez la précision de Federer dans ses coups droits, vous seriez déjà qualifiés pour les quarts.", intensity: 0},
-    {text: "Même Federer sur son déclin aurait plus de chance de remporter la Ligue des Champions que vous cette année.", intensity: 10},
+    {text: "Avec seulement 4 buts d'avance c'est chaud. Si seulement vous aviez pu faire un 8-0 ou 9-1 à l'aller, vous pourriez être plus sereins, #Cauvinflipette", intensity: 0},
+    {text: "Il vous manque un Pinot en attaque mon cauvinou pour être sereins", intensity: 5},
+    {text: "Qui dit bière avant de commencer ?", intensity: 0},
+    {text: "Allez Cauvin, respire, c'est pas Dijon en face, c'est seulement le Barca !", intensity: 5},
+    {text: "Même Federer sur son déclin aurait plus de chance de remporter la Ligue des Champions que vous cette année.", intensity: 30},
     {text: "Si vous jouiez avec la régularité de Fourcade en biathlon, vous passeriez les phases de groupes sans souci.", intensity: 20},
     {text: "Franchement, avec un mental comme celui de Federer, vous seriez déjà en finale de la Ligue des Champions.", intensity: 25},
     {text: "C’est comme si vous couriez avec les pieds liés, alors que Fourcade court pour l’or avec son biathlon. Où est la cohésion ?", intensity: 30},
