@@ -488,6 +488,18 @@ export class TransferDockGame {
             finalScoreDisplay.textContent = `Mission ${success ? 'réussie' : 'échouée'} !`; // Message de fin
             gameOverScreen.style.display = 'flex'; // Afficher l'écran de fin
 
+                if (success) {
+        const restartButton = document.getElementById('restart-button');
+        if (restartButton) {
+            restartButton.style.display = 'block';
+            restartButton.addEventListener('click', () => {
+                // Logique pour recommencer le jeu
+                window.location.reload(); // Par exemple, recharger la page
+            });
+        }
+    }
+
+            
             // Exécuter le callback approprié après un court délai pour montrer l'écran de fin
             setTimeout(() => {
                 if (success) {
